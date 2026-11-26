@@ -23,6 +23,7 @@ main.py
 # Firmware binaries — extracted from device, too large and legally sensitive for GitHub
 ldn_research/firmware/
 bins/
+01000000000010*/
 
 # Evidence data — large JSON/pcap/bin test outputs, regeneratable from scripts
 ldn_research/evidence/
