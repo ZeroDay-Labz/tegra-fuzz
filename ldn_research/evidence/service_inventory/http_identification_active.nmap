@@ -1,0 +1,9 @@
+# Nmap 7.92 scan initiated Fri Nov 20 10:39:52 2026 as: nmap -n -Pn -sT -sV --version-light --reason --max-retries 1 --host-timeout 20s -p80 --script http-server-header -oA ldn_research/evidence/service_inventory/http_identification_active 192.168.0.1
+Nmap scan report for 192.168.0.1
+Host is up, received user-set (0.0030s latency).
+
+PORT   STATE SERVICE    REASON  VERSION
+80/tcp open  tcpwrapped syn-ack
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Nov 20 10:39:52 2026 -- 1 IP address (1 host up) scanned in 0.20 seconds

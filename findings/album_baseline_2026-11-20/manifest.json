@@ -1,0 +1,41 @@
+{
+  "captured_at": "2026-11-20T07:26:07.703395+00:00",
+  "console_firmware": "22.5.0",
+  "hardware": "HAC-001 / Tegra X1 Erista",
+  "base_url": "http://192.168.0.1",
+  "responses": {
+    "/index.html": {
+      "status": 200,
+      "content_type": "text/html",
+      "length": 341,
+      "sha256": "ab7fd502879240ffeb30c309c06bf63fc18db3b3699ff50d7f54c60f2c62d34e",
+      "saved_as": "findings/album_baseline_2026-11-20/index.html"
+    },
+    "/js/index.js": {
+      "status": 200,
+      "content_type": "text/javascript",
+      "length": 3271,
+      "sha256": "5c19a8640757f8beb38c586a90218d9fafd6956482e0ef8bb8fc24b97511acb5",
+      "saved_as": "findings/album_baseline_2026-11-20/index.js"
+    },
+    "/styles/index.css": {
+      "status": 200,
+      "content_type": "text/css",
+      "length": 2652,
+      "sha256": "d99e009481735a5833c500ff71f5982a8be48f4b09cdc5884ec81d4812ef8510",
+      "saved_as": "findings/album_baseline_2026-11-20/index.css"
+    },
+    "/data.json": {
+      "status": 200,
+      "content_type": "text/plain",
+      "length": 464,
+      "sha256": "8164e79d61748b03a7e12f2e8026b48c230579584678b77e23c684bc5c9a7f9b",
+      "saved_as": "findings/album_baseline_2026-11-20/data.json"
+    }
+  },
+  "album_metadata": {
+    "file_type": "photo",
+    "console_name": "Switch",
+    "file_count": 1
+  }
+}

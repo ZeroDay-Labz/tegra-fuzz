@@ -25,11 +25,7 @@ ldn_research/firmware/
 bins/
 01000000000010*/
 
-# Album baseline web assets (pulled from device, not source code)
-findings/album_baseline_*
-ldn_research/evidence/album_baseline_*
-
-# Large pcap (60MB baseline too big for GitHub)
+# Large pcap (60MB, too big for GitHub)
 ldn_research/evidence/ldn_baseline_20261120_010339.pcap
 
 # Nintendo / Switch firmware artifacts
@@ -38,16 +34,6 @@ ldn_research/evidence/ldn_baseline_20261120_010339.pcap
 *.xci
 *.nso
 *.npdm
-
-# Images pulled from device
-*.jpg
-*.jpeg
-*.png
-*.bmp
-
-# Nmap scan output
-*.nmap
-*.gnmap
 
 # OS junk
 .DS_Store

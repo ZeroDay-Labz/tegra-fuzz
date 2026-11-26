@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Fri Nov 20 10:35:43 2026 as: nmap -n -Pn -sT -sV --version-light --max-retries 1 --host-timeout 20s -p80 --script http-server-header -oA ldn_research/evidence/service_inventory/http_identification 192.168.0.1
+Host: 192.168.0.1 ()	Status: Up
+Host: 192.168.0.1 ()	Ports: 80/closed/tcp//http///
+# Nmap done at Fri Nov 20 10:35:43 2026 -- 1 IP address (1 host up) scanned in 0.20 seconds
