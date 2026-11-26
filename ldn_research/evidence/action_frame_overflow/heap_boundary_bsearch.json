@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-11-24T12:13:05Z",
+  "results": [
+    {
+      "body_size": 1756,
+      "overflow": 352,
+      "status": "OK"
+    },
+    {
+      "body_size": 1900,
+      "overflow": 496,
+      "status": "CRASH"
+    },
+    {
+      "body_size": 1828,
+      "overflow": 424,
+      "status": "OK"
+    },
+    {
+      "body_size": 1864,
+      "overflow": 460,
+      "status": "OK"
+    },
+    {
+      "body_size": 1880,
+      "overflow": 476,
+      "status": "CRASH"
+    },
+    {
+      "body_size": 1872,
+      "overflow": 468,
+      "status": "OK"
+    },
+    {
+      "body_size": 1876,
+      "overflow": 472,
+      "status": "CRASH"
+    },
+    {
+      "body_size": 1872,
+      "overflow": 468,
+      "status": "OK"
+    },
+    {
+      "body_size": 1873,
+      "overflow": 469,
+      "status": "CRASH"
+    }
+  ]
+}

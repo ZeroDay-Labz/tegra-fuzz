@@ -1,0 +1,29 @@
+{
+  "finding": "HTTP Range header integer overflow crashes Switch",
+  "date": "2026-11-24",
+  "firmware": "22.5.0",
+  "error_code": "2162-0002",
+  "error_meaning": "Userland assert / svcBreak (module 162)",
+  "trigger": "Range: bytes=0-18446744073709551615",
+  "trigger_value": "UINT64_MAX (0xFFFFFFFFFFFFFFFF)",
+  "library": "cpp-httplib (confirmed by multipart boundary: --cpp-httplib-multipart-data-*)",
+  "feature": "Send to Smartphone (lp2p HTTP server)",
+  "attack_surface": "WiFi (switch_* AP, WPA2, 192.168.0.1:80)",
+  "reproducibility": "confirmed twice (manual + crashfinder)",
+  "mechanism": {
+    "theory": "UINT64_MAX overflows ssize_t parsing, uncaught exception with CPPHTTPLIB_NO_EXCEPTIONS → std::terminate → svcBreak",
+    "not_crashed": ["0-4294967295 (UINT32_MAX)", "0-4294967296 (UINT32_MAX+1)"],
+    "crashed": ["0-18446744073709551615 (UINT64_MAX)"],
+    "not_crashed_above": ["0-18446744073709551616 (UINT64_MAX+1 → 403)", "0-99999999999999999999 (→ 403)"]
+  },
+  "known_cves": {
+    "CVE-2026-31870": "Content-Length stoull uncaught exception, fixed 0.37.1",
+    "CVE-2026-45352": "Chunk-size negative wrap, fixed 0.43.4"
+  },
+  "next_steps": [
+    "Test SSIZE_MAX boundary (9223372036854775807) for different behavior",
+    "Test values that pass parsing but cause length overflow in get_range_offset_and_length",
+    "Check if crash is DoS only or if memory corruption occurs first",
+    "Look for other cpp-httplib vulnerabilities in the same HTTP server"
+  ]
+}

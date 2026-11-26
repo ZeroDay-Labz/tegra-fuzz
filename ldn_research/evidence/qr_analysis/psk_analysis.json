@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-11-22T21:31:58.474395+00:00",
+  "known_data": {
+    "ssid": "switch_F3DCDB0100S",
+    "bssid": "EC:C4:0D:F3:DC:DB",
+    "ssid_format": "switch_<serial_suffix>"
+  },
+  "ssid_analysis": {
+    "suffix": "F3DCDB0100S",
+    "suffix_hex": "4633444344423031303053",
+    "bssid_correlation": "SSID suffix starts with last 3 BSSID octets: F3DCDB == BSSID[-6:] F3DCDB",
+    "remaining_suffix": "0100S",
+    "suffix_decode_theory": {
+      "bssid_tail": "F3DCDB",
+      "model_code": "01",
+      "region_or_zero": "00",
+      "device_type": "S"
+    }
+  },
+  "psk_theories": [
+    {
+      "theory": "PSK derived from console serial number",
+      "evidence": "SSID contains device-specific data (MAC tail). PSK likely similarly derived.",
+      "test": "Capture QR code from two different sessions; if PSK changes, it's session-based."
+    },
+    {
+      "theory": "Static PSK per console",
+      "evidence": "Simpler implementation. Many embedded devices use static PSK.",
+      "test": "Compare PSK across sessions."
+    },
+    {
+      "theory": "PSK derived from BSSID + timestamp",
+      "evidence": "Would explain per-session rotation while being deterministic.",
+      "test": "If PSK format is numeric/hex, check SHA256(BSSID+timestamp) truncation."
+    },
+    {
+      "theory": "PSK is random per session",
+      "evidence": "Most secure option. Requires QR scan for every connection.",
+      "test": "Capture multiple QR codes; if no pattern, random."
+    }
+  ]
+}

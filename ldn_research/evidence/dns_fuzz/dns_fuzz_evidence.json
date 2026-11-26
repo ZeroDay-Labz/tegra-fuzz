@@ -1,0 +1,4565 @@
+{
+  "start_time": "2026-11-24T04:07:08.163449+00:00",
+  "queries": [
+    {
+      "timestamp": "2026-11-24T04:07:09.975149+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 886
+    },
+    {
+      "timestamp": "2026-11-24T04:07:27.318154+00:00",
+      "client": "192.168.44.35",
+      "query": "bvc-hac-lp1.cdn.nintendo.net",
+      "txn_id": 63860
+    },
+    {
+      "timestamp": "2026-11-24T04:07:52.619594+00:00",
+      "client": "192.168.44.35",
+      "query": "aqua.hac.lp1.d4c.nintendo.net",
+      "txn_id": 55432
+    },
+    {
+      "timestamp": "2026-11-24T04:07:57.648440+00:00",
+      "client": "192.168.44.35",
+      "query": "aqua.hac.lp1.d4c.nintendo.net",
+      "txn_id": 28425
+    },
+    {
+      "timestamp": "2026-11-24T04:08:17.748906+00:00",
+      "client": "192.168.44.35",
+      "query": "api.hac.lp1.ctest.srv.nintendo.net",
+      "txn_id": 53343
+    },
+    {
+      "timestamp": "2026-11-24T04:08:23.984184+00:00",
+      "client": "192.168.44.35",
+      "query": "api.hac.lp1.ctest.srv.nintendo.net",
+      "txn_id": 12075
+    },
+    {
+      "timestamp": "2026-11-24T04:08:34.574704+00:00",
+      "client": "192.168.44.35",
+      "query": "bvc-hac-lp1.cdn.nintendo.net",
+      "txn_id": 22701
+    },
+    {
+      "timestamp": "2026-11-24T04:08:45.591994+00:00",
+      "client": "192.168.44.35",
+      "query": "sun.hac.lp1.d4c.nintendo.net",
+      "txn_id": 34161
+    },
+    {
+      "timestamp": "2026-11-24T04:08:50.545259+00:00",
+      "client": "192.168.44.35",
+      "query": "bvc-hac-lp1.cdn.nintendo.net",
+      "txn_id": 60133
+    },
+    {
+      "timestamp": "2026-11-24T04:10:00.283067+00:00",
+      "client": "192.168.44.35",
+      "query": "aqua.hac.lp1.d4c.nintendo.net",
+      "txn_id": 51245
+    },
+    {
+      "timestamp": "2026-11-24T04:10:46.763991+00:00",
+      "client": "192.168.44.35",
+      "query": "ctest.cdn.nintendo.net",
+      "txn_id": 46818
+    },
+    {
+      "timestamp": "2026-11-24T04:10:46.867822+00:00",
+      "client": "192.168.44.35",
+      "query": "aqua.hac.lp1.d4c.nintendo.net",
+      "txn_id": 57457
+    },
+    {
+      "timestamp": "2026-11-24T04:10:51.413761+00:00",
+      "client": "192.168.44.35",
+      "query": "api.hac.lp1.ctest.srv.nintendo.net",
+      "txn_id": 30288
+    },
+    {
+      "timestamp": "2026-11-24T04:11:11.866374+00:00",
+      "client": "192.168.44.35",
+      "query": "aqua.hac.lp1.d4c.nintendo.net",
+      "txn_id": 17993
+    },
+    {
+      "timestamp": "2026-11-24T04:11:26.367989+00:00",
+      "client": "192.168.44.35",
+      "query": "api.hac.lp1.ctest.srv.nintendo.net",
+      "txn_id": 12417
+    },
+    {
+      "timestamp": "2026-11-24T04:11:30.363161+00:00",
+      "client": "192.168.44.35",
+      "query": "api.hac.lp1.ctest.srv.nintendo.net",
+      "txn_id": 8195
+    },
+    {
+      "timestamp": "2026-11-24T04:12:13.449009+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 16884
+    },
+    {
+      "timestamp": "2026-11-24T04:12:44.452523+00:00",
+      "client": "192.168.44.35",
+      "query": "ctest.cdn.nintendo.net",
+      "txn_id": 4686
+    },
+    {
+      "timestamp": "2026-11-24T04:12:44.558871+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 60029
+    },
+    {
+      "timestamp": "2026-11-24T04:12:44.647423+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 57453
+    },
+    {
+      "timestamp": "2026-11-24T04:12:45.542343+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 57453
+    },
+    {
+      "timestamp": "2026-11-24T04:12:45.622293+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 50607
+    },
+    {
+      "timestamp": "2026-11-24T04:12:48.370456+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 58997
+    },
+    {
+      "timestamp": "2026-11-24T04:12:52.184382+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 57558
+    },
+    {
+      "timestamp": "2026-11-24T04:13:02.206610+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 37769
+    },
+    {
+      "timestamp": "2026-11-24T04:13:07.279748+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 10533
+    },
+    {
+      "timestamp": "2026-11-24T04:13:07.328643+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 32399
+    },
+    {
+      "timestamp": "2026-11-24T04:13:12.233023+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 41550
+    },
+    {
+      "timestamp": "2026-11-24T04:13:22.258447+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 18716
+    },
+    {
+      "timestamp": "2026-11-24T04:13:28.559631+00:00",
+      "client": "192.168.44.35",
+      "query": "aqua.hac.lp1.d4c.nintendo.net",
+      "txn_id": 56954
+    },
+    {
+      "timestamp": "2026-11-24T04:13:32.277077+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 38763
+    },
+    {
+      "timestamp": "2026-11-24T04:13:54.613578+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 43725
+    },
+    {
+      "timestamp": "2026-11-24T04:13:55.954698+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 45738
+    },
+    {
+      "timestamp": "2026-11-24T04:13:59.357753+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 33541
+    },
+    {
+      "timestamp": "2026-11-24T04:13:59.661575+00:00",
+      "client": "192.168.44.35",
+      "query": "bvc-hac-lp1.cdn.nintendo.net",
+      "txn_id": 6995
+    },
+    {
+      "timestamp": "2026-11-24T04:19:14.577523+00:00",
+      "client": "192.168.44.35",
+      "query": "sun.hac.lp1.d4c.nintendo.net",
+      "txn_id": 12565
+    },
+    {
+      "timestamp": "2026-11-24T04:20:40.601502+00:00",
+      "client": "192.168.44.35",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "txn_id": 17722
+    }
+  ],
+  "fuzz_results": [
+    {
+      "case_idx": 0,
+      "case_name": "Normal response (baseline)",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 65,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:07:09.975149+00:00"
+    },
+    {
+      "case_idx": 0,
+      "case_name": "Normal response (baseline)",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.010106086730957
+    },
+    {
+      "case_idx": 0,
+      "case_name": "Normal response (baseline)",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.01110291481018
+    },
+    {
+      "case_idx": 0,
+      "case_name": "Normal response (baseline)",
+      "result": "TIMEOUT",
+      "gap_seconds": 12.012102127075195
+    },
+    {
+      "case_idx": 0,
+      "case_name": "Normal response (baseline)",
+      "result": "TIMEOUT",
+      "gap_seconds": 13.013105154037476
+    },
+    {
+      "case_idx": 0,
+      "case_name": "Normal response (baseline)",
+      "result": "TIMEOUT",
+      "gap_seconds": 14.014116764068604
+    },
+    {
+      "case_idx": 0,
+      "case_name": "Normal response (baseline)",
+      "result": "TIMEOUT",
+      "gap_seconds": 15.015502691268921
+    },
+    {
+      "case_idx": 0,
+      "case_name": "Normal response (baseline)",
+      "result": "TIMEOUT",
+      "gap_seconds": 16.01611566543579
+    },
+    {
+      "case_idx": 0,
+      "case_name": "Normal response (baseline)",
+      "result": "TIMEOUT",
+      "gap_seconds": 17.017106771469116
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "query": "bvc-hac-lp1.cdn.nintendo.net",
+      "response_size": 317,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:07:27.318154+00:00"
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.010090827941895
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.011113166809082
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 12.01210069656372
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 13.014118432998657
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 14.01510763168335
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 15.016801118850708
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 16.01810336112976
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 17.019113540649414
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 18.020110368728638
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 19.021103143692017
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 20.022092580795288
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 21.023091793060303
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 22.024091243743896
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 23.02509117126465
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 24.02676248550415
+    },
+    {
+      "case_idx": 1,
+      "case_name": "Name with 4x63-byte labels (256B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 25.02811098098755
+    },
+    {
+      "case_idx": 2,
+      "case_name": "Name with 8x63-byte labels (512B)",
+      "query": "aqua.hac.lp1.d4c.nintendo.net",
+      "response_size": 574,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:07:52.619594+00:00"
+    },
+    {
+      "case_idx": 3,
+      "case_name": "Name with 16x63-byte labels (1024B)",
+      "query": "aqua.hac.lp1.d4c.nintendo.net",
+      "response_size": 1086,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:07:57.648440+00:00"
+    },
+    {
+      "case_idx": 3,
+      "case_name": "Name with 16x63-byte labels (1024B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.00984239578247
+    },
+    {
+      "case_idx": 3,
+      "case_name": "Name with 16x63-byte labels (1024B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.010800123214722
+    },
+    {
+      "case_idx": 3,
+      "case_name": "Name with 16x63-byte labels (1024B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 12.01180100440979
+    },
+    {
+      "case_idx": 3,
+      "case_name": "Name with 16x63-byte labels (1024B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 13.012803792953491
+    },
+    {
+      "case_idx": 3,
+      "case_name": "Name with 16x63-byte labels (1024B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 14.014505386352539
+    },
+    {
+      "case_idx": 3,
+      "case_name": "Name with 16x63-byte labels (1024B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 15.015799522399902
+    },
+    {
+      "case_idx": 3,
+      "case_name": "Name with 16x63-byte labels (1024B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 16.017457723617554
+    },
+    {
+      "case_idx": 3,
+      "case_name": "Name with 16x63-byte labels (1024B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 17.018821716308594
+    },
+    {
+      "case_idx": 3,
+      "case_name": "Name with 16x63-byte labels (1024B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 18.01980209350586
+    },
+    {
+      "case_idx": 3,
+      "case_name": "Name with 16x63-byte labels (1024B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 19.021414041519165
+    },
+    {
+      "case_idx": 3,
+      "case_name": "Name with 16x63-byte labels (1024B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 20.023067951202393
+    },
+    {
+      "case_idx": 4,
+      "case_name": "Name with 32x63-byte labels (2048B)",
+      "query": "api.hac.lp1.ctest.srv.nintendo.net",
+      "response_size": 2115,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:08:17.748906+00:00"
+    },
+    {
+      "case_idx": 5,
+      "case_name": "Name with 64x63-byte labels (4096B)",
+      "query": "api.hac.lp1.ctest.srv.nintendo.net",
+      "response_size": 4163,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:08:23.984184+00:00"
+    },
+    {
+      "case_idx": 5,
+      "case_name": "Name with 64x63-byte labels (4096B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.009061574935913
+    },
+    {
+      "case_idx": 6,
+      "case_name": "Name with 127x63-byte labels (8128B)",
+      "query": "bvc-hac-lp1.cdn.nintendo.net",
+      "response_size": 8189,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:08:34.574704+00:00"
+    },
+    {
+      "case_idx": 6,
+      "case_name": "Name with 127x63-byte labels (8128B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.010535478591919
+    },
+    {
+      "case_idx": 6,
+      "case_name": "Name with 127x63-byte labels (8128B)",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.011537075042725
+    },
+    {
+      "case_idx": 7,
+      "case_name": "5 answer records",
+      "query": "sun.hac.lp1.d4c.nintendo.net",
+      "response_size": 126,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:08:45.591994+00:00"
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "query": "bvc-hac-lp1.cdn.nintendo.net",
+      "response_size": 206,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:08:50.545259+00:00"
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.01099967956543
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.011990785598755
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 12.013980150222778
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 13.015001058578491
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 14.01654577255249
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 15.017985343933105
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 16.01898765563965
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 17.01997995376587
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 18.021448850631714
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 19.022979497909546
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 20.02397847175598
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 21.02497935295105
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 22.025986194610596
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 23.02800488471985
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 24.02998399734497
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 25.030981302261353
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 26.031980752944946
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 27.032981872558594
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 28.033991813659668
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 29.035882234573364
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 30.03699541091919
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 31.03799080848694
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 32.04005026817322
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 33.04098176956177
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 34.04197955131531
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 35.04398727416992
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 36.04589796066284
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 37.047794342041016
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 38.04967522621155
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 39.050978899002075
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 40.05198335647583
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 41.0539824962616
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 42.055989265441895
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 43.05798411369324
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 44.058982849121094
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 45.05998253822327
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 46.06099081039429
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 47.06297826766968
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 48.06398105621338
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 49.0649778842926
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 50.066892862319946
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 51.06798052787781
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 52.06899046897888
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 53.070990562438965
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 54.072978496551514
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 55.073981523513794
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 56.074984550476074
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 57.07698583602905
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 58.0789999961853
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 59.08098292350769
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 60.08298110961914
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 61.08447289466858
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 62.08646559715271
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 63.08842706680298
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 64.09034872055054
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 65.0927324295044
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 66.09399962425232
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 67.09605574607849
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 68.09806823730469
+    },
+    {
+      "case_idx": 8,
+      "case_name": "10 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 69.1001570224762
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "query": "aqua.hac.lp1.d4c.nintendo.net",
+      "response_size": 847,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:10:00.283067+00:00"
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.010252237319946
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.012182235717773
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 12.01350450515747
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 13.015594720840454
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 14.017181396484375
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 15.019179821014404
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 16.021177291870117
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 17.022180318832397
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 18.02396845817566
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 19.026184558868408
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 20.028189659118652
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 21.03018045425415
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 22.031185626983643
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 23.033180713653564
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 24.035179138183594
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 25.037184476852417
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 26.039178133010864
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 27.041178941726685
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 28.043311834335327
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 29.045180559158325
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 30.0471932888031
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 31.049177408218384
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 32.05118441581726
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 33.053181886672974
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 34.055182695388794
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 35.05618453025818
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 36.05830955505371
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 37.06017827987671
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 38.06217885017395
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 39.06418180465698
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 40.06618285179138
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 41.06818079948425
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 42.07019233703613
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 43.07219076156616
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 44.07417917251587
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 45.07618451118469
+    },
+    {
+      "case_idx": 9,
+      "case_name": "50 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 46.0781774520874
+    },
+    {
+      "case_idx": 10,
+      "case_name": "100 answer records",
+      "query": "aqua.hac.lp1.d4c.nintendo.net",
+      "response_size": 1647,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:10:46.867822+00:00"
+    },
+    {
+      "case_idx": 11,
+      "case_name": "255 answer records",
+      "query": "api.hac.lp1.ctest.srv.nintendo.net",
+      "response_size": 4132,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:10:51.413761+00:00"
+    },
+    {
+      "case_idx": 11,
+      "case_name": "255 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.011621952056885
+    },
+    {
+      "case_idx": 11,
+      "case_name": "255 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.013481616973877
+    },
+    {
+      "case_idx": 11,
+      "case_name": "255 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 12.01547908782959
+    },
+    {
+      "case_idx": 11,
+      "case_name": "255 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 13.017484188079834
+    },
+    {
+      "case_idx": 11,
+      "case_name": "255 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 14.019482374191284
+    },
+    {
+      "case_idx": 11,
+      "case_name": "255 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 15.021482944488525
+    },
+    {
+      "case_idx": 11,
+      "case_name": "255 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 16.022757291793823
+    },
+    {
+      "case_idx": 11,
+      "case_name": "255 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 17.02448058128357
+    },
+    {
+      "case_idx": 11,
+      "case_name": "255 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 18.0264790058136
+    },
+    {
+      "case_idx": 11,
+      "case_name": "255 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 19.02847933769226
+    },
+    {
+      "case_idx": 11,
+      "case_name": "255 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 20.03048276901245
+    },
+    {
+      "case_idx": 12,
+      "case_name": "1000 answer records",
+      "query": "aqua.hac.lp1.d4c.nintendo.net",
+      "response_size": 16047,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:11:11.866374+00:00"
+    },
+    {
+      "case_idx": 12,
+      "case_name": "1000 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.011934041976929
+    },
+    {
+      "case_idx": 12,
+      "case_name": "1000 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.013865947723389
+    },
+    {
+      "case_idx": 12,
+      "case_name": "1000 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 12.015865564346313
+    },
+    {
+      "case_idx": 12,
+      "case_name": "1000 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 13.017865896224976
+    },
+    {
+      "case_idx": 12,
+      "case_name": "1000 answer records",
+      "result": "TIMEOUT",
+      "gap_seconds": 14.020018815994263
+    },
+    {
+      "case_idx": 13,
+      "case_name": "TXT record with 256B data",
+      "query": "api.hac.lp1.ctest.srv.nintendo.net",
+      "response_size": 320,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:11:26.367989+00:00"
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "query": "api.hac.lp1.ctest.srv.nintendo.net",
+      "response_size": 1088,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:11:30.363161+00:00"
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.010080575942993
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.012081861495972
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 12.014085292816162
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 13.016079187393188
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 14.018081426620483
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 15.020081043243408
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 16.022565126419067
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 17.02408218383789
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 18.026082754135132
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 19.028086185455322
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 20.030085563659668
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 21.03228783607483
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 22.03408169746399
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 23.036542177200317
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 24.038960695266724
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 25.041085481643677
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 26.04358673095703
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 27.045103311538696
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 28.047085285186768
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 29.04908514022827
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 30.051084756851196
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 31.053731679916382
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 32.05608916282654
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 33.058083057403564
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 34.06008291244507
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 35.06282711029053
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 36.065401554107666
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 37.068105697631836
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 38.070152282714844
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 39.07311153411865
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 40.076090812683105
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 41.078083753585815
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 42.08109951019287
+    },
+    {
+      "case_idx": 14,
+      "case_name": "TXT record with 1024B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 43.08308672904968
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 4157,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:12:13.449009+00:00"
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.01625108718872
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.018243789672852
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 12.02023434638977
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 13.022228956222534
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 14.024231433868408
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 15.026228427886963
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 16.02855682373047
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 17.030232429504395
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 18.032229900360107
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 19.034740209579468
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 20.036226511001587
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 21.03823757171631
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 22.040234804153442
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 23.042232990264893
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 24.044737577438354
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 25.047232389450073
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 26.049580574035645
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 27.0522301197052
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 28.054234981536865
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 29.056227922439575
+    },
+    {
+      "case_idx": 15,
+      "case_name": "TXT record with 4096B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 30.058231830596924
+    },
+    {
+      "case_idx": 16,
+      "case_name": "TXT record with 16384B data",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 16445,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:12:44.558871+00:00"
+    },
+    {
+      "case_idx": 17,
+      "case_name": "TXT record with 65535B data",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 65507,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:12:44.647423+00:00"
+    },
+    {
+      "case_idx": 18,
+      "case_name": "Self-referencing compression pointer",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 65,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:12:45.542343+00:00"
+    },
+    {
+      "case_idx": 19,
+      "case_name": "RDLENGTH=100 with 4B data",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 65,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:12:45.622293+00:00"
+    },
+    {
+      "case_idx": 20,
+      "case_name": "RDLENGTH=1000 with 4B data",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 65,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:12:48.370456+00:00"
+    },
+    {
+      "case_idx": 21,
+      "case_name": "RDLENGTH=10000 with 4B data",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 65,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:12:52.184382+00:00"
+    },
+    {
+      "case_idx": 21,
+      "case_name": "RDLENGTH=10000 with 4B data",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.011856079101562
+    },
+    {
+      "case_idx": 22,
+      "case_name": "RDLENGTH=65535 with 4B data",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 65,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:13:02.206610+00:00"
+    },
+    {
+      "case_idx": 23,
+      "case_name": "Chain of 5 CNAMEs",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 200,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:13:07.279748+00:00"
+    },
+    {
+      "case_idx": 24,
+      "case_name": "Chain of 10 CNAMEs",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 335,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:13:07.328643+00:00"
+    },
+    {
+      "case_idx": 25,
+      "case_name": "Chain of 50 CNAMEs",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 1455,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:13:12.233023+00:00"
+    },
+    {
+      "case_idx": 25,
+      "case_name": "Chain of 50 CNAMEs",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.010269403457642
+    },
+    {
+      "case_idx": 26,
+      "case_name": "Chain of 100 CNAMEs",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 2855,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:13:22.258447+00:00"
+    },
+    {
+      "case_idx": 27,
+      "case_name": "10 additional records",
+      "query": "aqua.hac.lp1.d4c.nintendo.net",
+      "response_size": 343,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:13:28.559631+00:00"
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 1505,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:13:32.277077+00:00"
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.010172367095947
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.01242470741272
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 12.015167713165283
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 13.017900228500366
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 14.020176410675049
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 15.022161960601807
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 16.024163007736206
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 17.02616810798645
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 18.028167009353638
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 19.03033995628357
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 20.03216242790222
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 21.034164667129517
+    },
+    {
+      "case_idx": 28,
+      "case_name": "50 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 22.036168575286865
+    },
+    {
+      "case_idx": 29,
+      "case_name": "100 additional records",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 2955,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:13:54.613578+00:00"
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "query": "dauth-lp1.ndas.srv.nintendo.net",
+      "response_size": 7605,
+      "result": "SENT",
+      "timestamp": "2026-11-24T04:13:55.954698+00:00"
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.009752035140991
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.012840032577515
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 12.015714406967163
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 13.017969369888306
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 14.02066159248352
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 15.02365517616272
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 16.026101112365723
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 17.028657913208008
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 18.031296730041504
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 19.033663749694824
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 20.03665542602539
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 21.03865647315979
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 22.041237354278564
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 23.043673038482666
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 24.046570777893066
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 25.049665451049805
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 26.05267071723938
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 27.054683685302734
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 28.0576593875885
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 29.059663772583008
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 30.062648057937622
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 31.064669847488403
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 32.06766128540039
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 33.07065796852112
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 34.07265758514404
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 35.07532358169556
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 36.077656745910645
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 37.079660415649414
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 38.08266043663025
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 39.08531451225281
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 40.08766031265259
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 41.09066653251648
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 42.09265732765198
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 43.094664096832275
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 44.096657276153564
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 45.09865856170654
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 46.100661754608154
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 47.10369539260864
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 48.1056592464447
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 49.107661724090576
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 50.11065864562988
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 51.11365818977356
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 52.11566114425659
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 53.11862659454346
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 54.120694637298584
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 55.122660875320435
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 56.1256685256958
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 57.128660917282104
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 58.13166046142578
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 59.13367319107056
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 60.13566207885742
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 61.137659788131714
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 62.1406626701355
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 63.142657995224
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 64.14466738700867
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 65.14665794372559
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 66.14967226982117
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 67.15166401863098
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 68.15468049049377
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 69.15767645835876
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 70.16142225265503
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 71.1645336151123
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 72.16766166687012
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 73.16966319084167
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 74.17266917228699
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 75.17586469650269
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 76.17834448814392
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 77.18065690994263
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 78.18265581130981
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 79.1856677532196
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 80.18865871429443
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 81.19165849685669
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 82.19465827941895
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 83.19751048088074
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 84.19966697692871
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 85.20266580581665
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 86.20600843429565
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 87.20865750312805
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 88.21109247207642
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 89.21365666389465
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 90.21574687957764
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 91.2176582813263
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 92.2206654548645
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 93.2234833240509
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 94.22566437721252
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 95.22865986824036
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 96.23141288757324
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 97.23467969894409
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 98.23766112327576
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 99.24066305160522
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 100.24265813827515
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 101.24566316604614
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 102.2486822605133
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 103.25171184539795
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 104.25466632843018
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 105.25766444206238
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 106.26105856895447
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 107.26392936706543
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 108.26695537567139
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 109.26966452598572
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 110.27266049385071
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 111.2756576538086
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 112.27865862846375
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 113.28165602684021
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 114.28466200828552
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 115.28666067123413
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 116.28962254524231
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 117.29265999794006
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 118.29643511772156
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 119.29865789413452
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 120.30237078666687
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 121.30565643310547
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 122.3086609840393
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 123.31165719032288
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 124.31465816497803
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 125.31765723228455
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 126.32066345214844
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 127.32410192489624
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 128.32666563987732
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 129.3296616077423
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 130.33266234397888
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 131.33667588233948
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 132.33966970443726
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 133.34267163276672
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 134.34667205810547
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 135.34965705871582
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 136.3526632785797
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 137.35566067695618
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 138.3586664199829
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 139.36166286468506
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 140.36466479301453
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 141.36765933036804
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 142.37066006660461
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 143.37365865707397
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 144.375657081604
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 145.37865924835205
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 146.38066816329956
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 147.38366103172302
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 148.3866617679596
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 149.38966178894043
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 150.39265775680542
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 151.39567255973816
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 152.39960169792175
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 153.4026689529419
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 154.40566039085388
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 155.40867018699646
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 156.41166186332703
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 157.41566014289856
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 158.4192235469818
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 159.42267179489136
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 160.42666745185852
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 161.43170166015625
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 162.43466138839722
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 163.4376621246338
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 164.44065713882446
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 165.44366455078125
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 166.4466574192047
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 167.44999170303345
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 168.4526584148407
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 169.45566701889038
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 170.4586579799652
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 171.46166563034058
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 172.46465706825256
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 173.46766257286072
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 174.47066068649292
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 175.47367072105408
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 176.47733068466187
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 177.48066329956055
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 178.48427033424377
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 179.48666095733643
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 180.48965549468994
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 181.49302172660828
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 182.4956545829773
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 183.49866390228271
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 184.50166630744934
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 185.5056755542755
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 186.50917959213257
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 187.51269507408142
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 188.5165400505066
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 189.5196578502655
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 190.52266764640808
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 191.52566981315613
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 192.52966403961182
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 193.53266096115112
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 194.5356605052948
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 195.53892827033997
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 196.54166388511658
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 197.5453703403473
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 198.54865908622742
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 199.55166101455688
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 200.5546600818634
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 201.55766487121582
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 202.5606656074524
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 203.56390571594238
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 204.56666326522827
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 205.56966042518616
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 206.57266879081726
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 207.57566046714783
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 208.57965683937073
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 209.5826654434204
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 210.58665990829468
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 211.59067487716675
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 212.59490060806274
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 213.59881448745728
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 214.60166096687317
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 215.60465717315674
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 216.6076672077179
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 217.61066389083862
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 218.61366248130798
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 219.61665987968445
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 220.61966848373413
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 221.62265920639038
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 222.6256604194641
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 223.62865948677063
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 224.63165664672852
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 225.63514256477356
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 226.63766193389893
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 227.64065885543823
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 228.6436607837677
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 229.64732599258423
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 230.65066838264465
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 231.65365958213806
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 232.65666007995605
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 233.6596601009369
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 234.6626660823822
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 235.66566109657288
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 236.6690435409546
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 237.67266058921814
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 238.67667269706726
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 239.6796989440918
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 240.6836760044098
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 241.68667912483215
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 242.69066166877747
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 243.69366645812988
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 244.69667601585388
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 245.69966983795166
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 246.70336961746216
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 247.70665574073792
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 248.7096586227417
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 249.71265482902527
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 250.7156789302826
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 251.71866083145142
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 252.72266054153442
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 253.7256669998169
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 254.728661775589
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 255.7316598892212
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 256.7346577644348
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 257.7376616001129
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 258.7406573295593
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 259.743661403656
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 260.74666357040405
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 261.74965834617615
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 262.7526569366455
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 263.7556574344635
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 264.7586579322815
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 265.7616786956787
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 266.7656683921814
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 267.76868772506714
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 268.77167797088623
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 269.77467036247253
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 270.77941131591797
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 271.7845516204834
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 272.7876670360565
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 273.7906551361084
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 274.7946546077728
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 275.7976551055908
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 276.8006603717804
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 277.8036584854126
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 278.80766439437866
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 279.81065917015076
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 280.8136610984802
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 281.8176624774933
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 282.820659160614
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 283.82366251945496
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 284.8278250694275
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 285.83165884017944
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 286.83466053009033
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 287.8386571407318
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 288.84166622161865
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 289.8456656932831
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 290.8496689796448
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 291.85265493392944
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 292.85565972328186
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 293.8586583137512
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 294.8616735935211
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 295.8654668331146
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 296.8686590194702
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 297.87187004089355
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 298.87563157081604
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 299.88014793395996
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 300.88365721702576
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 301.88778948783875
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 302.8906602859497
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 303.89466309547424
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 304.89765763282776
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 305.9006631374359
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 306.90366554260254
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 307.90766429901123
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 308.91143012046814
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 309.9156594276428
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 310.9196639060974
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 311.9236788749695
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 312.92768692970276
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 313.9326608181
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.009716272354126
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.013730525970459
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 12.01772689819336
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 13.02172064781189
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 14.02472734451294
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 15.027724981307983
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 16.031741619110107
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 17.03573703765869
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 18.040510892868042
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 19.043720245361328
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 20.04741668701172
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 21.050721645355225
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 22.054723739624023
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 23.058738708496094
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 24.06257176399231
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 25.06646704673767
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 26.06972026824951
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 27.072722673416138
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 28.075725317001343
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 29.079964637756348
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 30.08409857749939
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 31.088069915771484
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 32.09171652793884
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 33.09485077857971
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 34.0987274646759
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 35.10272932052612
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 36.1057186126709
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 37.10921502113342
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 38.11274266242981
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 39.11673426628113
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 40.12075114250183
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 41.125725746154785
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 42.12974977493286
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 43.133724212646484
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 44.13771963119507
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 45.14071726799011
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 46.143723487854004
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 47.14772152900696
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 48.150721073150635
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 49.15371799468994
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 50.15672445297241
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 51.16071939468384
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 52.163721323013306
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 53.16772246360779
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 54.171714544296265
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 55.17572093009949
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 56.178730487823486
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 57.18271827697754
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 58.186723947525024
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 59.19174599647522
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 60.195717334747314
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 61.19974493980408
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 62.20419883728027
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 63.207724809646606
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 64.21071767807007
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 65.21472096443176
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 66.21771740913391
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 67.22172784805298
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 68.2256555557251
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 69.22872018814087
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 70.23272514343262
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 71.23771810531616
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 72.2417299747467
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 73.24572110176086
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 74.24972224235535
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 75.25373220443726
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 76.25786423683167
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 77.2627341747284
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 78.267742395401
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 79.27186942100525
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 80.27571821212769
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 81.27973127365112
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 82.28372955322266
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 83.28772044181824
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 84.2917149066925
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 85.29534935951233
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 10.008004903793335
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 11.011979341506958
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 12.015757322311401
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 13.020129442214966
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 14.02379584312439
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 15.027748107910156
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 16.031750917434692
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 17.035752296447754
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 18.03915524482727
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 19.04275155067444
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 20.046757698059082
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 21.050750732421875
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 22.055256605148315
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 23.058757066726685
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 24.06275463104248
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 25.06696081161499
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 26.07075595855713
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 27.074751377105713
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 28.078751802444458
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 29.08248281478882
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 30.08684992790222
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 31.090770721435547
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 32.09576201438904
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 33.100865840911865
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 34.104753255844116
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 35.10875153541565
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 36.1127495765686
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 37.116759300231934
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 38.12074613571167
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 39.12475562095642
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 40.12875247001648
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 41.13275074958801
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 42.13674998283386
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 43.14082360267639
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 44.14476442337036
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 45.14975619316101
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 46.153748512268066
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 47.15875506401062
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 48.16376233100891
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 49.16777753829956
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 50.171786069869995
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 51.17775535583496
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 52.181750774383545
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 53.18574810028076
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 54.19003939628601
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 55.19575548171997
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 56.20009803771973
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 57.20475125312805
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 58.20874619483948
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 59.21302080154419
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 60.21674728393555
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 61.220879793167114
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 62.22475051879883
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 63.22875642776489
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 64.2327573299408
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 65.23676347732544
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 66.2407739162445
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 67.24574828147888
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 68.24975395202637
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 69.25474691390991
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 70.2587468624115
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 71.26274609565735
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 72.26675868034363
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 73.2711751461029
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 74.27475905418396
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 75.27975559234619
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 76.28374648094177
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 77.28775215148926
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 78.29174709320068
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 79.29590344429016
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 80.29975271224976
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 81.30374717712402
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 82.308767080307
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 83.31377744674683
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 84.31875467300415
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 85.32321953773499
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 86.32775378227234
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 87.33250308036804
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 88.33675050735474
+    },
+    {
+      "case_idx": 30,
+      "case_name": "255 additional records",
+      "result": "TIMEOUT",
+      "gap_seconds": 89.34074902534485
+    }
+  ],
+  "crashes_detected": 0,
+  "end_time": "2026-11-24T04:22:10.298391+00:00"
+}

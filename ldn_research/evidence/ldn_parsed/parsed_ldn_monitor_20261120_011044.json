@@ -1,0 +1,182 @@
+{
+  "file": "ldn_research/evidence/ldn_monitor_20261120_011044.pcap",
+  "total_packets": 1103,
+  "beacons": [
+    {
+      "frame_num": 1,
+      "type": "beacon",
+      "bssid": "18:a5:3f:4a:64:54",
+      "src": "18:a5:3f:4a:64:54",
+      "dst": "ff:ff:ff:ff:ff:ff",
+      "vendor_ies": [],
+      "ssid": "Chrome cast"
+    },
+    {
+      "frame_num": 2,
+      "type": "beacon",
+      "bssid": "72:13:01:e0:9d:9a",
+      "src": "72:13:01:e0:9d:9a",
+      "dst": "ff:ff:ff:ff:ff:ff",
+      "vendor_ies": [
+        {
+          "oui": "00:10:18",
+          "label": "Broadcom",
+          "data_hex": "0200001c0000"
+        }
+      ],
+      "ssid": ""
+    },
+    {
+      "frame_num": 3,
+      "type": "beacon",
+      "bssid": "72:13:01:e0:9d:9e",
+      "src": "72:13:01:e0:9d:9e",
+      "dst": "ff:ff:ff:ff:ff:ff",
+      "vendor_ies": [
+        {
+          "oui": "00:10:18",
+          "label": "Broadcom",
+          "data_hex": "0200001c0000"
+        }
+      ],
+      "ssid": ""
+    },
+    {
+      "frame_num": 4,
+      "type": "beacon",
+      "bssid": "12:a7:93:0d:75:b6",
+      "src": "12:a7:93:0d:75:b6",
+      "dst": "ff:ff:ff:ff:ff:ff",
+      "vendor_ies": [
+        {
+          "oui": "00:10:18",
+          "label": "Broadcom",
+          "data_hex": "0200001c0000"
+        }
+      ],
+      "ssid": ""
+    },
+    {
+      "frame_num": 5,
+      "type": "beacon",
+      "bssid": "72:13:01:e0:9d:9a",
+      "src": "72:13:01:e0:9d:9a",
+      "dst": "ff:ff:ff:ff:ff:ff",
+      "vendor_ies": [
+        {
+          "oui": "00:10:18",
+          "label": "Broadcom",
+          "data_hex": "0200001c0000"
+        }
+      ],
+      "ssid": ""
+    }
+  ],
+  "probe_responses": [
+    {
+      "frame_num": 325,
+      "type": "probe_response",
+      "bssid": "18:a5:ff:49:64:54",
+      "src": "18:a5:ff:49:64:54",
+      "dst": "88:9e:68:9e:ae:27",
+      "vendor_ies": [],
+      "ssid": "kittykatLand"
+    },
+    {
+      "frame_num": 817,
+      "type": "probe_response",
+      "bssid": "ec:c4:0d:f3:dc:db",
+      "src": "ec:c4:0d:f3:dc:db",
+      "dst": "d4:e2:cb:4b:ec:19",
+      "vendor_ies": [
+        {
+          "oui": "00:22:aa",
+          "type": 16,
+          "data_hex": "0101",
+          "data_len": 2,
+          "label": "Nintendo"
+        },
+        {
+          "oui": "00:10:18",
+          "label": "Broadcom",
+          "data_hex": "0200001c0000"
+        }
+      ],
+      "ssid": "switch_F3DCDB0100S"
+    },
+    {
+      "frame_num": 818,
+      "type": "probe_response",
+      "bssid": "ec:c4:0d:f3:dc:db",
+      "src": "ec:c4:0d:f3:dc:db",
+      "dst": "d4:e2:cb:4b:ec:19",
+      "vendor_ies": [
+        {
+          "oui": "00:22:aa",
+          "type": 16,
+          "data_hex": "0101",
+          "data_len": 2,
+          "label": "Nintendo"
+        },
+        {
+          "oui": "00:10:18",
+          "label": "Broadcom",
+          "data_hex": "0200001c0000"
+        }
+      ],
+      "ssid": "switch_F3DCDB0100S"
+    },
+    {
+      "frame_num": 819,
+      "type": "probe_response",
+      "bssid": "ec:c4:0d:f3:dc:db",
+      "src": "ec:c4:0d:f3:dc:db",
+      "dst": "d4:e2:cb:4b:ec:19",
+      "vendor_ies": [
+        {
+          "oui": "00:22:aa",
+          "type": 16,
+          "data_hex": "0101",
+          "data_len": 2,
+          "label": "Nintendo"
+        },
+        {
+          "oui": "00:10:18",
+          "label": "Broadcom",
+          "data_hex": "0200001c0000"
+        }
+      ],
+      "ssid": "switch_F3DCDB0100S"
+    },
+    {
+      "frame_num": 820,
+      "type": "probe_response",
+      "bssid": "ec:c4:0d:f3:dc:db",
+      "src": "ec:c4:0d:f3:dc:db",
+      "dst": "d4:e2:cb:4b:ec:19",
+      "vendor_ies": [
+        {
+          "oui": "00:22:aa",
+          "type": 16,
+          "data_hex": "0101",
+          "data_len": 2,
+          "label": "Nintendo"
+        },
+        {
+          "oui": "00:10:18",
+          "label": "Broadcom",
+          "data_hex": "0200001c0000"
+        }
+      ],
+      "ssid": "switch_F3DCDB0100S"
+    }
+  ],
+  "action_frames": [],
+  "ldn_data_frames": [],
+  "summary": {
+    "beacons": 824,
+    "probe_responses": 5,
+    "action_frames": 0,
+    "ldn_data_frames": 0
+  }
+}

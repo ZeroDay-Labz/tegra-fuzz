@@ -1,0 +1,169 @@
+{
+  "timestamp": "2026-11-24T22:02:41Z",
+  "test": "frame_path_mapping",
+  "purpose": "Determine which action frame parameters affect Switch behavior",
+  "interface": "wlp5s0",
+  "switch_mac": "ecc40df3dcdb",
+  "results": [
+    {
+      "name": "cat_0x7F_vendor_specific",
+      "result": "OK",
+      "frame_size": 100,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "cat_0x09_sa_query",
+      "result": "OK",
+      "frame_size": 41,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "cat_0x04_public_action",
+      "result": "OK",
+      "frame_size": 57,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-22": 20
+      }
+    },
+    {
+      "name": "cat_0x03_block_ack",
+      "result": "OK",
+      "frame_size": 33,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "oui_lp2p_0022aa",
+      "result": "OK",
+      "frame_size": 100,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "oui_nintendo_001f32",
+      "result": "OK",
+      "frame_size": 100,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "oui_microsoft_0050f2",
+      "result": "OK",
+      "frame_size": 100,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "oui_generic_aabbcc",
+      "result": "OK",
+      "frame_size": 100,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "body_minimal_4bytes",
+      "result": "OK",
+      "frame_size": 28,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "body_lp2p_type0",
+      "result": "OK",
+      "frame_size": 280,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "body_lp2p_type3",
+      "result": "OK",
+      "frame_size": 280,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "body_lp2p_type1",
+      "result": "OK",
+      "frame_size": 280,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "body_lp2p_type2",
+      "result": "OK",
+      "frame_size": 280,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "size_64B_type3",
+      "result": "OK",
+      "frame_size": 88,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "size_512B_type3",
+      "result": "OK",
+      "frame_size": 536,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    },
+    {
+      "name": "size_2048B_type3",
+      "result": "OK",
+      "frame_size": 2072,
+      "sent": 20,
+      "successes": 0,
+      "errors": {
+        "-107": 20
+      }
+    }
+  ]
+}

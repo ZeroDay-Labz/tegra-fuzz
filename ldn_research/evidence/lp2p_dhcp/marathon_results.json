@@ -1,0 +1,218 @@
+{
+  "test": "http_marathon_fuzz",
+  "timestamp": "2026-11-24T04:59:03.262785+00:00",
+  "results": [
+    {
+      "label": "img HEAD",
+      "resp_len": 110,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "img Range 0-99",
+      "resp_len": 232,
+      "status_line": "HTTP/1.1 206 Partial Content",
+      "alive": true
+    },
+    {
+      "label": "img Range -100",
+      "resp_len": 241,
+      "status_line": "HTTP/1.1 206 Partial Content",
+      "alive": true
+    },
+    {
+      "label": "img Range 999999-9999999",
+      "resp_len": 271,
+      "status_line": "HTTP/1.1 206 Partial Content",
+      "alive": true
+    },
+    {
+      "label": "img 50 ranges",
+      "resp_len": 16147,
+      "status_line": "HTTP/1.1 206 Partial Content",
+      "alive": true
+    },
+    {
+      "label": "img Range 0-SMAX",
+      "resp_len": 271,
+      "status_line": "HTTP/1.1 206 Partial Content",
+      "alive": true
+    },
+    {
+      "label": "img[0] GET",
+      "resp_len": 362417,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "img[1] GET",
+      "resp_len": 407443,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "img[2] GET",
+      "resp_len": 348770,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "img[3] GET",
+      "resp_len": 313614,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "img[4] GET",
+      "resp_len": 359915,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "img[5] GET",
+      "resp_len": 257761,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "img[6] GET",
+      "resp_len": 150327,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "img[7] GET",
+      "resp_len": 153710,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "img[8] GET",
+      "resp_len": 137763,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "img[9] GET",
+      "resp_len": 132660,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "slow header 1B/100ms",
+      "resp_len": 1053,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "partial request",
+      "resp_len": 0,
+      "status_line": "PARTIAL_SENT",
+      "alive": true
+    },
+    {
+      "label": "raw binary",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "TLS on HTTP port",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "HTTP/2 preface",
+      "resp_len": 210,
+      "status_line": "HTTP/1.1 400 Bad Request",
+      "alive": true
+    },
+    {
+      "label": "WebSocket upgrade",
+      "resp_len": 1053,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "10_concurrent_images",
+      "errors": 0,
+      "alive": true
+    },
+    {
+      "label": "fmt URL '%s%s%s%s%s%s%s%s%s%s'",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "fmt Host '%s%s%s%s%s%s%s%s%s%s'",
+      "resp_len": 1053,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "fmt URL '%n%n%n%n'",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "fmt Host '%n%n%n%n'",
+      "resp_len": 1053,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "fmt URL '%x%x%x%x%x%x%x%x%x%x'",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "fmt Host '%x%x%x%x%x%x%x%x%x%x'",
+      "resp_len": 1053,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "fmt URL 'AAAA%08x.%08x.%08x.%'",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "fmt Host 'AAAA%08x.%08x.%08x.%'",
+      "resp_len": 1053,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "200 headers x 200B",
+      "resp_len": 1053,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "POST form 100KB",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "POST multipart 10KB",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "GET with body 1KB",
+      "resp_len": 1053,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": false,
+      "recovered": true
+    }
+  ],
+  "crashed": true,
+  "total_tests": 35
+}

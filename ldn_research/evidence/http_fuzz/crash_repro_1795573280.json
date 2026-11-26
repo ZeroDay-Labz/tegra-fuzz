@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-11-25T02:21:20Z",
+  "finding": "multipart_filename_crash",
+  "confirmed": true,
+  "safe_size": 256,
+  "crash_size": 8192,
+  "tcp_state_after_crash": "ERR:timed out",
+  "description": "POST with multipart/form-data containing an 8192-byte filename crashes the HTTP server persistently. TCP port remains open but connections are immediately reset.",
+  "request_template": "POST / with Content-Type: multipart/form-data, filename='A'*8192",
+  "impact": "Persistent DoS - HTTP handler crashes, only TCP listener survives. Recovery requires restarting Send to Smartphone feature."
+}

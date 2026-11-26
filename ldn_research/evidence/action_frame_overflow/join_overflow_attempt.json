@@ -1,0 +1,20 @@
+{
+  "mode": "join",
+  "timestamp": "2026-11-24T17:58:44.823878+00:00",
+  "target": "FUN_71000398b0 \u2192 FUN_710003c6b0 \u2192 FUN_710003b470",
+  "vulnerability": "CVE-2026-82079 stack-based buffer overflow",
+  "interface": "wlp5s0",
+  "freq": 2412,
+  "src_mac": "22:7c:ce:e0:bd:56",
+  "dst_mac": "ec:c4:0d:f3:dc:db",
+  "bssid": "ec:c4:0d:f3:dc:db",
+  "overflow_size": "0x0900",
+  "body_size": "0x0570",
+  "protocol_type": "type 3 (plaintext, no payload_size cap)",
+  "duration": 120,
+  "delay": 0.002,
+  "total_sent": 800,
+  "total_fail": 0,
+  "crash_detected": true,
+  "crash_time": 11.180636405944824
+}

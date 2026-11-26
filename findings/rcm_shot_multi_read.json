@@ -1,0 +1,39 @@
+{
+  "case": "multi_read",
+  "device": {
+    "bus": 3,
+    "address": 7
+  },
+  "timestamp": "2026-11-19T17:13:09",
+  "ep0_pre_handshake": "00000000000000008000000094fc0040010000000090004000000000009000400090004090290040db79100001000000e0fc004000900040237b100000500040302e004014310040d12a100088008800012100001b29100014310040502e0040302e004038020000292910001996ce44a8af9edad590304574fac528720ab24f",
+  "device_id": "40810205000000080047506401101062",
+  "write": {
+    "outcome": "ok",
+    "bytes": 4096
+  },
+  "reads": [
+    {
+      "outcome": "ok",
+      "length": 4,
+      "hex": "08000000"
+    },
+    {
+      "outcome": "timeout",
+      "length": 0
+    },
+    {
+      "outcome": "timeout",
+      "length": 0
+    },
+    {
+      "outcome": "timeout",
+      "length": 0
+    },
+    {
+      "outcome": "timeout",
+      "length": 0
+    }
+  ],
+  "ep0_post": "none",
+  "device_alive": true
+}

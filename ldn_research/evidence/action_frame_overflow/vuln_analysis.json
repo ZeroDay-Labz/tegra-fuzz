@@ -1,0 +1,258 @@
+{
+  "vulnerability": "ldn SendActionFrame heap overflow",
+  "firmware": "22.5.0 (unfixed)",
+  "fixed_in": "23.5.0",
+  "binary": "ldn sysmodule (main.flat.bin)",
+  "binary_sha256": "91bee792da7c8ca7718bac166009331cd14ecdcc662c9fcf52f435da0d56f34a",
+  "severity": "CRITICAL",
+  "type": "heap_overflow",
+  "attack_vector": "WiFi proximity (802.11 action frame injection)",
+
+  "vulnerable_function": {
+    "name": "FUN_710003b470",
+    "address": "0x710003b470",
+    "description": "Frame data extractor — copies parsed payload to output struct",
+    "vulnerable_line": "thunk_FUN_71000a8540(param_1 + 0xf, payload_ptr, payload_size)",
+    "explanation": "memcpy(output+0x78, payload_ptr, payload_size) where payload_size comes from parsed frame body via vtable[4] with NO bounds check against destination buffer size (0x798 - 0x78 = 0x720 available)"
+  },
+
+  "data_flow": {
+    "step1_receive": {
+      "function": "FUN_7100036bb0 (RecvActionFrame thread)",
+      "address": "0x7100036bb0",
+      "action": "WiFi driver receives 802.11 action frame via vtable[0x120/8]",
+      "cap": "0x57c (1404 bytes) max frame, copied to ring buffer slot of 0x5e8 (1512 bytes)",
+      "safe": true
+    },
+    "step2_ring_buffer": {
+      "write_function": "FUN_71000411f0 (ring buffer commit)",
+      "read_function": "FUN_71000412b0 (ring buffer peek)",
+      "structure": {
+        "slot_stride": "0x602 (1538 bytes)",
+        "header_size": "0x1a (26 bytes) — metadata",
+        "data_size": "0x5e8 (1512 bytes) — frame data",
+        "ring_buffers": {
+          "type_0x102": "param_1 + 0xc278",
+          "other_types": "param_1 + 0x30f8"
+        }
+      }
+    },
+    "step3_parse": {
+      "function": "FUN_7100044360",
+      "address": "0x7100044360",
+      "action": "Creates packet parser object, parses body starting at offset 12",
+      "body_parser": {
+        "function": "FUN_7100045060",
+        "action": "JUST STORES RAW POINTER if body > 0x27 bytes — NO size validation",
+        "code": "if (0x27 < param_3) { *param_1 = param_2; } return 0x27 < param_3;"
+      },
+      "packet_types": {
+        "type_1": {"size": "0x48", "vtable_data_ref": "DAT_71000e8740"},
+        "type_2": {"size": "0x5d8", "vtable_data_ref": "DAT_71000e8748"},
+        "type_3": {"size": "0x5d8", "vtable_data_ref": "DAT_71000e8750"}
+      }
+    },
+    "step4_extract": {
+      "function": "FUN_710003b470",
+      "address": "0x710003b470",
+      "action": "Calls vtable[2] to parse/decrypt, vtable[4] to get payload_size, vtable[3] to get payload_ptr, then memcpy",
+      "vtable_entries_type2": {
+        "vtable_base": "DAT_71000e8748 + 0x10 = 0x71000e23f8",
+        "0x10_parse": "0x7100044df0",
+        "0x18_get_payload_ptr": "0x7100044e60",
+        "0x20_get_payload_size": "0x7100044e70",
+        "0x48_get_source_mac": "0x7100044d20",
+        "0x60_get_encryption": "0x7100044d80"
+      },
+      "overflow": {
+        "destination": "output struct array element at param_3 + iVar20 * 0x798",
+        "dest_offset": "0x78 (param_1 + 0xf, where param_1 is undefined8*)",
+        "available_bytes": "0x720 (0x798 - 0x78 = 1824 bytes max)",
+        "actual_field_at_0x210": "vtable[11] writes 8 bytes at param_1+0x42",
+        "actual_field_at_0x790": "metadata bytes at param_1+0xf2",
+        "size_source": "vtable[4] reads from parser state (raw frame body pointer)",
+        "controlled_by_attacker": true
+      }
+    },
+    "step5_consumer": {
+      "function": "FUN_7100037dc0",
+      "address": "0x7100037dc0",
+      "size": "9355 code units",
+      "action": "Main frame processing loop — peeks ring buffer, calls parse chain, sorts results"
+    }
+  },
+
+  "crypto_classes": {
+    "plaintext": {
+      "protocol_id": 0,
+      "protocol_class": "G2gPlaintextProtocol",
+      "parser_class": "G2gPlaintextPacketParser",
+      "authentication": "NONE — attacker fully controls all fields"
+    },
+    "aes_gcm": {
+      "protocol_id": 1,
+      "protocol_class": "G2gAes128GcmProtocol",
+      "parser_class": "G2gAes128GcmPacketParser",
+      "authentication": "AES-128-GCM — requires group key to forge valid frames"
+    }
+  },
+
+  "frame_structure": {
+    "total_max": "0x57c (1404 bytes)",
+    "header": {
+      "offset_0": "0x7F (magic byte)",
+      "offset_1_3": "3 more magic bytes",
+      "offset_4": "type = 0x04",
+      "offset_5": "version/padding",
+      "offset_6_7": "frame_type (big-endian uint16, ntohs)",
+      "offset_8_11": "unknown (4 bytes)"
+    },
+    "body": {
+      "start": "offset 12 (0x0c)",
+      "min_size": "0x28 (40 bytes) — parser requires > 0x27",
+      "contains": "encrypted/plaintext payload with embedded payload_size field"
+    }
+  },
+
+  "exploitation": {
+    "requirements": [
+      "WiFi proximity to target Switch",
+      "802.11 monitor mode + packet injection capability (PC phy0 confirmed)",
+      "Switch in ldn/lp2p active mode (Send to Smartphone, local wireless play)",
+      "Knowledge of lp2p group parameters for valid frame construction",
+      "For GCM sessions: group encryption key (from key exchange observation)",
+      "For plaintext: just craft and inject frames"
+    ],
+    "mitigations_absent": [
+      "No PAC (Erista)",
+      "No stack canaries",
+      "No bounds check on payload_size before memcpy"
+    ],
+    "mitigations_present": [
+      "NX — need ROP for code execution",
+      "ASLR — 17-bit, 2MB-aligned (~65K attempts to brute-force)"
+    ],
+    "heap_overflow_target": {
+      "CORRECTED": "Output buffer is IPC-provided heap/mapped memory, NOT stack",
+      "output_struct_size": "0x798 bytes",
+      "overflow_at_offset": "0x78",
+      "max_overflow": "payload_size - 0x720 bytes past the struct boundary",
+      "buffer_source": "IPC dispatcher FUN_7100036560 case 7 → param struct offset 0x70",
+      "adjacent_data": "IPC buffer metadata, heap allocator metadata, or adjacent heap objects",
+      "exploitation_type": "Heap overflow — corrupt allocator metadata or adjacent objects for arbitrary write"
+    }
+  },
+
+  "universal_vulnerability": {
+    "finding": "ALL THREE packet types (0x01, 0x02, 0x03) share the same accessor implementations",
+    "get_payload_size_impl": "0x7100045CB0 — raw uint16 at body+0x1DA, NO bounds check",
+    "get_payload_ptr_impl": "0x7100045D70 — body+0x1DC",
+    "type_offsets": {"type_1": "this+0x40", "type_2": "this+0x5d0", "type_3": "this+0x5d0"}
+  },
+
+  "type3_analysis": {
+    "finding": "Type 3 is the EXPLOITABLE path — NO SHA-256 hash, NO payload_size cap",
+    "parse_chain": "FUN_7100044f00 → FUN_7100046cd0 (gate 1) → FUN_7100046010 (members)",
+    "gate_1_function": "FUN_7100046cd0 (484 bytes, 0x7100046cd0-0x7100046eb4)",
+    "gate_1_checks": {
+      "magic": "7F 00 22 AA 04 (FUN_7100042680 validates and stores raw_data ptr)",
+      "frame_type": "0x0101 (ADVERTISE) via FUN_71000426d0",
+      "body_size": ">= 0x28 (CMP X0, #0x28)",
+      "body_0x20": "<= 0x0F (CMP W8, #0x0F; B.HI fail)",
+      "context": "ntohl(body[0x24..0x27]) vs *(this+0x5B8) — zeroed for fresh objects",
+      "context_mismatch_path": "BNE to 0x7100046da4 — NOT a failure. Requires body_size-0x38 == ntohs(body[0x22]). Then continues to body copy.",
+      "body_copy": "FUN_71000435a0 copies body data verbatim to object at this+0x5C",
+      "post_copy_check": "body[0:8] and body[8:16] compared against factory-zeroed fields — pass with zeroed body prefix"
+    },
+    "member_validation": {
+      "function": "FUN_7100046010 at 0x7100046010",
+      "stores_parse_state": "*(this+0x5D0) = this+0x5C (body data copy location)",
+      "max_members": "LDRSB body[0x26], must be 1-8",
+      "member_count": "LDRSB body[0x27], must be 1..max_members",
+      "per_member_size": "ntohs(body[member_count*0x30+0x28]) <= 0x180",
+      "total_size": "body_size-0x38 >= member_count*0x30 + 0x2A",
+      "flags_check": "body[0x1A] bit 7 must be clear (TBNZ at 0x71000460d4)",
+      "payload_size_check": "NONE — confirmed absent"
+    },
+    "data_flow": {
+      "raw_body_in_ringbuffer": "FUN_7100042680 stores raw_data ptr at *(this+0x8)",
+      "body_ptr_accessor": "FUN_71000426e0: returns *(this+0x8) + 0xC = body_ptr",
+      "copy_to_object": "FUN_71000435a0 copies body verbatim to this+0x5C",
+      "parse_state_ptr": "FUN_7100046f40 returns this+0x5C (ADD X0, X0, #0x54; RET)",
+      "parse_state_store": "FUN_7100046010: STR X1, [X0] → *(this+0x5D0) = this+0x5C",
+      "payload_size_read": "*(this+0x5D0) + 0x1DA = this+0x5C + 0x1DA = body[0x1DA]",
+      "confirmed": "BODY_PAYLOAD_SIZE_OFFSET=0x1DA is correct for type 3"
+    },
+    "no_sha256": true,
+    "no_payload_size_cap": true,
+    "no_aes_gcm": true
+  },
+
+  "type1_blocked": {
+    "finding": "Type 1 parse caps payload_size < 0x181 (385) via FUN_71000456b0",
+    "function": "FUN_71000456b0 called in type 1 gate 3",
+    "max_payload": 384,
+    "buffer_size": 1824,
+    "overflow_possible": false
+  },
+
+  "sha256_hash_bypass": {
+    "finding": "Parse gate 2 (FUN_7100046690) uses plain SHA-256 with standard IV, NOT HMAC — only for TYPE 1",
+    "note": "Type 3 does NOT have gate 2 — no SHA-256 needed",
+    "init_function": "FUN_710008a890: H0-H7 = standard SHA-256 IV (0x6a09e667, 0xbb67ae85, ...)",
+    "hash_computation": "SHA-256(body[0:0x28] || 32_zero_bytes || body[0x48:0x48+ntohs(body[0x22])])",
+    "hash_stored_at": "body[0x28:0x48] (32 bytes)",
+    "bypass": "Only needed for type 1. Type 3 bypass: skip hash entirely."
+  },
+
+  "fresh_object_bypass": {
+    "finding": "Consumer creates FRESH packet objects per frame. Context at this+0x5B8 is ZEROED.",
+    "type3_handling": "Zeroed context causes ntohl(body[0x24..0x27]) != 0 when body[0x26]=1 → BNE path at 0x7100046da4. BNE path requires body_size-0x38 == ntohs(body[0x22]), then continues normally.",
+    "body_prefix_match": "Post-copy comparison checks body[0:16] against factory-zeroed fields → all-zero body prefix matches",
+    "context_location": "type 1: this+0x28, type 2/3: this+0x5B8 (zeroed on allocation)"
+  },
+
+  "event_loop_race": {
+    "finding": "Event loop (FUN_7100035f60) drains ALL frames from ring buffer 0x30f8 before IPC handler sees them",
+    "implication": "IPC RecvActionFrame (FUN_7100037dc0, the vulnerable path) must race with event loop drain",
+    "mitigation_for_exploit": "Continuous frame injection — WiFi thread adds frames while IPC handler is active",
+    "confirmed_safe_paths": [
+      "FUN_710003e020 (data frame type 2): fixed 0x300 memcpy",
+      "FUN_710003dcc0 (data frame type 3): no unchecked memcpy",
+      "FUN_710003bf40 (SendAdvertise): fixed 0x5F8 memcpy",
+      "FUN_710003d050 (scan list update): memcmp only, no extraction",
+      "FUN_710003e5e0 (data frame validation): comparison only"
+    ]
+  },
+
+  "next_steps": [
+    "1. EMPIRICAL TEST: inject type 3 overflow frame with PoC crash mode — verify sysmodule crash",
+    "2. CRASH ANALYSIS: error code reveals crash location (heap metadata corruption vs page fault)",
+    "3. RACE CONDITION: measure frame reachability — does IPC handler see injected frames?",
+    "4. HEAP LAYOUT MAPPING: send varying overflow sizes to identify what's adjacent to IPC buffer",
+    "5. HEAP SPRAY: send many lp2p frames before exploit to control adjacent parser object memory",
+    "6. ASLR bypass: brute force (~65K) or partial overwrite of heap pointers",
+    "7. body[0x22] size field requirement (must be body_size-0x38) — PoC already updated"
+  ],
+
+  "parser_object_lifecycle": {
+    "factory": "FUN_71000441c0 — allocates via polymorphic allocator vtable[2]",
+    "destructor": "FUN_71000444a0 — calls vtable[0] destructor, then allocator vtable[3] dealloc",
+    "type_3_size": "0x5D8 (1496 bytes, alignment 8)",
+    "type_1_size": "0x48 (72 bytes, alignment 8)",
+    "allocator_type": "nn::lmem::ExpHeapMemoryResource (confirmed by string at 0x71000adb34)",
+    "heap_spray_note": "Parser objects allocated/freed in tight loop — freed memory retains data until reused"
+  },
+
+  "ipc_case_0xb_local_overflow": {
+    "finding": "IPC dispatcher case 0xb has memcpy with IPC-client-supplied size",
+    "code": "thunk_FUN_71000a8540(param_1 + 0x2f20, puVar2, uVar5) where uVar5 = first 8 bytes of 0x188-byte IPC input",
+    "reachability": "IPC-local ONLY — requires compromised IPC client (game/sysmodule), NOT reachable from WiFi",
+    "exploitation_type": "Local privilege escalation from game process to ldn sysmodule",
+    "relevance": "Second-stage exploit AFTER WiFi code execution — could escalate from ldn sysmodule to other services",
+    "ipc_full_map_cases": "1-0x16 (22 cases), only case 7 (RecvActionFrame) is WiFi-reachable with overflow"
+  },
+
+  "analysis_date": "2026-11-24",
+  "session": "binary_analysis_offline_continued"
+}

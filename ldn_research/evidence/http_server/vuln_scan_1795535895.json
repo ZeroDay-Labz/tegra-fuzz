@@ -1,0 +1,261 @@
+{
+  "timestamp": "2026-11-24T15:58:15.374203+00:00",
+  "results": [
+    {
+      "name": "Traversal: /img/../data.json",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Traversal: /img/../../etc/passwd",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Traversal: /img/../../../etc/passwd",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Traversal: /img/..%2f..%2f..%2fetc/passwd",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Traversal: /img/%2e%2e/%2e%2e/%2e%2e/etc/passwd",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Traversal: /img/....//....//....//etc/passwd",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Traversal: /img/../index.html",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Traversal: /img/../js/index.js",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Traversal: /img/../../../atmosphere/config",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Traversal: /img/../../../switch/prod.keys",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Traversal: /img/../data.json%00.jpg",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Traversal: /img/\u0000",
+      "alive_after": true,
+      "response_len": 210,
+      "status": "400",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "POST CL=9223372036854775808",
+      "alive_after": true,
+      "response_len": 0
+    },
+    {
+      "name": "POST CL=-1",
+      "alive_after": true,
+      "response_len": 0
+    },
+    {
+      "name": "POST CL=99999999999999999999",
+      "alive_after": true,
+      "response_len": 0
+    },
+    {
+      "name": "Header 4096B",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Header 8192B",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Header 32768B",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "500 headers",
+      "alive_after": true,
+      "response_len": 0
+    },
+    {
+      "name": "URL 4096B",
+      "alive_after": true,
+      "response_len": 211,
+      "status": "414",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "URL 16384B",
+      "alive_after": true,
+      "response_len": 211,
+      "status": "414",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "URL 65536B",
+      "alive_after": true,
+      "response_len": 0
+    },
+    {
+      "name": "Chunked normal",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Chunked huge size",
+      "alive_after": true,
+      "response_len": 0
+    },
+    {
+      "name": "Chunked negative",
+      "alive_after": true,
+      "response_len": 0
+    },
+    {
+      "name": "CL-TE smuggle",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Multipart normal",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Multipart long boundary",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "No version",
+      "alive_after": true,
+      "response_len": 210,
+      "status": "400",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "HTTP/0.9",
+      "alive_after": true,
+      "response_len": 210,
+      "status": "400",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Double CL",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Missing Host",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Huge method",
+      "alive_after": true,
+      "response_len": 211,
+      "status": "414",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    },
+    {
+      "name": "Binary garbage",
+      "alive_after": true,
+      "response_len": 0
+    },
+    {
+      "name": "100 pipelined GETs",
+      "alive_after": true,
+      "response_len": 208,
+      "status": "404",
+      "content_length": "117",
+      "body": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Not Found</title></head><body><p>Not Found</p></body></html>"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "diffs": [
+    {
+      "key": "connection.id",
+      "v221": "isolator_v221",
+      "v222": "isolator_v222"
+    },
+    {
+      "key": "connection.uuid",
+      "v221": "0c7b9156-e623-496f-982e-b97faa69c449",
+      "v222": "e91a1a0f-d7a2-4b5c-8a49-9d9da02eed45"
+    },
+    {
+      "key": "ipv4.dhcp-vendor-class-identifier",
+      "v221": "VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV...(221)",
+      "v222": "VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV...(222)"
+    }
+  ],
+  "keyfile_221_len": 791,
+  "keyfile_222_len": 792
+}

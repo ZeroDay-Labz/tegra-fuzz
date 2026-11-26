@@ -1,0 +1,73 @@
+{
+  "session": "2026-11-24",
+  "firmware": "22.5.0",
+  "feature": "Send to Smartphone (lp2p HTTP server)",
+  "library": "cpp-httplib (confirmed by multipart boundary)",
+  "findings": [
+    {
+      "id": "HTTP-001",
+      "type": "DoS",
+      "trigger": "Range: bytes=0-9223372036854775808 (SSIZE_MAX+1)",
+      "mechanism": "Uncaught std::out_of_range from ssize_t parse → std::terminate → svcBreak",
+      "error_code": "2162-0002",
+      "exploitable": false,
+      "reproducible": true,
+      "notes": "Exact boundary at SSIZE_MAX. Values 0-SMAX → 206 OK, SMAX+1+ → crash. Same pattern as CVE-2026-31870 but in Range header."
+    },
+    {
+      "id": "HTTP-002",
+      "type": "FALSE_POSITIVE",
+      "trigger": "GET /data.json with Content-Length: 1024 body (1024 bytes of 0x41)",
+      "mechanism": "Originally thought to be cleanup/teardown crash. NOT REPRODUCIBLE in isolation.",
+      "exploitable": false,
+      "reproducible": false,
+      "notes": "Observed once during marathon fuzzer (test #35+). Isolated reproduction attempted with 16 body sizes (0-65536B) — zero crashes. Also tested: pipelining with body, HTTP desync, 50 rapid connection cycles, 20 RST connections, half-open connections — all survived. Original crash was likely accumulated heap stress from 35+ prior requests or coincidental Switch sleep timing."
+    }
+  ],
+  "dead_ends": [
+    "CVE-2026-82079 DHCP stack overflow: parser fix in FW 21.0.0 blocks overflow on 22.5.0",
+    "DNS fuzzing: 31/31 cases, zero crashes",
+    "Path traversal: properly clamped to web root",
+    "Long URLs: 414 for >128 chars, no crash",
+    "Format strings: not vulnerable (all 404 or 200)",
+    "Chunked TE negative sizes: no crash (timeout/ignored)",
+    "Content-Length overflow: no crash (timeout)",
+    "HTTP smuggling: no crash",
+    "Concurrent connections: 20 OK, 10 concurrent images OK",
+    "Slow HTTP: slowloris-style OK",
+    "Protocol confusion (TLS, HTTP/2, WebSocket): properly rejected",
+    "GET with body (all sizes 0-65536): no crash in isolation",
+    "Pipelining + body confusion: no crash",
+    "HTTP desync (CL mismatch): no crash",
+    "Rapid connection cycling (50x): no crash",
+    "RST connections (20x): no crash",
+    "Half-open connections: 0 established (server rejects quickly)",
+    "200 headers x 200B each: handled OK",
+    "POST multipart 10KB: handled OK (404)",
+    "POST form 100KB: handled OK (404)",
+    "Image Range edge cases (suffix, beyond-EOF, 50-multipart, SMAX): all handled correctly"
+  ],
+  "server_characteristics": {
+    "methods_supported": ["GET", "HEAD"],
+    "methods_unsupported": ["POST (404)", "PUT (timeout)", "DELETE (timeout)", "PATCH (timeout)", "OPTIONS (404)"],
+    "url_max_length": "~128 chars (414 beyond)",
+    "range_support": "Yes (multipart, suffix, all standard variants)",
+    "range_max_ssize_t": true,
+    "keep_alive": false,
+    "headers_max": "200+ headers handled OK",
+    "header_value_max": "64KB+ handled OK",
+    "pipelining": true,
+    "image_serving": "10+ images, 130-400KB each",
+    "concurrent_connections": "handles 20+ concurrent, 50 rapid cycles, 10 concurrent image fetches",
+    "slow_http_resistant": true,
+    "protocol_confusion_resistant": "rejects TLS, binary; returns 400 for HTTP/2; ignores WebSocket upgrade",
+    "half_open_rejection": "immediate (0 of 50 connections established)"
+  },
+  "total_tests_this_session": "100+ individual test cases across 6 scripts",
+  "next_steps": [
+    "PRIORITY: ldn SendActionFrame heap overflow (unfixed 22.5.0, fixed 23.5.0) — WiFi card supports monitor mode",
+    "BCM4345x WiFi firmware vulnerabilities (8 bugs in v7.45.265, no ASLR/canaries)",
+    "Audio sysmodule OOB writes (present on 22.5.0, needs prior code exec)",
+    "Consider accumulated-state HTTP fuzzing: run many concurrent + sequential requests to stress heap before targeted exploit"
+  ]
+}

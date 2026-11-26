@@ -1,0 +1,47 @@
+{
+  "usb_descriptors": {
+    "vid": 2389,
+    "pid": 29473,
+    "bcd_usb": "2.00",
+    "bcd_device": 258,
+    "device_class": 0,
+    "device_subclass": 0,
+    "device_protocol": 0,
+    "max_packet_size_0": 64,
+    "num_configurations": 1,
+    "speed": "480 Mbps",
+    "bus": 3,
+    "address": 28,
+    "manufacturer": "NVIDIA Corp.",
+    "product": "APX",
+    "serial": "",
+    "interfaces": [],
+    "endpoints": []
+  },
+  "sysfs_path": "/sys/bus/usb/devices/3-2.4",
+  "device_id_hex": "40810205000000080047506401101062",
+  "device_id_bytes": [
+    64,
+    129,
+    2,
+    5,
+    0,
+    0,
+    0,
+    8,
+    0,
+    71,
+    80,
+    100,
+    1,
+    16,
+    16,
+    98
+  ],
+  "parsed_id": {
+    "chip": "T210 (Erista)",
+    "revision": "A02 (production)",
+    "uid": "0x05028140",
+    "ecid": "000000080047506401101062"
+  }
+}

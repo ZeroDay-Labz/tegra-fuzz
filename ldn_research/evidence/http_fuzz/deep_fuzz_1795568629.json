@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-11-25T01:03:49Z",
+  "results": [
+    {
+      "test": "KEEPALIVE-100",
+      "alive": true,
+      "resp": "100 requests on 1 connection"
+    },
+    {
+      "test": "WS-upgrade",
+      "alive": true,
+      "resp": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15768000; includeSubdomains\r\nPragma: no-cache\r\nCache-Control: no-store, no-cache, must-revalidate\r\nCon"
+    },
+    {
+      "test": "OBSFOLD",
+      "alive": true,
+      "resp": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15768000; includeSubdomains\r\nPragma: no-cache\r\nCache-Control: no-store, no-cache, must-revalidate\r\nCon"
+    },
+    {
+      "test": "MULTIPART-normal",
+      "alive": true,
+      "resp": "<TIMEOUT>"
+    },
+    {
+      "test": "MULTIPART-hugename",
+      "alive": false,
+      "resp": "<TIMEOUT>"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "test": "monitor_beacon_infoleak",
+  "timestamp": "2026-11-23T06:15:12.724234+00:00",
+  "scan_duration_s": 15,
+  "beacon_count": 0,
+  "nintendo_ies": [],
+  "findings": [],
+  "raw_frames": []
+}

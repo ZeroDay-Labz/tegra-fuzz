@@ -1,0 +1,853 @@
+{
+  "dev_status": {
+    "bmrt": 128,
+    "breq": 0,
+    "wval": 0,
+    "widx": 0,
+    "len": 2,
+    "nonzero": 1,
+    "entropy": 1.0,
+    "hex": "0100",
+    "pointers": []
+  },
+  "get_config": {
+    "bmrt": 128,
+    "breq": 8,
+    "wval": 0,
+    "widx": 0,
+    "len": 255,
+    "nonzero": 1,
+    "entropy": 0.03699692532893585,
+    "hex": "010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "pointers": []
+  },
+  "iface0_status": {
+    "bmrt": 129,
+    "breq": 0,
+    "wval": 0,
+    "widx": 0,
+    "len": 255,
+    "nonzero": 209,
+    "entropy": 6.190645241255204,
+    "hex": "00000000ff00000098fc0040010000000090004000000000009000400090004090290040db79100001000000e0fc004000900040237b100000500040302e004014310040d12a100088008800012100001b29100014310040502e0040302e004038020000292910001816ce45a89fbe5ad5943041747ac528720ab24f9328f5fa50b580feab3a12d39a8ae54d72338559f1fb6b3fd8bc3c88f7dee8078c5fc5df2bdde6f5be4c977455c1c051798e08d0ac8c5a8ba2be9b2e0f8bc207b5764f047c95bbcad18d9654e0c24670ab17a34a9e45cdf879bfcc396638c6c0750f872b405e5f90a88e6f3ab20d4124061a1a6ee1f6a42ef8a6e8407b8ab42af73661",
+    "pointers": [
+      {
+        "offset": 8,
+        "value": "0x4000FC98",
+        "raw": 1073806488,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 16,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 24,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 28,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 32,
+        "value": "0x40002990",
+        "raw": 1073752464,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 36,
+        "value": "0x001079DB",
+        "raw": 1079771,
+        "annotation": " \u2190 ShofEL2 return addr"
+      },
+      {
+        "offset": 44,
+        "value": "0x4000FCE0",
+        "raw": 1073806560,
+        "annotation": " \u2190 near-stack (from leak)"
+      },
+      {
+        "offset": 48,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 52,
+        "value": "0x00107B23",
+        "raw": 1080099,
+        "annotation": " \u2190 USB handler (from leak)"
+      },
+      {
+        "offset": 56,
+        "value": "0x40005000",
+        "raw": 1073762304,
+        "annotation": " \u2190 IRAM pointer (from leak)"
+      },
+      {
+        "offset": 60,
+        "value": "0x40002E30",
+        "raw": 1073753648,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 64,
+        "value": "0x40003114",
+        "raw": 1073754388,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 68,
+        "value": "0x00102AD1",
+        "raw": 1059537,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 80,
+        "value": "0x0010291B",
+        "raw": 1059099,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 84,
+        "value": "0x40003114",
+        "raw": 1073754388,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 88,
+        "value": "0x40002E50",
+        "raw": 1073753680,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 92,
+        "value": "0x40002E30",
+        "raw": 1073753648,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 100,
+        "value": "0x00102929",
+        "raw": 1059113,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 164,
+        "value": "0x74974CBE",
+        "raw": 1956072638,
+        "annotation": " \u2190 MMIO range"
+      },
+      {
+        "offset": 200,
+        "value": "0x7046C2E0",
+        "raw": 1883685600,
+        "annotation": " \u2190 MMIO range"
+      },
+      {
+        "offset": 236,
+        "value": "0x6E1A1A06",
+        "raw": 1847204358,
+        "annotation": " \u2190 MMIO range"
+      }
+    ]
+  },
+  "iface1_status": {
+    "status": "ERR:2"
+  },
+  "get_iface0": {
+    "bmrt": 129,
+    "breq": 10,
+    "wval": 0,
+    "widx": 0,
+    "len": 255,
+    "nonzero": 0,
+    "entropy": -0.0,
+    "hex": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "pointers": []
+  },
+  "get_iface1": {
+    "status": "ERR:2"
+  },
+  "ep0_out_status": {
+    "bmrt": 130,
+    "breq": 0,
+    "wval": 0,
+    "widx": 0,
+    "len": 255,
+    "nonzero": 205,
+    "entropy": 6.088257164744954,
+    "hex": "0000000000000000ff00000094fc0040010000000090004000000000009000400090004090290040db79100001000000e0fc004000900040237b100000500040302e004014310040d12a100088008800012100001b29100014310040502e0040302e004038020000292910001816ce45a89fbe5ad5943041747ac528720ab24f9328f5fa50b580feab3a12d39a8ae54d72338559f1fb6b3fd8bc3c88f7dee8078c5fc5df2bdde6f5be4c977455c1c051798e08d0ac8c5a8ba2be9b2e0f8bc207b5764f047c95bbcad18d9654e0c24670ab17a34a9e45cdf879bfcc396638c6c0750f872b405e5f90a88e6f3ab20d4124061a1a6ee1f6a42ef8a6e8407b8ab4",
+    "pointers": [
+      {
+        "offset": 12,
+        "value": "0x4000FC94",
+        "raw": 1073806484,
+        "annotation": " \u2190 src_base (from leak)"
+      },
+      {
+        "offset": 20,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 28,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 32,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 36,
+        "value": "0x40002990",
+        "raw": 1073752464,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 40,
+        "value": "0x001079DB",
+        "raw": 1079771,
+        "annotation": " \u2190 ShofEL2 return addr"
+      },
+      {
+        "offset": 48,
+        "value": "0x4000FCE0",
+        "raw": 1073806560,
+        "annotation": " \u2190 near-stack (from leak)"
+      },
+      {
+        "offset": 52,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 56,
+        "value": "0x00107B23",
+        "raw": 1080099,
+        "annotation": " \u2190 USB handler (from leak)"
+      },
+      {
+        "offset": 60,
+        "value": "0x40005000",
+        "raw": 1073762304,
+        "annotation": " \u2190 IRAM pointer (from leak)"
+      },
+      {
+        "offset": 64,
+        "value": "0x40002E30",
+        "raw": 1073753648,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 68,
+        "value": "0x40003114",
+        "raw": 1073754388,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 72,
+        "value": "0x00102AD1",
+        "raw": 1059537,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 84,
+        "value": "0x0010291B",
+        "raw": 1059099,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 88,
+        "value": "0x40003114",
+        "raw": 1073754388,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 92,
+        "value": "0x40002E50",
+        "raw": 1073753680,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 96,
+        "value": "0x40002E30",
+        "raw": 1073753648,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 104,
+        "value": "0x00102929",
+        "raw": 1059113,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 168,
+        "value": "0x74974CBE",
+        "raw": 1956072638,
+        "annotation": " \u2190 MMIO range"
+      },
+      {
+        "offset": 204,
+        "value": "0x7046C2E0",
+        "raw": 1883685600,
+        "annotation": " \u2190 MMIO range"
+      },
+      {
+        "offset": 240,
+        "value": "0x6E1A1A06",
+        "raw": 1847204358,
+        "annotation": " \u2190 MMIO range"
+      }
+    ]
+  },
+  "ep1_out_status": {
+    "bmrt": 130,
+    "breq": 0,
+    "wval": 0,
+    "widx": 1,
+    "len": 255,
+    "nonzero": 205,
+    "entropy": 6.088257164744954,
+    "hex": "0000000000000000ff00000094fc0040010000000090004000000000009000400090004090290040db79100001000000e0fc004000900040237b100000500040302e004014310040d12a100088008800012100001b29100014310040502e0040302e004038020000292910001816ce45a89fbe5ad5943041747ac528720ab24f9328f5fa50b580feab3a12d39a8ae54d72338559f1fb6b3fd8bc3c88f7dee8078c5fc5df2bdde6f5be4c977455c1c051798e08d0ac8c5a8ba2be9b2e0f8bc207b5764f047c95bbcad18d9654e0c24670ab17a34a9e45cdf879bfcc396638c6c0750f872b405e5f90a88e6f3ab20d4124061a1a6ee1f6a42ef8a6e8407b8ab4",
+    "pointers": [
+      {
+        "offset": 12,
+        "value": "0x4000FC94",
+        "raw": 1073806484,
+        "annotation": " \u2190 src_base (from leak)"
+      },
+      {
+        "offset": 20,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 28,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 32,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 36,
+        "value": "0x40002990",
+        "raw": 1073752464,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 40,
+        "value": "0x001079DB",
+        "raw": 1079771,
+        "annotation": " \u2190 ShofEL2 return addr"
+      },
+      {
+        "offset": 48,
+        "value": "0x4000FCE0",
+        "raw": 1073806560,
+        "annotation": " \u2190 near-stack (from leak)"
+      },
+      {
+        "offset": 52,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 56,
+        "value": "0x00107B23",
+        "raw": 1080099,
+        "annotation": " \u2190 USB handler (from leak)"
+      },
+      {
+        "offset": 60,
+        "value": "0x40005000",
+        "raw": 1073762304,
+        "annotation": " \u2190 IRAM pointer (from leak)"
+      },
+      {
+        "offset": 64,
+        "value": "0x40002E30",
+        "raw": 1073753648,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 68,
+        "value": "0x40003114",
+        "raw": 1073754388,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 72,
+        "value": "0x00102AD1",
+        "raw": 1059537,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 84,
+        "value": "0x0010291B",
+        "raw": 1059099,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 88,
+        "value": "0x40003114",
+        "raw": 1073754388,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 92,
+        "value": "0x40002E50",
+        "raw": 1073753680,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 96,
+        "value": "0x40002E30",
+        "raw": 1073753648,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 104,
+        "value": "0x00102929",
+        "raw": 1059113,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 168,
+        "value": "0x74974CBE",
+        "raw": 1956072638,
+        "annotation": " \u2190 MMIO range"
+      },
+      {
+        "offset": 204,
+        "value": "0x7046C2E0",
+        "raw": 1883685600,
+        "annotation": " \u2190 MMIO range"
+      },
+      {
+        "offset": 240,
+        "value": "0x6E1A1A06",
+        "raw": 1847204358,
+        "annotation": " \u2190 MMIO range"
+      }
+    ]
+  },
+  "ep2_out_status": {
+    "status": "ERR:5"
+  },
+  "ep0_in_status": {
+    "bmrt": 130,
+    "breq": 0,
+    "wval": 0,
+    "widx": 128,
+    "len": 255,
+    "nonzero": 205,
+    "entropy": 6.088257164744954,
+    "hex": "0000000000000000ff00000094fc0040010000000090004000000000009000400090004090290040db79100001000000e0fc004000900040237b100000500040302e004014310040d12a100088008800012100001b29100014310040502e0040302e004038020000292910001816ce45a89fbe5ad5943041747ac528720ab24f9328f5fa50b580feab3a12d39a8ae54d72338559f1fb6b3fd8bc3c88f7dee8078c5fc5df2bdde6f5be4c977455c1c051798e08d0ac8c5a8ba2be9b2e0f8bc207b5764f047c95bbcad18d9654e0c24670ab17a34a9e45cdf879bfcc396638c6c0750f872b405e5f90a88e6f3ab20d4124061a1a6ee1f6a42ef8a6e8407b8ab4",
+    "pointers": [
+      {
+        "offset": 12,
+        "value": "0x4000FC94",
+        "raw": 1073806484,
+        "annotation": " \u2190 src_base (from leak)"
+      },
+      {
+        "offset": 20,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 28,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 32,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 36,
+        "value": "0x40002990",
+        "raw": 1073752464,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 40,
+        "value": "0x001079DB",
+        "raw": 1079771,
+        "annotation": " \u2190 ShofEL2 return addr"
+      },
+      {
+        "offset": 48,
+        "value": "0x4000FCE0",
+        "raw": 1073806560,
+        "annotation": " \u2190 near-stack (from leak)"
+      },
+      {
+        "offset": 52,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 56,
+        "value": "0x00107B23",
+        "raw": 1080099,
+        "annotation": " \u2190 USB handler (from leak)"
+      },
+      {
+        "offset": 60,
+        "value": "0x40005000",
+        "raw": 1073762304,
+        "annotation": " \u2190 IRAM pointer (from leak)"
+      },
+      {
+        "offset": 64,
+        "value": "0x40002E30",
+        "raw": 1073753648,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 68,
+        "value": "0x40003114",
+        "raw": 1073754388,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 72,
+        "value": "0x00102AD1",
+        "raw": 1059537,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 84,
+        "value": "0x0010291B",
+        "raw": 1059099,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 88,
+        "value": "0x40003114",
+        "raw": 1073754388,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 92,
+        "value": "0x40002E50",
+        "raw": 1073753680,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 96,
+        "value": "0x40002E30",
+        "raw": 1073753648,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 104,
+        "value": "0x00102929",
+        "raw": 1059113,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 168,
+        "value": "0x74974CBE",
+        "raw": 1956072638,
+        "annotation": " \u2190 MMIO range"
+      },
+      {
+        "offset": 204,
+        "value": "0x7046C2E0",
+        "raw": 1883685600,
+        "annotation": " \u2190 MMIO range"
+      },
+      {
+        "offset": 240,
+        "value": "0x6E1A1A06",
+        "raw": 1847204358,
+        "annotation": " \u2190 MMIO range"
+      }
+    ]
+  },
+  "ep1_in_status": {
+    "bmrt": 130,
+    "breq": 0,
+    "wval": 0,
+    "widx": 129,
+    "len": 255,
+    "nonzero": 205,
+    "entropy": 6.088257164744954,
+    "hex": "0000000000000000ff00000094fc0040010000000090004000000000009000400090004090290040db79100001000000e0fc004000900040237b100000500040302e004014310040d12a100088008800012100001b29100014310040502e0040302e004038020000292910001816ce45a89fbe5ad5943041747ac528720ab24f9328f5fa50b580feab3a12d39a8ae54d72338559f1fb6b3fd8bc3c88f7dee8078c5fc5df2bdde6f5be4c977455c1c051798e08d0ac8c5a8ba2be9b2e0f8bc207b5764f047c95bbcad18d9654e0c24670ab17a34a9e45cdf879bfcc396638c6c0750f872b405e5f90a88e6f3ab20d4124061a1a6ee1f6a42ef8a6e8407b8ab4",
+    "pointers": [
+      {
+        "offset": 12,
+        "value": "0x4000FC94",
+        "raw": 1073806484,
+        "annotation": " \u2190 src_base (from leak)"
+      },
+      {
+        "offset": 20,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 28,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 32,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 36,
+        "value": "0x40002990",
+        "raw": 1073752464,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 40,
+        "value": "0x001079DB",
+        "raw": 1079771,
+        "annotation": " \u2190 ShofEL2 return addr"
+      },
+      {
+        "offset": 48,
+        "value": "0x4000FCE0",
+        "raw": 1073806560,
+        "annotation": " \u2190 near-stack (from leak)"
+      },
+      {
+        "offset": 52,
+        "value": "0x40009000",
+        "raw": 1073778688,
+        "annotation": " \u2190 DMA buffer"
+      },
+      {
+        "offset": 56,
+        "value": "0x00107B23",
+        "raw": 1080099,
+        "annotation": " \u2190 USB handler (from leak)"
+      },
+      {
+        "offset": 60,
+        "value": "0x40005000",
+        "raw": 1073762304,
+        "annotation": " \u2190 IRAM pointer (from leak)"
+      },
+      {
+        "offset": 64,
+        "value": "0x40002E30",
+        "raw": 1073753648,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 68,
+        "value": "0x40003114",
+        "raw": 1073754388,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 72,
+        "value": "0x00102AD1",
+        "raw": 1059537,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 84,
+        "value": "0x0010291B",
+        "raw": 1059099,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 88,
+        "value": "0x40003114",
+        "raw": 1073754388,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 92,
+        "value": "0x40002E50",
+        "raw": 1073753680,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 96,
+        "value": "0x40002E30",
+        "raw": 1073753648,
+        "annotation": " \u2190 IRAM range"
+      },
+      {
+        "offset": 104,
+        "value": "0x00102929",
+        "raw": 1059113,
+        "annotation": " \u2190 bootROM function (from leak)"
+      },
+      {
+        "offset": 168,
+        "value": "0x74974CBE",
+        "raw": 1956072638,
+        "annotation": " \u2190 MMIO range"
+      },
+      {
+        "offset": 204,
+        "value": "0x7046C2E0",
+        "raw": 1883685600,
+        "annotation": " \u2190 MMIO range"
+      },
+      {
+        "offset": 240,
+        "value": "0x6E1A1A06",
+        "raw": 1847204358,
+        "annotation": " \u2190 MMIO range"
+      }
+    ]
+  },
+  "ep2_in_status": {
+    "status": "ERR:5"
+  },
+  "stability": {
+    "same": true,
+    "diff_bytes": 0
+  },
+  "rom_pointers": [
+    {
+      "offset": 40,
+      "value": "0x001079DB",
+      "raw": 1079771,
+      "annotation": " \u2190 ShofEL2 return addr"
+    },
+    {
+      "offset": 56,
+      "value": "0x00107B23",
+      "raw": 1080099,
+      "annotation": " \u2190 USB handler (from leak)"
+    },
+    {
+      "offset": 72,
+      "value": "0x00102AD1",
+      "raw": 1059537,
+      "annotation": " \u2190 bootROM function (from leak)"
+    },
+    {
+      "offset": 84,
+      "value": "0x0010291B",
+      "raw": 1059099,
+      "annotation": " \u2190 bootROM function (from leak)"
+    },
+    {
+      "offset": 104,
+      "value": "0x00102929",
+      "raw": 1059113,
+      "annotation": " \u2190 bootROM function (from leak)"
+    }
+  ],
+  "iram_pointers": [
+    {
+      "offset": 12,
+      "value": "0x4000FC94",
+      "raw": 1073806484,
+      "annotation": " \u2190 src_base (from leak)"
+    },
+    {
+      "offset": 20,
+      "value": "0x40009000",
+      "raw": 1073778688,
+      "annotation": " \u2190 DMA buffer"
+    },
+    {
+      "offset": 28,
+      "value": "0x40009000",
+      "raw": 1073778688,
+      "annotation": " \u2190 DMA buffer"
+    },
+    {
+      "offset": 32,
+      "value": "0x40009000",
+      "raw": 1073778688,
+      "annotation": " \u2190 DMA buffer"
+    },
+    {
+      "offset": 36,
+      "value": "0x40002990",
+      "raw": 1073752464,
+      "annotation": " \u2190 IRAM range"
+    },
+    {
+      "offset": 48,
+      "value": "0x4000FCE0",
+      "raw": 1073806560,
+      "annotation": " \u2190 near-stack (from leak)"
+    },
+    {
+      "offset": 52,
+      "value": "0x40009000",
+      "raw": 1073778688,
+      "annotation": " \u2190 DMA buffer"
+    },
+    {
+      "offset": 60,
+      "value": "0x40005000",
+      "raw": 1073762304,
+      "annotation": " \u2190 IRAM pointer (from leak)"
+    },
+    {
+      "offset": 64,
+      "value": "0x40002E30",
+      "raw": 1073753648,
+      "annotation": " \u2190 IRAM range"
+    },
+    {
+      "offset": 68,
+      "value": "0x40003114",
+      "raw": 1073754388,
+      "annotation": " \u2190 IRAM range"
+    },
+    {
+      "offset": 88,
+      "value": "0x40003114",
+      "raw": 1073754388,
+      "annotation": " \u2190 IRAM range"
+    },
+    {
+      "offset": 92,
+      "value": "0x40002E50",
+      "raw": 1073753680,
+      "annotation": " \u2190 IRAM range"
+    },
+    {
+      "offset": 96,
+      "value": "0x40002E30",
+      "raw": 1073753648,
+      "annotation": " \u2190 IRAM range"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Fri Nov 20 10:35:43 2026 as: nmap -n -Pn -sT -sV -&#45;version-light -&#45;max-retries 1 -&#45;host-timeout 20s -p80 -&#45;script http-server-header -oA ldn_research/evidence/service_inventory/http_identification 192.168.0.1 -->
+<nmaprun scanner="nmap" args="nmap -n -Pn -sT -sV -&#45;version-light -&#45;max-retries 1 -&#45;host-timeout 20s -p80 -&#45;script http-server-header -oA ldn_research/evidence/service_inventory/http_identification 192.168.0.1" start="1795196143" startstr="Fri Nov 20 10:35:43 2026" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1795196143" endtime="1795196143"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.0.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="5355" rttvar="5355" to="100000"/>
+</host>
+<runstats><finished time="1795196143" timestr="Fri Nov 20 10:35:43 2026" summary="Nmap done at Fri Nov 20 10:35:43 2026; 1 IP address (1 host up) scanned in 0.20 seconds" elapsed="0.20" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

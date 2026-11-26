@@ -1,0 +1,296 @@
+{
+  "test": "hostname_overflow_boundary_search",
+  "cve": "CVE-2026-82079",
+  "timestamp": "2026-11-23T05:48:40.628330+00:00",
+  "mac": "22:7c:ce:e0:bd:56",
+  "results": [
+    {
+      "test": "baseline_8",
+      "timestamp": "2026-11-23T05:46:40.539487+00:00",
+      "nmcli_returncode": 0,
+      "nmcli_elapsed": 2.8,
+      "nmcli_stdout": "Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/31)",
+      "nmcli_stderr": "",
+      "dhcp_packets": [
+        {
+          "dir": "CLIENT",
+          "msg": "REQUEST",
+          "size": 292,
+          "opts": {
+            "hostname_len": 8
+          }
+        },
+        {
+          "dir": "SERVER",
+          "msg": "ACK",
+          "size": 284,
+          "opts": {}
+        }
+      ],
+      "got_ip": true,
+      "http_status": 200,
+      "ap_visible": true
+    },
+    {
+      "test": "hostname_32",
+      "timestamp": "2026-11-23T05:46:52.942288+00:00",
+      "nmcli_returncode": 0,
+      "nmcli_elapsed": 0.5,
+      "nmcli_stdout": "Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/33)",
+      "nmcli_stderr": "",
+      "dhcp_packets": [
+        {
+          "dir": "CLIENT",
+          "msg": "REQUEST",
+          "size": 292,
+          "opts": {
+            "hostname_len": 8
+          }
+        },
+        {
+          "dir": "SERVER",
+          "msg": "ACK",
+          "size": 548,
+          "opts": {}
+        },
+        {
+          "dir": "CLIENT",
+          "msg": "REQUEST",
+          "size": 316,
+          "opts": {
+            "hostname_len": 32
+          }
+        },
+        {
+          "dir": "SERVER",
+          "msg": "ACK",
+          "size": 284,
+          "opts": {}
+        }
+      ],
+      "got_ip": true,
+      "http_status": 200,
+      "ap_visible": true,
+      "hostname_size": 32,
+      "status": "OK"
+    },
+    {
+      "test": "hostname_64",
+      "timestamp": "2026-11-23T05:47:04.974590+00:00",
+      "nmcli_returncode": 0,
+      "nmcli_elapsed": 0.3,
+      "nmcli_stdout": "Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/34)",
+      "nmcli_stderr": "",
+      "dhcp_packets": [
+        {
+          "dir": "CLIENT",
+          "msg": "REQUEST",
+          "size": 348,
+          "opts": {
+            "hostname_len": 64
+          }
+        },
+        {
+          "dir": "SERVER",
+          "msg": "ACK",
+          "size": 284,
+          "opts": {}
+        }
+      ],
+      "got_ip": true,
+      "http_status": 200,
+      "ap_visible": true,
+      "hostname_size": 64,
+      "status": "OK"
+    },
+    {
+      "test": "hostname_128",
+      "timestamp": "2026-11-23T05:47:16.858127+00:00",
+      "nmcli_returncode": 0,
+      "nmcli_elapsed": 0.3,
+      "nmcli_stdout": "Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/35)",
+      "nmcli_stderr": "",
+      "dhcp_packets": [
+        {
+          "dir": "CLIENT",
+          "msg": "REQUEST",
+          "size": 282,
+          "opts": {}
+        },
+        {
+          "dir": "SERVER",
+          "msg": "ACK",
+          "size": 284,
+          "opts": {}
+        }
+      ],
+      "got_ip": true,
+      "http_status": 200,
+      "ap_visible": true,
+      "hostname_size": 128,
+      "status": "OK"
+    },
+    {
+      "test": "hostname_192",
+      "timestamp": "2026-11-23T05:47:28.948189+00:00",
+      "nmcli_returncode": 0,
+      "nmcli_elapsed": 0.3,
+      "nmcli_stdout": "Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/36)",
+      "nmcli_stderr": "",
+      "dhcp_packets": [
+        {
+          "dir": "CLIENT",
+          "msg": "REQUEST",
+          "size": 282,
+          "opts": {}
+        },
+        {
+          "dir": "SERVER",
+          "msg": "ACK",
+          "size": 284,
+          "opts": {}
+        }
+      ],
+      "got_ip": true,
+      "http_status": 200,
+      "ap_visible": true,
+      "hostname_size": 192,
+      "status": "OK"
+    },
+    {
+      "test": "hostname_224",
+      "timestamp": "2026-11-23T05:47:41.028720+00:00",
+      "nmcli_returncode": 0,
+      "nmcli_elapsed": 0.3,
+      "nmcli_stdout": "Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/37)",
+      "nmcli_stderr": "",
+      "dhcp_packets": [
+        {
+          "dir": "CLIENT",
+          "msg": "REQUEST",
+          "size": 282,
+          "opts": {}
+        },
+        {
+          "dir": "SERVER",
+          "msg": "ACK",
+          "size": 284,
+          "opts": {}
+        }
+      ],
+      "got_ip": true,
+      "http_status": 200,
+      "ap_visible": true,
+      "hostname_size": 224,
+      "status": "OK"
+    },
+    {
+      "test": "hostname_240",
+      "timestamp": "2026-11-23T05:47:52.903554+00:00",
+      "nmcli_returncode": 0,
+      "nmcli_elapsed": 0.3,
+      "nmcli_stdout": "Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/38)",
+      "nmcli_stderr": "",
+      "dhcp_packets": [
+        {
+          "dir": "CLIENT",
+          "msg": "REQUEST",
+          "size": 282,
+          "opts": {}
+        },
+        {
+          "dir": "SERVER",
+          "msg": "ACK",
+          "size": 284,
+          "opts": {}
+        }
+      ],
+      "got_ip": true,
+      "http_status": 200,
+      "ap_visible": true,
+      "hostname_size": 240,
+      "status": "OK"
+    },
+    {
+      "test": "hostname_248",
+      "timestamp": "2026-11-23T05:48:04.783755+00:00",
+      "nmcli_returncode": 0,
+      "nmcli_elapsed": 0.3,
+      "nmcli_stdout": "Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/39)",
+      "nmcli_stderr": "",
+      "dhcp_packets": [
+        {
+          "dir": "CLIENT",
+          "msg": "REQUEST",
+          "size": 282,
+          "opts": {}
+        },
+        {
+          "dir": "SERVER",
+          "msg": "ACK",
+          "size": 284,
+          "opts": {}
+        }
+      ],
+      "got_ip": true,
+      "http_status": 200,
+      "ap_visible": true,
+      "hostname_size": 248,
+      "status": "OK"
+    },
+    {
+      "test": "hostname_252",
+      "timestamp": "2026-11-23T05:48:16.868235+00:00",
+      "nmcli_returncode": 0,
+      "nmcli_elapsed": 0.3,
+      "nmcli_stdout": "Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/40)",
+      "nmcli_stderr": "",
+      "dhcp_packets": [
+        {
+          "dir": "CLIENT",
+          "msg": "REQUEST",
+          "size": 282,
+          "opts": {}
+        },
+        {
+          "dir": "SERVER",
+          "msg": "ACK",
+          "size": 284,
+          "opts": {}
+        }
+      ],
+      "got_ip": true,
+      "http_status": 200,
+      "ap_visible": true,
+      "hostname_size": 252,
+      "status": "OK"
+    },
+    {
+      "test": "hostname_255",
+      "timestamp": "2026-11-23T05:48:28.547555+00:00",
+      "nmcli_returncode": 0,
+      "nmcli_elapsed": 0.4,
+      "nmcli_stdout": "Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/41)",
+      "nmcli_stderr": "",
+      "dhcp_packets": [
+        {
+          "dir": "CLIENT",
+          "msg": "REQUEST",
+          "size": 282,
+          "opts": {}
+        },
+        {
+          "dir": "SERVER",
+          "msg": "ACK",
+          "size": 284,
+          "opts": {}
+        }
+      ],
+      "got_ip": true,
+      "http_status": 200,
+      "ap_visible": true,
+      "hostname_size": 255,
+      "status": "OK"
+    }
+  ]
+}

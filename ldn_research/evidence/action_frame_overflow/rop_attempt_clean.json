@@ -1,0 +1,23 @@
+{
+  "mode": "rop",
+  "target": "clean",
+  "target_offset": "0x36680",
+  "lr_partial": "0x6680",
+  "timestamp": "2026-11-24T18:35:00.805691+00:00",
+  "vulnerability": "CVE-2026-82079 stack-based buffer overflow",
+  "interface": "wlp5s0",
+  "freq": 2412,
+  "src_mac": "22:7c:ce:e0:bd:56",
+  "dst_mac": "ec:c4:0d:f3:dc:db",
+  "bssid": "ec:c4:0d:f3:dc:db",
+  "payload_size": "0x08ca",
+  "spray_body_size": "0x0800",
+  "rop_body_size": "0x0800",
+  "spray_sent": 300,
+  "overflow_sent": 70,
+  "total_sent": 150,
+  "duration": 90,
+  "outcome": "HANG_PERMANENT",
+  "crash_detected": true,
+  "crash_time": 3.749293804168701
+}

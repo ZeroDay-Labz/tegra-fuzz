@@ -1,0 +1,91 @@
+{
+  "suite": "probe_requests",
+  "timestamp": "2026-11-22T21:35:09.814684+00:00",
+  "mon_iface": "wlp5s0mon",
+  "dry_run": true,
+  "tests": [
+    {
+      "name": "probe_baseline",
+      "src_mac": "42:92:89:88:bb:77",
+      "frame_size": 62,
+      "timestamp": "2026-11-22T21:35:09.810412+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "probe_ssid_64B",
+      "src_mac": "9a:ed:58:03:21:3e",
+      "frame_size": 108,
+      "timestamp": "2026-11-22T21:35:09.810734+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "probe_ssid_255B",
+      "src_mac": "36:e2:e0:e9:26:4d",
+      "frame_size": 299,
+      "timestamp": "2026-11-22T21:35:09.811072+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "probe_ssid_nulls",
+      "src_mac": "0e:a9:d9:a5:bd:c1",
+      "frame_size": 94,
+      "timestamp": "2026-11-22T21:35:09.811412+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "probe_nintendo_ie_normal",
+      "src_mac": "6a:c9:a9:4a:87:e4",
+      "frame_size": 70,
+      "timestamp": "2026-11-22T21:35:09.811733+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "probe_nintendo_ie_255B",
+      "src_mac": "86:d5:50:eb:b0:90",
+      "frame_size": 316,
+      "timestamp": "2026-11-22T21:35:09.812043+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "probe_rsn_truncated",
+      "src_mac": "5a:a7:45:81:a0:1b",
+      "frame_size": 66,
+      "timestamp": "2026-11-22T21:35:09.812368+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "probe_rsn_8_pmkids",
+      "src_mac": "06:21:78:74:54:99",
+      "frame_size": 214,
+      "timestamp": "2026-11-22T21:35:09.812675+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "probe_50_vendor_ies",
+      "src_mac": "26:6d:ce:4d:2a:75",
+      "frame_size": 2362,
+      "timestamp": "2026-11-22T21:35:09.814059+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "probe_ssid_fmtstr",
+      "src_mac": "e6:51:a6:44:96:51",
+      "frame_size": 60,
+      "timestamp": "2026-11-22T21:35:09.814376+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "probe_broadcom_ie_200B",
+      "src_mac": "86:2c:f6:11:fb:e4",
+      "frame_size": 268,
+      "timestamp": "2026-11-22T21:35:09.814675+00:00",
+      "dry_run": true
+    }
+  ],
+  "summary": {
+    "total": 11,
+    "sent": 0,
+    "responses": 0,
+    "possible_crashes": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-11-25T03:27:02Z",
+  "finding": "multipart_filename_crash_fine_bisect",
+  "last_safe_size": 3968,
+  "crash_size": 4032,
+  "last_safe_hex": "0x0F80",
+  "crash_size_hex": "0x0FC0",
+  "step_size": 64,
+  "all_safe": [
+    3136,
+    3200,
+    3264,
+    3328,
+    3392,
+    3456,
+    3520,
+    3584,
+    3648,
+    3712,
+    3776,
+    3840,
+    3904,
+    3968
+  ]
+}

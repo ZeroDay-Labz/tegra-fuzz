@@ -1,0 +1,74 @@
+[    0.000000] BIOS-e820: [mem 0x000000000a200000-0x000000000a20dfff]  ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000c30d2000-0x00000000ca038fff]  System RAM
+[    0.000000] BIOS-e820: [mem 0x00000000fd200000-0x00000000fd2fffff]  device reserved
+[    0.000000] BIOS-e820: [gap 0x00000000fec02000-0x00000000fec0ffff]
+[    0.000000] BIOS-e820: [mem 0x00000000fedc2000-0x00000000fedcffff]  device reserved
+[    0.000000] efi: ACPI=0xca5c3000 ACPI 2.0=0xca5c3014 TPMFinalLog=0xca962000 SMBIOS=0xcb7b4000 SMBIOS 3.0=0xcb7b3000 MEMATTR=0xc5dbd018 ESRT=0xc8b9a518 MOKvar=0xcaec5000 RNG=0xca59ec18 TPMEventLog=0xca47e018 
+[    0.000000] efi: Remove mem80: MMIO range=[0xfd200000-0xfd2fffff] (1MB) from e820 map
+[    0.000000] e820: remove [mem 0xfd200000-0xfd2fffff] device reserved
+[    0.000000] efi: Not removing mem88: MMIO range=[0xfedc2000-0xfedcffff] (56KB) from e820 map
+[    0.003386] ACPI: FACS 0x00000000CA992000 000040
+[    0.003421] ACPI: Reserving FACS table memory at [mem 0xca992000-0xca99203f]
+[    0.004445] PM: hibernation: Registered nosave memory: [mem 0x0a200000-0x0a20dfff]
+[    0.008885]   node   0: [mem 0x00000000c30d2000-0x00000000ca038fff]
+[    0.747039] ACPI: PM: Registering ACPI NVS region [mem 0x0a200000-0x0a20dfff] (57344 bytes)
+[    0.748567] audit: type=2000 audit(1794828924.187:1): state=initialized audit_enabled=0 res=1
+[    0.840323] pci 0000:03:0a.0:   bridge window [mem 0xfc200000-0xfc2fffff]
+[    0.842377] pci 0000:06:00.0: [10ec:8125] type 00 class 0x020000 PCIe Endpoint
+[    0.843174] pci 0000:07:00.0: [8086:1539] type 00 class 0x020000 PCIe Endpoint
+[    0.843273] pci 0000:07:00.0: BAR 3 [mem 0xfc520000-0xfc523fff]
+[    0.849486] pci 0000:0b:00.0: BAR 5 [mem 0xfc200000-0xfc2007ff]
+[    0.851953] pci 0000:0e:00.1: BAR 0 [mem 0xfcd20000-0xfcd23fff]
+[    0.864008] e820: register RAM buffer resource [mem 0x0a200000-0x0bffffff]
+[    0.865898] acpi PNP0C02:01: Reserved [mem 0xfd200000-0xfd2fffff]
+[    0.877183] pci 0000:03:0a.0:   bridge window [mem 0xfc200000-0xfc2fffff]
+[    0.877321] pci_bus 0000:0b: resource 1 [mem 0xfc200000-0xfc2fffff]
+[    0.987206] ata2: SATA max UDMA/133 abar m2048@0xfc200000 port 0xfc200100 irq 47 lpm-pol 3
+[    0.987209] ata3: SATA max UDMA/133 abar m2048@0xfc200000 port 0xfc200180 irq 48 lpm-pol 3
+[    1.357321] integrity: Loaded X.509 cert 'Microsoft Corporation: Windows UEFI CA 2023: aefc5fbbbe055d8f8daa585473499417ab5a5272'
+[  394.725585] perf: interrupt took too long (3209 > 3168), lowering kernel.perf_event_max_sample_rate to 62000
+[253289.765092] usb 3-4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[253289.766966] usb 3-4: Product: APX
+[253912.426789] usb 3-4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[253912.428662] usb 3-4: Product: APX
+[255636.091444] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[255636.093318] usb 3-2.4: Product: APX
+[262163.977178] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[262163.979051] usb 3-2.4: Product: APX
+[262568.860836] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[262568.862710] usb 3-2.4: Product: APX
+[262742.291458] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[262742.293455] usb 3-2.4: Product: APX
+[262912.426105] usb 3-2.4: New USB device found, idVendor=057e, idProduct=2000, bcdDevice= 1.00
+[262912.428854] usb 3-2.4: Product: Nintendo Switch
+[262912.428856] usb 3-2.4: Manufacturer: Nintendo
+[262912.488361] hid-generic 0003:057E:2000.0018: hiddev102,hidraw13: USB HID v1.11 Device [Nintendo Nintendo Switch] on usb-0000:09:00.3-2.4/input0
+[262965.219560] usb 3-2.4: New USB device found, idVendor=057e, idProduct=2000, bcdDevice= 1.00
+[262965.222309] usb 3-2.4: Product: Nintendo Switch
+[262965.222311] usb 3-2.4: Manufacturer: Nintendo
+[262965.288033] hid-generic 0003:057E:2000.0019: hiddev102,hidraw13: USB HID v1.11 Device [Nintendo Nintendo Switch] on usb-0000:09:00.3-2.4/input0
+[262999.081167] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[262999.083040] usb 3-2.4: Product: APX
+[263499.941680] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[263499.943552] usb 3-2.4: Product: APX
+[264168.870967] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[264168.872840] usb 3-2.4: Product: APX
+[264484.636458] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[264484.638320] usb 3-2.4: Product: APX
+[264801.521902] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[264801.523778] usb 3-2.4: Product: APX
+[265023.218131] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[265023.220001] usb 3-2.4: Product: APX
+[265023.220003] usb 3-2.4: Manufacturer: NVIDIA Corp.
+[265763.794061] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[265763.795930] usb 3-2.4: Product: APX
+[265870.129205] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[265870.131075] usb 3-2.4: Product: APX
+[266752.083976] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[266752.085847] usb 3-2.4: Product: APX
+[269247.396165] usb 3-2.4: New USB device found, idVendor=057e, idProduct=2000, bcdDevice= 1.00
+[269247.398912] usb 3-2.4: Product: Nintendo Switch
+[269247.398915] usb 3-2.4: Manufacturer: Nintendo
+[269247.445759] hid-generic 0003:057E:2000.001A: hiddev102,hidraw13: USB HID v1.11 Device [Nintendo Nintendo Switch] on usb-0000:09:00.3-2.4/input0
+[269283.851748] usb 3-2.4: New USB device found, idVendor=0955, idProduct=7321, bcdDevice= 1.02
+[269283.853620] usb 3-2.4: Product: APX

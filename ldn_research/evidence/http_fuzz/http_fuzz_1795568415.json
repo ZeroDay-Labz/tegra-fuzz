@@ -1,0 +1,434 @@
+{
+  "timestamp": "2026-11-25T01:00:15Z",
+  "target": "192.168.0.1:80",
+  "total": 71,
+  "deaths": 1,
+  "results": [
+    {
+      "test": "URL-256",
+      "payload": "URL-256",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "URL-1024",
+      "payload": "URL-1024",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "URL-4096",
+      "payload": "URL-4096",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "URL-8192",
+      "payload": "URL-8192",
+      "response": "HTTP/1.0 431 \r\nContent-Type: text/html\r\nContent-Length: 323\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:02 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=\"iso-8859-1",
+      "alive_after": true
+    },
+    {
+      "test": "URL-16384",
+      "payload": "URL-16384",
+      "response": "HTTP/1.0 431 \r\nContent-Type: text/html\r\nContent-Length: 323\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:03 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=\"iso-8859-1",
+      "alive_after": true
+    },
+    {
+      "test": "URL-32768",
+      "payload": "URL-32768",
+      "response": "HTTP/1.0 431 \r\nContent-Type: text/html\r\nContent-Length: 323\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:03 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=\"iso-8859-1",
+      "alive_after": true
+    },
+    {
+      "test": "URL-65536",
+      "payload": "URL-65536",
+      "response": "HTTP/1.0 431 \r\nContent-Type: text/html\r\nContent-Length: 323\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:04 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=\"iso-8859-1",
+      "alive_after": true
+    },
+    {
+      "test": "HDR-1024",
+      "payload": "HDR-1024",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "HDR-4096",
+      "payload": "HDR-4096",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "HDR-16384",
+      "payload": "HDR-16384",
+      "response": "HTTP/1.0 431 \r\nContent-Type: text/html\r\nContent-Length: 323\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:06 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=\"iso-8859-1",
+      "alive_after": true
+    },
+    {
+      "test": "HDR-65536",
+      "payload": "HDR-65536",
+      "response": "HTTP/1.0 431 \r\nContent-Type: text/html\r\nContent-Length: 323\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:06 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=\"iso-8859-1",
+      "alive_after": true
+    },
+    {
+      "test": "HDRCNT-100",
+      "payload": "HDRCNT-100",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "HDRCNT-500",
+      "payload": "HDRCNT-500",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "HDRCNT-1000",
+      "payload": "HDRCNT-1000",
+      "response": "HTTP/1.0 431 \r\nContent-Type: text/html\r\nContent-Length: 323\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:09 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=\"iso-8859-1",
+      "alive_after": true
+    },
+    {
+      "test": "METHOD-DELETE",
+      "payload": "METHOD-DELETE",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "METHOD-PATCH",
+      "payload": "METHOD-PATCH",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "METHOD-OPTIONS",
+      "payload": "METHOD-OPTIONS",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "METHOD-TRACE",
+      "payload": "METHOD-TRACE",
+      "response": "HTTP/1.1 403 Forbidden\r\nContent-Type: text/html\r\nContent-Length: 341\r\nDate: Fri, 09 Jan 1970 15:06:12 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n<!DOCT",
+      "alive_after": true
+    },
+    {
+      "test": "METHOD-CONNECT",
+      "payload": "METHOD-CONNECT",
+      "response": "HTTP/1.1 405 Method Not Allowed\r\nContent-Type: text/html\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15768000; includeS",
+      "alive_after": true
+    },
+    {
+      "test": "METHOD-PROPFIND",
+      "payload": "METHOD-PROPFIND",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "METHOD-AAAAAAAAAAAAAAAAAAAA",
+      "payload": "METHOD-AAAAAAAAAAAAAAAAAAAA",
+      "response": "HTTP/1.0 501 Not Implemented\r\nContent-Type: text/html\r\nContent-Length: 353\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:14 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encod",
+      "alive_after": true
+    },
+    {
+      "test": "METHOD-AAAAAAAAAAAAAAAAAAAA",
+      "payload": "METHOD-AAAAAAAAAAAAAAAAAAAA",
+      "response": "HTTP/1.0 501 Not Implemented\r\nContent-Type: text/html\r\nContent-Length: 353\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:14 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encod",
+      "alive_after": true
+    },
+    {
+      "test": "METHOD-\\0GET",
+      "payload": "METHOD-\\0GET",
+      "response": "HTTP/1.0 501 Not Implemented\r\nContent-Type: text/html\r\nContent-Length: 353\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:15 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encod",
+      "alive_after": true
+    },
+    {
+      "test": "METHOD-GET\\0POST",
+      "payload": "METHOD-GET\\0POST",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "CL-0",
+      "payload": "CL-0",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "CL--1",
+      "payload": "CL--1",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:17 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "CL-4294967295",
+      "payload": "CL-4294967295",
+      "response": "<TIMEOUT>",
+      "alive_after": true
+    },
+    {
+      "test": "CL-9999999999999999",
+      "payload": "CL-9999999999999999",
+      "response": "<TIMEOUT>",
+      "alive_after": true
+    },
+    {
+      "test": "CL-0x100",
+      "payload": "CL-0x100",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:24 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "CL-NaN",
+      "payload": "CL-NaN",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:25 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "CL- 100",
+      "payload": "CL- 100",
+      "response": "<TIMEOUT>",
+      "alive_after": true
+    },
+    {
+      "test": "CL-100 ",
+      "payload": "CL-100 ",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:29 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "CHUNK-normal",
+      "payload": "CHUNK-normal",
+      "response": "HTTP/1.1 200 OK\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15768000; includeSubdomains\r\nPragma: no-cache\r\nCache-Contro",
+      "alive_after": true
+    },
+    {
+      "test": "CHUNK-huge",
+      "payload": "CHUNK-huge",
+      "response": "<TIMEOUT>",
+      "alive_after": true
+    },
+    {
+      "test": "CHUNK-neg",
+      "payload": "CHUNK-neg",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15768000; includeSubdomai",
+      "alive_after": true
+    },
+    {
+      "test": "CHUNK-double",
+      "payload": "CHUNK-double",
+      "response": "HTTP/1.1 501 Not Implemented\r\nContent-Type: text/html\r\nContent-Length: 353\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:34 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encod",
+      "alive_after": true
+    },
+    {
+      "test": "PATH-/../../../etc/passwd",
+      "payload": "PATH-/../../../etc/passwd",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "PATH-/..%2f..%2f..%2fetc/passwd",
+      "payload": "PATH-/..%2f..%2f..%2fetc/passwd",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "PATH-/%00",
+      "payload": "PATH-/%00",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "PATH-/././././././././././././././.",
+      "payload": "PATH-/././././././././././././././.",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "PATH-//////////////////////////////",
+      "payload": "PATH-//////////////////////////////",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "PATH-/img/../../../../../../proc/se",
+      "payload": "PATH-/img/../../../../../../proc/se",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "FMT-%s%s%s%s%s%s%s%s%s%s",
+      "payload": "FMT-%s%s%s%s%s%s%s%s%s%s",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "FMT-HDR-%s%s%s%s%s%s%s%",
+      "payload": "FMT-HDR-%s%s%s%s%s%s%s%",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:41 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "FMT-%n%n%n%n",
+      "payload": "FMT-%n%n%n%n",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "FMT-HDR-%n%n%n%n",
+      "payload": "FMT-HDR-%n%n%n%n",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:42 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "FMT-%x%x%x%x%x%x%x%x%x%x",
+      "payload": "FMT-%x%x%x%x%x%x%x%x%x%x",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "FMT-HDR-%x%x%x%x%x%x%x%",
+      "payload": "FMT-HDR-%x%x%x%x%x%x%x%",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:43 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "FMT-%p%p%p%p%p%p%p%p%p%p",
+      "payload": "FMT-%p%p%p%p%p%p%p%p%p%p",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "FMT-HDR-%p%p%p%p%p%p%p%",
+      "payload": "FMT-HDR-%p%p%p%p%p%p%p%",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:45 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "FMT-AAAA%08x.%08x.%08x.%",
+      "payload": "FMT-AAAA%08x.%08x.%08x.%",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "FMT-HDR-AAAA%08x.%08x.%",
+      "payload": "FMT-HDR-AAAA%08x.%08x.%",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:46 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "SMUGGLE-CL-CL",
+      "payload": "SMUGGLE-CL-CL",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:47 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "SMUGGLE-CL-TE",
+      "payload": "SMUGGLE-CL-TE",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "NULL-url",
+      "payload": "NULL-url",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:48 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "NULL-hdr",
+      "payload": "NULL-hdr",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:48 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "NULL-method",
+      "payload": "NULL-method",
+      "response": "HTTP/1.0 501 Not Implemented\r\nContent-Type: text/html\r\nContent-Length: 353\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:49 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encod",
+      "alive_after": true
+    },
+    {
+      "test": "BODY-4096",
+      "payload": "BODY-4096",
+      "response": "HTTP/1.1 200 OK\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15768000; includeSubdomains\r\nPragma: no-cache\r\nCache-Contro",
+      "alive_after": true
+    },
+    {
+      "test": "BODY-65536",
+      "payload": "BODY-65536",
+      "response": "HTTP/1.1 200 OK\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15768000; includeSubdomains\r\nPragma: no-cache\r\nCache-Contro",
+      "alive_after": true
+    },
+    {
+      "test": "BODY-1048576",
+      "payload": "BODY-1048576",
+      "response": "HTTP/1.1 200 OK\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15768000; includeSubdomains\r\nPragma: no-cache\r\nCache-Contro",
+      "alive_after": true
+    },
+    {
+      "test": "VER-HTTP/0.9",
+      "payload": "VER-HTTP/0.9",
+      "response": "HTTP/1.0 505 HTTP Version Not Supported\r\nContent-Type: text/html\r\nContent-Length: 375\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:52 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=",
+      "alive_after": true
+    },
+    {
+      "test": "VER-HTTP/2.0",
+      "payload": "VER-HTTP/2.0",
+      "response": "HTTP/1.0 505 HTTP Version Not Supported\r\nContent-Type: text/html\r\nContent-Length: 375\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:53 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=",
+      "alive_after": true
+    },
+    {
+      "test": "VER-HTTP/3.0",
+      "payload": "VER-HTTP/3.0",
+      "response": "HTTP/1.0 505 HTTP Version Not Supported\r\nContent-Type: text/html\r\nContent-Length: 375\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:53 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=",
+      "alive_after": true
+    },
+    {
+      "test": "VER-HTTP/1.99",
+      "payload": "VER-HTTP/1.99",
+      "response": "HTTP/1.0 505 HTTP Version Not Supported\r\nContent-Type: text/html\r\nContent-Length: 375\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:54 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=",
+      "alive_after": true
+    },
+    {
+      "test": "VER-HTTP/",
+      "payload": "VER-HTTP/",
+      "response": "HTTP/1.0 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:54 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "VER-XXXX/1.1",
+      "payload": "VER-XXXX/1.1",
+      "response": "HTTP/1.0 400 Bad Request\r\nContent-Type: text/html\r\nContent-Length: 345\r\nConnection: close\r\nDate: Fri, 09 Jan 1970 15:06:55 GMT\r\nServer: Xfinity Broadband Router Server\r\n\r\n<?xml version=\"1.0\" encoding=",
+      "alive_after": true
+    },
+    {
+      "test": "CONNFLOOD-50",
+      "payload": "50 simultaneous connections",
+      "response": "see above",
+      "alive_after": false
+    },
+    {
+      "test": "SLOWLORIS-20",
+      "payload": "20 partial connections held 3s",
+      "response": "",
+      "alive_after": true
+    },
+    {
+      "test": "RANGE-huge",
+      "payload": "RANGE-huge",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "RANGE-neg",
+      "payload": "RANGE-neg",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    },
+    {
+      "test": "RANGE-multi",
+      "payload": "RANGE-multi",
+      "response": "HTTP/1.1 200 OK\r\nContent-type: text/html\r\nX-robots-tag: noindex,nofollow\r\nX-Frame-Options: deny\r\nX-XSS-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nStrict-Transport-Security: max-age=15",
+      "alive_after": true
+    }
+  ]
+}

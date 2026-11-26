@@ -1,0 +1,236 @@
+{
+  "timestamp": "20261122T213613Z",
+  "target_bssid": "EC:C4:0D:F3:DC:DB",
+  "source_mac": "AA:BB:CC:DD:EE:FF",
+  "dry_run": true,
+  "total_tests": 25,
+  "sent": 0,
+  "errors": 0,
+  "results": [
+    {
+      "name": "advert_normal",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "Normal advertisement frame (baseline)",
+      "frame_type": "advertisement",
+      "sha256": "74d322c364c7127f0298c77c27176c592fd175d6eb7f21e81fca3f546db6bd53"
+    },
+    {
+      "name": "advert_size_zero",
+      "status": "dry_run",
+      "frame_size": 84,
+      "wrapped_size": 116,
+      "description": "Advertisement data size = 0",
+      "frame_type": "advertisement",
+      "sha256": "6db9f2016578374a6d866264b66d1bf1d426bff59da54d81f1ffeb048aa11cbb"
+    },
+    {
+      "name": "advert_size_1281",
+      "status": "dry_run",
+      "frame_size": 1365,
+      "wrapped_size": 1397,
+      "description": "Advertisement data size = 1281 (buffer is 1280)",
+      "frame_type": "advertisement",
+      "sha256": "8af60139c67ee2a9fea3bd378d0225d89c2ff79f3bb51f3b35663846027b2d46"
+    },
+    {
+      "name": "advert_size_1300",
+      "status": "dry_run",
+      "frame_size": 1384,
+      "wrapped_size": 1416,
+      "description": "Advertisement data size = 1300 (buffer is 1280)",
+      "frame_type": "advertisement",
+      "sha256": "e0231d4a70f34da5a556371c2edf5e90505771000cc31f00ddf9173508c06f1f"
+    },
+    {
+      "name": "advert_size_1400",
+      "status": "dry_run",
+      "frame_size": 1484,
+      "wrapped_size": 1516,
+      "description": "Advertisement data size = 1400 (buffer is 1280)",
+      "frame_type": "advertisement",
+      "sha256": "43179b348935b2350b206725ee1ea2abb985ed1b9b5229c053d19635d9693b81"
+    },
+    {
+      "name": "advert_size_1536",
+      "status": "dry_run",
+      "frame_size": 1620,
+      "wrapped_size": 1652,
+      "description": "Advertisement data size = 1536 (buffer is 1280)",
+      "frame_type": "advertisement",
+      "sha256": "504b81a56c64dcab22a5dd6204c4dc38d4b5aa7392d80e475abc01c3b781ae99"
+    },
+    {
+      "name": "advert_size_1024",
+      "status": "dry_run",
+      "frame_size": 1108,
+      "wrapped_size": 1140,
+      "description": "Advertisement data size = 1024",
+      "frame_type": "advertisement",
+      "sha256": "78107673a970327662b3982a45293893727b2f95eda06002e0fa609dc9c3aa80"
+    },
+    {
+      "name": "advert_size_2048",
+      "status": "dry_run",
+      "frame_size": 2132,
+      "wrapped_size": 2164,
+      "description": "Advertisement data size = 2048",
+      "frame_type": "advertisement",
+      "sha256": "8c4c9ee8acb5b9bbeb7e2321b36a47cadcc4be67858f5b9a48056a63062dda8d"
+    },
+    {
+      "name": "advert_size_4096",
+      "status": "dry_run",
+      "frame_size": 4180,
+      "wrapped_size": 4212,
+      "description": "Advertisement data size = 4096",
+      "frame_type": "advertisement",
+      "sha256": "dfe561184ac7c08ab413d5b531ebf81f9050d9989a59db9edb1d1a32dd5de8d5"
+    },
+    {
+      "name": "advert_size_8192",
+      "status": "dry_run",
+      "frame_size": 4180,
+      "wrapped_size": 4212,
+      "description": "Advertisement data size = 8192",
+      "frame_type": "advertisement",
+      "sha256": "2e4ca680aa0984e07e8ff09cde9d86a37ec44e7dcbf175f0f71df5d7a4e0c0d7"
+    },
+    {
+      "name": "advert_size_16384",
+      "status": "dry_run",
+      "frame_size": 4180,
+      "wrapped_size": 4212,
+      "description": "Advertisement data size = 16384",
+      "frame_type": "advertisement",
+      "sha256": "e4195bb7c52979b764ae2172cb592fa0c5070c6ad3e2e9a217348d4679cc19ea"
+    },
+    {
+      "name": "advert_size_32768",
+      "status": "dry_run",
+      "frame_size": 4180,
+      "wrapped_size": 4212,
+      "description": "Advertisement data size = 32768",
+      "frame_type": "advertisement",
+      "sha256": "9f2fe81ce609a4a225e59f775e4ea4f14970081327df11987c437543131777d4"
+    },
+    {
+      "name": "advert_size_65535",
+      "status": "dry_run",
+      "frame_size": 4180,
+      "wrapped_size": 4212,
+      "description": "Advertisement data size = 65535",
+      "frame_type": "advertisement",
+      "sha256": "72a1ce96f7bd2e5a81e67568aa071838c1089d8c902207fff1938293eb205ccf"
+    },
+    {
+      "name": "advert_size_mismatch_large",
+      "status": "dry_run",
+      "frame_size": 4180,
+      "wrapped_size": 4212,
+      "description": "Size claims 1280 but payload is 4096 bytes",
+      "frame_type": "advertisement",
+      "sha256": "68feb6ac2b97624600067185b4f3c26617d8216078afc8ed3d2a7ae6608ea1ca"
+    },
+    {
+      "name": "advert_size_max_short_data",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "Size claims 65535 but only 1280 bytes sent",
+      "frame_type": "advertisement",
+      "sha256": "2571a82a0cd63e403e317692ea8f0ffd258ddcdb62855092ba6355f8a353fd39"
+    },
+    {
+      "name": "advert_participant_count_255",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "Participant count = 255 (overflows 8-slot array)",
+      "frame_type": "advertisement",
+      "sha256": "bea9f16fee911a33a46f30ac9d4d090eb57a66d648c76433b3b8e3a25b142ac3"
+    },
+    {
+      "name": "advert_participant_count_9",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "Participant count = 9 (one beyond 8-slot limit)",
+      "frame_type": "advertisement",
+      "sha256": "a51d7a61d3bc9d2ac0d7bb8340ec46e4c23db6abfced96de15f7bc50a4573e15"
+    },
+    {
+      "name": "advert_appdata_size_max",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "Application data size = 65535 (buffer is 384)",
+      "frame_type": "advertisement",
+      "sha256": "b0222d89ddb20796e5aef94db0a343b9e71c794098869bea49f888c918a55bb0"
+    },
+    {
+      "name": "advert_enc_gcm_plain_data",
+      "status": "dry_run",
+      "frame_size": 1332,
+      "wrapped_size": 1364,
+      "description": "Encryption type = GCM but data is plain format",
+      "frame_type": "advertisement",
+      "sha256": "2d5c3d0d4eb042b05cd35fd34aaed0ce2751396941067020dcc9adcb8d9e6d0a"
+    },
+    {
+      "name": "advert_enc_invalid",
+      "status": "dry_run",
+      "frame_size": 1332,
+      "wrapped_size": 1364,
+      "description": "Encryption type = 0xFF (invalid)",
+      "frame_type": "advertisement",
+      "sha256": "ccd78dc976377cbb9e59d3f6a87d1111086fe0a9b6fc6c3282ae421d19251433"
+    },
+    {
+      "name": "advert_version_0",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "LDN version = 0",
+      "frame_type": "advertisement",
+      "sha256": "fb6e7688e3ec60696ed710972aa9ab5be9cce17ce892c3a98eb44abe184508e0"
+    },
+    {
+      "name": "advert_version_1",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "LDN version = 1",
+      "frame_type": "advertisement",
+      "sha256": "5f4398d1c246cf196b2554a3fa60bababd2a0f9c8f0133af2ba5ab79bbc0bd4f"
+    },
+    {
+      "name": "advert_version_5",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "LDN version = 5",
+      "frame_type": "advertisement",
+      "sha256": "590e00405f7f5488890d06a24eb9e694f391f6b7214bd6b3ca9f8386dc533435"
+    },
+    {
+      "name": "advert_version_127",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "LDN version = 127",
+      "frame_type": "advertisement",
+      "sha256": "c5b111194733923d4e58dae59166078ce99f1d930f27f9ef2e377c95763fa128"
+    },
+    {
+      "name": "advert_version_255",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "LDN version = 255",
+      "frame_type": "advertisement",
+      "sha256": "238f38f8b7955a1c26252530d7af330b14cf6e6c926137f49d0b300679c8413c"
+    }
+  ]
+}

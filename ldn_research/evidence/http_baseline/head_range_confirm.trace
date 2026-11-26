@@ -1,0 +1,22 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0*   Trying 192.168.0.1:80...
+* socket successfully bound to interface 'wlp5s0'
+* Established connection to 192.168.0.1 (192.168.0.1 port 80) from 192.168.0.2 port 35456 
+* using HTTP/1.x
+> HEAD /data.json HTTP/1.1
+> Host: 192.168.0.1
+> Range: bytes=0-15
+> User-Agent: curl/8.18.0
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 206 Partial Content
+< Accept-Ranges: bytes
+< Connection: close
+< Content-Length: 16
+< Content-Range: bytes 0-15/464
+< Content-Type: text/plain
+< 
+  0     16   0      0   0      0      0      0                              0  0     16   0      0   0      0      0      0                              0  0     16   0      0   0      0      0      0                              0
+* shutting down connection #0

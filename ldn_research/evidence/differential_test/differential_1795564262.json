@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-11-24T23:51:02Z",
+  "test": "differential_injection",
+  "method": "monitor-mode radiotap",
+  "card": "iwlwifi AX (fw v89)",
+  "threshold": "0x720",
+  "results": {
+    "safe": {
+      "result": "ALIVE",
+      "sent": 0,
+      "errors": 30,
+      "size_field": "0x0100"
+    },
+    "threshold": {
+      "result": "ALIVE",
+      "sent": 0,
+      "errors": 30,
+      "size_field": "0x0720"
+    },
+    "over_1": {
+      "result": "ALIVE",
+      "sent": 0,
+      "errors": 30,
+      "size_field": "0x0721"
+    },
+    "over_224": {
+      "result": "ALIVE",
+      "sent": 0,
+      "errors": 30,
+      "size_field": "0x0800"
+    }
+  }
+}

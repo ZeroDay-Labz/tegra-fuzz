@@ -1,0 +1,76 @@
+{
+  "suite": "broadcom_action_frames",
+  "timestamp": "2026-11-22T21:35:18.704165+00:00",
+  "mon_iface": "wlp5s0mon",
+  "dry_run": true,
+  "tests": [
+    {
+      "name": "action_broadcom_type_01",
+      "src_mac": "7a:68:ac:a9:d1:ff",
+      "frame_size": 53,
+      "timestamp": "2026-11-22T21:35:18.701536+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_broadcom_type_02",
+      "src_mac": "66:1d:16:b1:b8:b4",
+      "frame_size": 53,
+      "timestamp": "2026-11-22T21:35:18.701904+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_broadcom_type_03",
+      "src_mac": "8e:b8:70:5d:d5:6b",
+      "frame_size": 53,
+      "timestamp": "2026-11-22T21:35:18.702207+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_broadcom_type_04",
+      "src_mac": "b2:03:3f:53:8e:a3",
+      "frame_size": 53,
+      "timestamp": "2026-11-22T21:35:18.702571+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_broadcom_type_ff",
+      "src_mac": "aa:78:a6:2b:fc:20",
+      "frame_size": 53,
+      "timestamp": "2026-11-22T21:35:18.702913+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_broadcom_payload_128B",
+      "src_mac": "b2:77:3a:14:40:ce",
+      "frame_size": 165,
+      "timestamp": "2026-11-22T21:35:18.703222+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_broadcom_payload_512B",
+      "src_mac": "0a:7e:f5:24:b8:d3",
+      "frame_size": 549,
+      "timestamp": "2026-11-22T21:35:18.703526+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_broadcom_payload_1024B",
+      "src_mac": "9a:b9:99:89:20:49",
+      "frame_size": 1061,
+      "timestamp": "2026-11-22T21:35:18.703883+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_broadcom_payload_2000B",
+      "src_mac": "ca:cc:8f:70:7a:b5",
+      "frame_size": 2037,
+      "timestamp": "2026-11-22T21:35:18.704153+00:00",
+      "dry_run": true
+    }
+  ],
+  "summary": {
+    "total": 9,
+    "sent": 0,
+    "possible_crashes": 0
+  }
+}

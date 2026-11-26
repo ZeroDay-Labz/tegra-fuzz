@@ -1,0 +1,62 @@
+{
+  "suite": "data_frames",
+  "timestamp": "2026-11-22T21:35:18.708956+00:00",
+  "mon_iface": "wlp5s0mon",
+  "dry_run": true,
+  "tests": [
+    {
+      "name": "data_frame_256B",
+      "src_mac": "c2:36:9c:16:a4:c9",
+      "frame_size": 288,
+      "timestamp": "2026-11-22T21:35:18.706677+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "data_frame_512B",
+      "src_mac": "5a:61:f1:11:d3:fd",
+      "frame_size": 544,
+      "timestamp": "2026-11-22T21:35:18.707129+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "data_frame_1024B",
+      "src_mac": "52:38:40:76:4a:30",
+      "frame_size": 1056,
+      "timestamp": "2026-11-22T21:35:18.707450+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "data_frame_1500B",
+      "src_mac": "66:55:e1:28:04:eb",
+      "frame_size": 1532,
+      "timestamp": "2026-11-22T21:35:18.707735+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "data_frame_2000B",
+      "src_mac": "fe:06:08:13:c7:af",
+      "frame_size": 2032,
+      "timestamp": "2026-11-22T21:35:18.708078+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "data_frame_2346B",
+      "src_mac": "2e:76:c9:c6:bd:39",
+      "frame_size": 2378,
+      "timestamp": "2026-11-22T21:35:18.708513+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "data_frame_ldn_oversized",
+      "src_mac": "4a:5c:2f:1e:62:ef",
+      "frame_size": 2090,
+      "timestamp": "2026-11-22T21:35:18.708942+00:00",
+      "dry_run": true
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "sent": 0,
+    "possible_crashes": 0
+  }
+}

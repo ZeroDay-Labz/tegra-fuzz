@@ -1,0 +1,44 @@
+{
+  "finding": "CVE-2026-82079 CONFIRMED — lp2p DHCP Server Stack Buffer Overflow",
+  "timestamp": "2026-11-23T06:00:00Z",
+  "device": "Nintendo Switch XAW4 001878 (Tegra X1 Erista, FW 22.5.0)",
+  "cve": "CVE-2026-82079",
+  "discoverer": "moehw (H1:3770768)",
+  
+  "crash_boundary": {
+    "last_ok_total_option_data_bytes": 476,
+    "first_crash_total_option_data_bytes": 477,
+    "last_ok_dhcp_packet_bytes": 505,
+    "first_crash_dhcp_packet_bytes": 506,
+    "options_used": {
+      "hostname_option_12": 255,
+      "vendor_class_option_60_last_ok": 221,
+      "vendor_class_option_60_first_crash": 222,
+      "note": "NM also sends ~29B of standard DHCP options (client-id, param-request, max-msg-size, etc.)"
+    }
+  },
+  
+  "evidence": {
+    "pre_flight_http": 200,
+    "vendor_221_result": "OK — DHCP ACK received, 505B REQUEST, full connectivity",
+    "vendor_222_result": "CRASH — nmcli timeout 25s, AP disappeared, no DHCP ACK",
+    "post_crash_http": "200 (with manual IP — ldn sysmodule partially recovered but AP down)",
+    "ap_disappeared": true,
+    "reproducible": true,
+    "tests_run": "13 hostname tests (8-255) all OK, 13 combined tests narrowing to exact byte"
+  },
+  
+  "implications": {
+    "buffer_size_estimate": "~476-505 bytes (accounting for NM's standard options)",
+    "overflow_reaches_stack": true,
+    "no_stack_canaries": "Erista has no stack canaries (PAC is Mariko only)",
+    "aslr_17bit": "17-bit ASLR entropy, 2MB-aligned",
+    "nx_stack": "Stack is non-executable, need ROP",
+    "next_steps": [
+      "Map exact stack layout (x30 offset) using De Bruijn pattern in option data",
+      "Find ASLR bypass (AdvertiseData infoleak)",
+      "Build ROP chain from ldn sysmodule gadgets",
+      "Deliver exploit payload via DHCP options"
+    ]
+  }
+}

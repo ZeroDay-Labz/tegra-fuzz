@@ -1,0 +1,22 @@
+{
+  "test": "ldn_infoleak_scan",
+  "timestamp": "2026-11-22T21:54:11.863911+00:00",
+  "total_findings": 1,
+  "findings": [
+    {
+      "source": "cmdline",
+      "data_size": 40,
+      "data_hex": "5465737455736572000000000000000000000000000000000000000000000000000071ab00000000",
+      "leaks": [
+        {
+          "offset": 31,
+          "value": "0x000000ab71000000",
+          "region": "stack_high",
+          "aligned_2mb": true
+        }
+      ],
+      "username": "TestUser",
+      "username_len": 8
+    }
+  ]
+}

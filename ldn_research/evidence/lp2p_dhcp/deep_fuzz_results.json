@@ -1,0 +1,222 @@
+{
+  "test": "http_deep_fuzz",
+  "timestamp": "2026-11-24T04:57:29.995114+00:00",
+  "library": "cpp-httplib",
+  "results": [
+    {
+      "label": "GET /data.json",
+      "resp_len": 1053,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "POST /data.json",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "PUT /data.json",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "DELETE /data.json",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "OPTIONS /data.json",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "HEAD /data.json",
+      "resp_len": 107,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "PATCH /data.json",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "POST body=0B",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "POST body=100B",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "POST body=1024B",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "POST body=4096B",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "POST body=65536B",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "CL=1M send=100B",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "CL=-1",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "CL=UINT64_MAX",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "CL=SMAX+1",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "chunked normal",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "chunked multi",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "chunked 64KB",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "chunked neg -1 (0xFFFF...)",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "chunked neg -2 (0xFFFE...)",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "chunked SMAX hex",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "chunked SMAX+1 hex",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "chunked 0+extra",
+      "resp_len": 210,
+      "status_line": "HTTP/1.1 400 Bad Request",
+      "alive": true
+    },
+    {
+      "label": "CL+TE smuggle",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "double CL",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "CRLF in URL",
+      "resp_len": 208,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "alive": true
+    },
+    {
+      "label": "null in header",
+      "resp_len": 1053,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "header 64KB",
+      "resp_len": 0,
+      "status_line": "NO_RESPONSE",
+      "alive": true
+    },
+    {
+      "label": "header no colon",
+      "resp_len": 1053,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "10 pipelined",
+      "resp_len": 1053,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "100 pipelined",
+      "resp_len": 1053,
+      "status_line": "HTTP/1.1 200 OK",
+      "alive": true
+    },
+    {
+      "label": "20_concurrent",
+      "alive": true
+    },
+    {
+      "label": "query 8KB",
+      "resp_len": 211,
+      "status_line": "HTTP/1.1 414 URI Too Long",
+      "alive": true
+    },
+    {
+      "label": "100 query params",
+      "resp_len": 211,
+      "status_line": "HTTP/1.1 414 URI Too Long",
+      "alive": true
+    },
+    {
+      "label": "fragment 1KB",
+      "resp_len": 211,
+      "status_line": "HTTP/1.1 414 URI Too Long",
+      "alive": true
+    }
+  ],
+  "crashed": false
+}

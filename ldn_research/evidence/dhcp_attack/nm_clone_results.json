@@ -1,0 +1,62 @@
+{
+  "test": "nm_clone_request_overflow",
+  "timestamp": "2026-11-23T06:36:06.339488+00:00",
+  "results": [
+    {
+      "vendor": 200,
+      "packet_size": 484,
+      "got_offer": true,
+      "got_ack": false,
+      "ap_up": true,
+      "status": "NO_ACK(ap_up)"
+    },
+    {
+      "vendor": 220,
+      "packet_size": 504,
+      "got_offer": true,
+      "got_ack": false,
+      "ap_up": true,
+      "status": "NO_ACK(ap_up)"
+    },
+    {
+      "vendor": 221,
+      "packet_size": 505,
+      "got_offer": true,
+      "got_ack": false,
+      "ap_up": true,
+      "status": "NO_ACK(ap_up)"
+    },
+    {
+      "vendor": 222,
+      "packet_size": 506,
+      "got_offer": true,
+      "got_ack": false,
+      "ap_up": true,
+      "status": "NO_ACK(ap_up)"
+    },
+    {
+      "vendor": 230,
+      "packet_size": 514,
+      "got_offer": true,
+      "got_ack": false,
+      "ap_up": true,
+      "status": "NO_ACK(ap_up)"
+    },
+    {
+      "vendor": 240,
+      "packet_size": 524,
+      "got_offer": true,
+      "got_ack": false,
+      "ap_up": true,
+      "status": "NO_ACK(ap_up)"
+    },
+    {
+      "vendor": 255,
+      "packet_size": 539,
+      "got_offer": true,
+      "got_ack": false,
+      "ap_up": true,
+      "status": "NO_ACK(ap_up)"
+    }
+  ]
+}

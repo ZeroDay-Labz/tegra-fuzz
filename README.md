@@ -140,10 +140,10 @@ tegra_fuzz/
 │   │   ├── exploit/         Exploit chain building
 │   │   └── recon/           Network recon, MITM, pcap analysis
 │   ├── firmware/            Extracted binaries (gitignored)
-│   └── evidence/            JSON/pcap test output (gitignored)
+│   └── evidence/            JSON evidence & test output (pcaps gitignored)
 ├── tegra_fuzz/              RCM USB fuzzer package
 ├── tests/                   Unit tests (77 tests, no hardware required)
-├── findings/                RCM-era evidence (gitignored)
+├── findings/                RCM-era analysis & evidence
 └── bins/                    Payload binaries (gitignored)
 ```
 

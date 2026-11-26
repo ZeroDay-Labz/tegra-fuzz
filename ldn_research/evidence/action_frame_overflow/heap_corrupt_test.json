@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-11-24T12:00:17Z",
+  "results": [
+    {
+      "name": "BASELINE (no heap overflow, body_size=0x570)",
+      "overflow_fill": "0000000000000000000000000000000000000000000000000000000000000000",
+      "frame_count": 100,
+      "result": "NO_CRASH",
+      "inject_time": 0.21078109741210938,
+      "mid_alive": true,
+      "mid_ping": false,
+      "post_alive": true,
+      "post_ping": true
+    },
+    {
+      "name": "ALL_ZEROS (zeroed heap metadata)",
+      "overflow_fill": "0000000000000000000000000000000000000000000000000000000000000000",
+      "frame_count": 100,
+      "result": "CRASH_DELAYED",
+      "inject_time": 0.21059060096740723,
+      "mid_alive": false,
+      "mid_ping": true,
+      "post_alive": true,
+      "post_ping": false
+    },
+    {
+      "name": "ALL_FF (max corruption)",
+      "overflow_fill": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "frame_count": 100,
+      "result": "HTTP_DOWN",
+      "inject_time": 0.21326112747192383,
+      "mid_alive": false,
+      "mid_ping": true,
+      "post_alive": false,
+      "post_ping": true
+    },
+    {
+      "name": "FAKE_USED (MU magic, 4K size, null ptrs)",
+      "overflow_fill": "554d000000100000000000000000000000000000000000000000000000000000",
+      "frame_count": 100,
+      "result": "CRASH_DELAYED",
+      "inject_time": 0.21101951599121094,
+      "mid_alive": true,
+      "mid_ping": true,
+      "post_alive": false,
+      "post_ping": false
+    },
+    {
+      "name": "FAKE_FREE (FR magic, 1K size, null ptrs)",
+      "overflow_fill": "5246000000040000000000000000000000000000000000000000000000000000",
+      "frame_count": 100,
+      "result": "HTTP_DOWN",
+      "inject_time": 0.2112419605255127,
+      "mid_alive": false,
+      "mid_ping": true,
+      "post_alive": false,
+      "post_ping": true
+    },
+    {
+      "name": "FAKE_FREE_LARGE (FR magic, 64K size, null ptrs)",
+      "overflow_fill": "5246000000000100000000000000000000000000000000000000000000000000",
+      "frame_count": 100,
+      "result": "CRASH_DELAYED",
+      "inject_time": 0.21103906631469727,
+      "mid_alive": true,
+      "mid_ping": true,
+      "post_alive": false,
+      "post_ping": false
+    },
+    {
+      "name": "INVALID_MAGIC (0xDEAD, rest zeros)",
+      "overflow_fill": "adde000000000000000000000000000000000000000000000000000000000000",
+      "frame_count": 100,
+      "result": "HTTP_DOWN",
+      "inject_time": 0.21190500259399414,
+      "mid_alive": true,
+      "mid_ping": true,
+      "post_alive": false,
+      "post_ping": true
+    },
+    {
+      "name": "EXACT_FIT (body_size=0x638, no overflow)",
+      "overflow_fill": "4141414141414141414141414141414141414141414141414141414141414141",
+      "frame_count": 100,
+      "result": "NO_CRASH",
+      "inject_time": 0.21076703071594238,
+      "mid_alive": true,
+      "mid_ping": true,
+      "post_alive": true,
+      "post_ping": true
+    }
+  ]
+}

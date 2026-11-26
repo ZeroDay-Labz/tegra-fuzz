@@ -1,0 +1,26 @@
+{
+  "test_date": "2026-11-24",
+  "vulnerability": "HTTP Range header integer overflow DoS",
+  "target": "192.168.0.1:80 (ldn sysmodule HTTP server)",
+  "mode": "Send to Smartphone (lp2p AP active)",
+  "trigger": "GET /index.html HTTP/1.1\r\nRange: bytes=0-9223372036854775808\r\n\r\n",
+  "result": "CRASH — server down, lp2p AP down, Switch unreachable",
+  "error_code": "2162-0002 (expected)",
+  "library": "cpp-httplib",
+  "severity": "DoS (crash/restart, not code execution)",
+  
+  "action_frame_overflow_status": {
+    "finding": "1000 overflow frames sent via NL80211_CMD_FRAME, all ACKed, no crash",
+    "ping_latency_increase": "5ms → 65ms during injection (frames ARE being processed)",
+    "explanation": "Send to Smartphone mode does NOT call RecvActionFrame IPC — transfers use HTTP/TCP, not action frames",
+    "event_loop_drains": "Frames go through safe event loop path (scan list update), never reach vulnerable FUN_710003b470",
+    "requirement": "Need a game in Local Wireless multiplayer mode for RecvActionFrame to be called"
+  },
+
+  "nl80211_cmd_frame_confirmed": {
+    "finding": "NL80211_CMD_FRAME works on Intel AX210 (iwlwifi) for action frame TX while associated",
+    "previous_error": "ENOTCONN was caused by NetworkManager switching to home WiFi, not by driver limitation",
+    "injection_rate": "~400 frames/sec sustained",
+    "ack_rate": "100% ACKed by firmware"
+  }
+}

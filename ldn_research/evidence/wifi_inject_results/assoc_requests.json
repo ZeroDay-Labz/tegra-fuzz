@@ -1,0 +1,56 @@
+{
+  "suite": "assoc_requests",
+  "timestamp": "2026-11-22T21:35:15.008833+00:00",
+  "mon_iface": "wlp5s0mon",
+  "dry_run": true,
+  "tests": [
+    {
+      "name": "assoc_baseline",
+      "src_mac": "2a:32:67:1c:2f:91",
+      "frame_size": 88,
+      "timestamp": "2026-11-22T21:35:15.007085+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "assoc_50_rates",
+      "src_mac": "2a:9b:9d:55:47:c6",
+      "frame_size": 130,
+      "timestamp": "2026-11-22T21:35:15.007437+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "assoc_rsn_pmkid_mismatch",
+      "src_mac": "2e:f9:03:85:99:62",
+      "frame_size": 122,
+      "timestamp": "2026-11-22T21:35:15.007769+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "assoc_nintendo_ie_max",
+      "src_mac": "86:3d:b7:cf:52:82",
+      "frame_size": 342,
+      "timestamp": "2026-11-22T21:35:15.008124+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "assoc_dual_rsn",
+      "src_mac": "6a:20:a0:12:00:e9",
+      "frame_size": 110,
+      "timestamp": "2026-11-22T21:35:15.008468+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "assoc_extcap_200B",
+      "src_mac": "26:c4:8e:d7:6d:b1",
+      "frame_size": 290,
+      "timestamp": "2026-11-22T21:35:15.008820+00:00",
+      "dry_run": true
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "sent": 0,
+    "responses": 0,
+    "possible_crashes": 0
+  }
+}

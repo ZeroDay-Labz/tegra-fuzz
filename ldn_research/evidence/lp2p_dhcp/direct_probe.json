@@ -1,0 +1,201 @@
+{
+  "test": "direct_overflow_probe",
+  "timestamp": "2026-11-24T04:26:51.813663+00:00",
+  "target": "192.168.0.1 lp2p DHCP server",
+  "cve": "CVE-2026-82079",
+  "mac": "22:7c:ce:e0:bd:56",
+  "results": [
+    {
+      "target_bytes": 32,
+      "actual_opt_bytes": 32,
+      "pkt_bytes": 291,
+      "response": false,
+      "elapsed": 2.0021,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 64,
+      "actual_opt_bytes": 64,
+      "pkt_bytes": 323,
+      "response": false,
+      "elapsed": 2.0021,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 128,
+      "actual_opt_bytes": 128,
+      "pkt_bytes": 387,
+      "response": false,
+      "elapsed": 2.0021,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 256,
+      "actual_opt_bytes": 256,
+      "pkt_bytes": 515,
+      "response": false,
+      "elapsed": 2.0019,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 384,
+      "actual_opt_bytes": 384,
+      "pkt_bytes": 643,
+      "response": false,
+      "elapsed": 2.0019,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 448,
+      "actual_opt_bytes": 448,
+      "pkt_bytes": 707,
+      "response": false,
+      "elapsed": 2.0021,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 480,
+      "actual_opt_bytes": 480,
+      "pkt_bytes": 739,
+      "response": false,
+      "elapsed": 2.0021,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 496,
+      "actual_opt_bytes": 496,
+      "pkt_bytes": 755,
+      "response": false,
+      "elapsed": 2.0019,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 504,
+      "actual_opt_bytes": 504,
+      "pkt_bytes": 763,
+      "response": false,
+      "elapsed": 2.0022,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 508,
+      "actual_opt_bytes": 508,
+      "pkt_bytes": 767,
+      "response": false,
+      "elapsed": 2.0019,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 512,
+      "actual_opt_bytes": 512,
+      "pkt_bytes": 771,
+      "response": false,
+      "elapsed": 2.0013,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 516,
+      "actual_opt_bytes": 514,
+      "pkt_bytes": 773,
+      "response": false,
+      "elapsed": 2.0014,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 520,
+      "actual_opt_bytes": 520,
+      "pkt_bytes": 779,
+      "response": false,
+      "elapsed": 2.0015,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 528,
+      "actual_opt_bytes": 528,
+      "pkt_bytes": 787,
+      "response": false,
+      "elapsed": 2.0021,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 536,
+      "actual_opt_bytes": 536,
+      "pkt_bytes": 795,
+      "response": false,
+      "elapsed": 2.0021,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 544,
+      "actual_opt_bytes": 544,
+      "pkt_bytes": 803,
+      "response": false,
+      "elapsed": 2.0021,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 560,
+      "actual_opt_bytes": 560,
+      "pkt_bytes": 819,
+      "response": false,
+      "elapsed": 2.0021,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 576,
+      "actual_opt_bytes": 576,
+      "pkt_bytes": 835,
+      "response": false,
+      "elapsed": 2.0021,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 640,
+      "actual_opt_bytes": 640,
+      "pkt_bytes": 899,
+      "response": false,
+      "elapsed": 2.0021,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 768,
+      "actual_opt_bytes": 768,
+      "pkt_bytes": 1027,
+      "response": false,
+      "elapsed": 2.0019,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 1024,
+      "actual_opt_bytes": 1024,
+      "pkt_bytes": 1283,
+      "response": false,
+      "elapsed": 2.0017,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 2048,
+      "actual_opt_bytes": 2048,
+      "pkt_bytes": 2307,
+      "response": false,
+      "elapsed": 2.0021,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 4096,
+      "actual_opt_bytes": 4096,
+      "pkt_bytes": 4355,
+      "response": false,
+      "elapsed": 2.0021,
+      "ping_alive": true
+    },
+    {
+      "target_bytes": 7680,
+      "actual_opt_bytes": 7680,
+      "pkt_bytes": 7939,
+      "response": false,
+      "elapsed": 2.0014,
+      "ping_alive": true
+    }
+  ]
+}

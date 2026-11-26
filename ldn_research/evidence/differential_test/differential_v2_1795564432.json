@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-11-24T23:53:52Z",
+  "version": 2,
+  "method": "raw_socket_monitor",
+  "card": "iwlwifi AX fw89",
+  "results": {
+    "0x0100": {
+      "result": "ALIVE",
+      "sent": 0,
+      "errors": 30
+    },
+    "0x0720": {
+      "result": "ALIVE",
+      "sent": 0,
+      "errors": 30
+    },
+    "0x0721": {
+      "result": "ALIVE",
+      "sent": 0,
+      "errors": 30
+    },
+    "0x0800": {
+      "result": "ALIVE",
+      "sent": 0,
+      "errors": 30
+    }
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "results": [
+    {
+      "name": "Range 100 ranges",
+      "status": "206",
+      "resp_len": 11697,
+      "alive_after": true
+    },
+    {
+      "name": "Range 500 ranges",
+      "status": "206",
+      "resp_len": 58497,
+      "alive_after": true
+    },
+    {
+      "name": "Range 1000 ranges",
+      "status": "206",
+      "resp_len": 116998,
+      "alive_after": true
+    },
+    {
+      "name": "Range 5000 ranges",
+      "status": "206",
+      "resp_len": 592998,
+      "alive_after": true
+    },
+    {
+      "name": "User-Agent 8192B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "User-Agent 32768B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "User-Agent 65536B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Accept 8192B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Accept 32768B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Accept 65536B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Accept-Language 8192B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Accept-Language 32768B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Accept-Language 65536B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Accept-Encoding 8192B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Accept-Encoding 32768B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Accept-Encoding 65536B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Cookie 8192B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Cookie 32768B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Cookie 65536B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Referer 8192B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Referer 32768B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Referer 65536B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Authorization 8192B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Authorization 32768B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Authorization 65536B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Host 4096B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Host 16384B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "Host 65536B",
+      "status": "200",
+      "resp_len": 425,
+      "alive_after": true
+    },
+    {
+      "name": "POST /img/<file>",
+      "status": "404",
+      "resp_len": 208,
+      "alive_after": true
+    },
+    {
+      "name": "PUT /img/<file>",
+      "status": "404",
+      "resp_len": 208,
+      "alive_after": true
+    },
+    {
+      "name": "GET /img/2026082120040500-0E7DF678130F4...",
+      "status": "200",
+      "resp_len": 397533,
+      "alive_after": true
+    },
+    {
+      "name": "Range 0-100 on img",
+      "status": "206",
+      "resp_len": 234,
+      "alive_after": true
+    },
+    {
+      "name": "Range last 100 on img",
+      "status": "206",
+      "resp_len": 241,
+      "alive_after": true
+    },
+    {
+      "name": "200 overlapping ranges on img",
+      "status": "206",
+      "resp_len": 43978,
+      "alive_after": true
+    },
+    {
+      "name": "Range SMAX on img",
+      "status": "",
+      "resp_len": 0,
+      "alive_after": false,
+      "CRASH": true
+    },
+    {
+      "name": "HTTP/1.0 GET /",
+      "skip": "server down before test"
+    },
+    {
+      "name": "HTTP/1.0 GET /index.html",
+      "status": "403",
+      "resp_len": 510,
+      "alive_after": true
+    },
+    {
+      "name": "HTTP/1.0 GET /img/file",
+      "status": "200",
+      "resp_len": 9570,
+      "alive_after": true
+    },
+    {
+      "name": "50 keep-alive GETs",
+      "ka_ok": 0,
+      "alive_after": true
+    },
+    {
+      "name": "20-deep nested multipart",
+      "status": "",
+      "resp_len": 0,
+      "alive_after": true
+    },
+    {
+      "name": "CT long charset",
+      "status": "431",
+      "resp_len": 483,
+      "alive_after": true
+    },
+    {
+      "name": "CT long boundary",
+      "status": "",
+      "resp_len": 0,
+      "alive_after": true
+    },
+    {
+      "name": "CRLF in path",
+      "status": "400",
+      "resp_len": 516,
+      "alive_after": true
+    },
+    {
+      "name": "Encoded CRLF in path",
+      "status": "200",
+      "resp_len": 9570,
+      "alive_after": true
+    },
+    {
+      "name": "WS upgrade",
+      "status": "200",
+      "resp_len": 9551,
+      "alive_after": true
+    },
+    {
+      "name": "Expect 100-continue",
+      "status": "200",
+      "resp_len": 9593,
+      "alive_after": true
+    },
+    {
+      "name": "Query 4096B",
+      "status": "403",
+      "resp_len": 510,
+      "alive_after": true
+    },
+    {
+      "name": "Query 16384B",
+      "status": "431",
+      "resp_len": 483,
+      "alive_after": true
+    },
+    {
+      "name": "Query 65536B",
+      "status": "431",
+      "resp_len": 483,
+      "alive_after": true
+    },
+    {
+      "name": "Multipart-range 50 parts on img",
+      "status": "200",
+      "resp_len": 9570,
+      "alive_after": true
+    },
+    {
+      "name": "Multipart-range 200 parts on img",
+      "status": "200",
+      "resp_len": 9570,
+      "alive_after": true
+    },
+    {
+      "name": "Multipart-range 1000 parts on img",
+      "status": "431",
+      "resp_len": 483,
+      "alive_after": true
+    },
+    {
+      "name": "TE: identity",
+      "status": "501",
+      "resp_len": 528,
+      "alive_after": true
+    },
+    {
+      "name": "TE: gzip,chunked",
+      "status": "501",
+      "resp_len": 528,
+      "alive_after": true
+    },
+    {
+      "name": "20-thread concurrent GET",
+      "ok": 0,
+      "errs": 200,
+      "alive": true,
+      "CRASH": false
+    },
+    {
+      "name": "Slowloris 50",
+      "opened": 50,
+      "alive_during": true,
+      "alive_after": true,
+      "CRASH": false
+    },
+    {
+      "name": "POST body 100000B",
+      "status": "403",
+      "alive": true,
+      "CRASH": false
+    },
+    {
+      "name": "POST body 1000000B",
+      "status": "403",
+      "alive": true,
+      "CRASH": false
+    },
+    {
+      "name": "POST body 5000000B",
+      "status": "403",
+      "alive": true,
+      "CRASH": false
+    },
+    {
+      "name": "concurrent download+requests",
+      "alive": true,
+      "CRASH": false
+    },
+    {
+      "name": "HEAD /index.html",
+      "status": "403"
+    },
+    {
+      "name": "HEAD /data.json",
+      "status": "403"
+    },
+    {
+      "name": "HEAD /img/2026082120040500-0E7DF678130F4",
+      "status": "200"
+    }
+  ],
+  "crashes": [
+    "Range SMAX on img"
+  ],
+  "concurrent_tests": true
+}

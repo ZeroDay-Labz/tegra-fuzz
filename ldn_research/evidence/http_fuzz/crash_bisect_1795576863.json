@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-11-25T03:21:03Z",
+  "finding": "multipart_filename_crash_bisection",
+  "last_safe_size": 3072,
+  "crash_size": 4096,
+  "tested_sizes": {
+    "512": "safe",
+    "1024": "safe",
+    "2048": "safe",
+    "3072": "safe",
+    "4096": "crash"
+  },
+  "description": "Multipart filename of 4096 bytes crashes HTTP server. Last safe size: 3072."
+}

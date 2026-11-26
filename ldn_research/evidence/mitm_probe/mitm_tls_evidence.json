@@ -1,0 +1,90 @@
+{
+  "start_time": "2026-11-24T04:03:39.864913+00:00",
+  "http_requests": [],
+  "tls_connections": [
+    {
+      "timestamp": "2026-11-24T04:03:42.669467+00:00",
+      "client": "192.168.44.35",
+      "sni": "dauth-lp1.ndas.srv.nintendo.net",
+      "result": "REJECTED",
+      "rejection_type": "UNKNOWN_CA",
+      "error": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:1085)"
+    },
+    {
+      "timestamp": "2026-11-24T04:04:05.487729+00:00",
+      "client": "192.168.44.35",
+      "sni": "dauth-lp1.ndas.srv.nintendo.net",
+      "result": "REJECTED",
+      "rejection_type": "UNKNOWN_CA",
+      "error": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:1085)"
+    },
+    {
+      "timestamp": "2026-11-24T04:04:05.625887+00:00",
+      "client": "192.168.44.35",
+      "sni": "dauth-lp1.ndas.srv.nintendo.net",
+      "result": "REJECTED",
+      "rejection_type": "UNKNOWN_CA",
+      "error": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:1085)"
+    },
+    {
+      "timestamp": "2026-11-24T04:04:14.483943+00:00",
+      "client": "192.168.44.35",
+      "sni": "dauth-lp1.ndas.srv.nintendo.net",
+      "result": "REJECTED",
+      "rejection_type": "UNKNOWN_CA",
+      "error": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:1085)"
+    },
+    {
+      "timestamp": "2026-11-24T04:04:34.484912+00:00",
+      "client": "192.168.44.35",
+      "sni": "dauth-lp1.ndas.srv.nintendo.net",
+      "result": "REJECTED",
+      "rejection_type": "UNKNOWN_CA",
+      "error": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:1085)"
+    },
+    {
+      "timestamp": "2026-11-24T04:04:38.496456+00:00",
+      "client": "192.168.44.35",
+      "sni": "sun.hac.lp1.d4c.nintendo.net",
+      "result": "REJECTED",
+      "rejection_type": "CERT_REJECTED",
+      "error": "[SSL: SSLV3_ALERT_BAD_CERTIFICATE] ssl/tls alert bad certificate (_ssl.c:1085)"
+    },
+    {
+      "timestamp": "2026-11-24T04:04:49.633345+00:00",
+      "client": "192.168.44.35",
+      "sni": "dauth-lp1.ndas.srv.nintendo.net",
+      "result": "REJECTED",
+      "rejection_type": "UNKNOWN_CA",
+      "error": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:1085)"
+    },
+    {
+      "timestamp": "2026-11-24T04:04:53.531222+00:00",
+      "client": "192.168.44.35",
+      "sni": "dauth-lp1.ndas.srv.nintendo.net",
+      "result": "REJECTED",
+      "rejection_type": "UNKNOWN_CA",
+      "error": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:1085)"
+    },
+    {
+      "timestamp": "2026-11-24T04:04:53.634343+00:00",
+      "client": "192.168.44.35",
+      "sni": "dauth-lp1.ndas.srv.nintendo.net",
+      "result": "REJECTED",
+      "rejection_type": "UNKNOWN_CA",
+      "error": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:1085)"
+    },
+    {
+      "timestamp": "2026-11-24T04:04:53.816509+00:00",
+      "client": "192.168.44.35",
+      "sni": "dauth-lp1.ndas.srv.nintendo.net",
+      "result": "REJECTED",
+      "rejection_type": "UNKNOWN_CA",
+      "error": "[SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:1085)"
+    }
+  ],
+  "tls_decrypted_requests": [],
+  "cert_rejections": 10,
+  "cert_acceptances": 0,
+  "end_time": "2026-11-24T04:05:27.915261+00:00"
+}

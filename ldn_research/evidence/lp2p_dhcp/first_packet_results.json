@@ -1,0 +1,112 @@
+{
+  "test": "first_packet_dhcp_overflow",
+  "timestamp": "2026-11-24T04:53:00.165929+00:00",
+  "mode": "probe",
+  "ssid": "switch_F3DCDB0100S",
+  "mac": "02:1c:15:c9:b6:9b",
+  "results": [
+    {
+      "phase": "normal_discover",
+      "response": "OFFER",
+      "offered_ip": "192.168.0.9"
+    },
+    {
+      "size": 64,
+      "opts": 64,
+      "pkt": 323,
+      "response": "OFFER",
+      "resp_len": 284
+    },
+    {
+      "size": 128,
+      "opts": 128,
+      "pkt": 387,
+      "response": "OFFER",
+      "resp_len": 284
+    },
+    {
+      "size": 256,
+      "opts": 256,
+      "pkt": 515,
+      "response": "OFFER",
+      "resp_len": 284
+    },
+    {
+      "size": 384,
+      "opts": 384,
+      "pkt": 643,
+      "response": "OFFER",
+      "resp_len": 284
+    },
+    {
+      "size": 448,
+      "opts": 448,
+      "pkt": 707,
+      "response": "OFFER",
+      "resp_len": 284
+    },
+    {
+      "size": 496,
+      "opts": 496,
+      "pkt": 755,
+      "response": "OFFER",
+      "resp_len": 284
+    },
+    {
+      "size": 512,
+      "opts": 512,
+      "pkt": 771,
+      "response": "OFFER",
+      "resp_len": 284
+    },
+    {
+      "size": 520,
+      "opts": 520,
+      "pkt": 779,
+      "response": "OFFER",
+      "resp_len": 284
+    },
+    {
+      "size": 528,
+      "opts": 528,
+      "pkt": 787,
+      "response": "OFFER",
+      "resp_len": 284
+    },
+    {
+      "size": 536,
+      "opts": 536,
+      "pkt": 795,
+      "response": "OFFER",
+      "resp_len": 284
+    },
+    {
+      "size": 544,
+      "opts": 544,
+      "pkt": 803,
+      "response": "OFFER",
+      "resp_len": 284
+    },
+    {
+      "size": 576,
+      "opts": 576,
+      "pkt": 835,
+      "response": "OFFER",
+      "resp_len": 284
+    },
+    {
+      "size": 640,
+      "opts": 640,
+      "pkt": 899,
+      "response": "OFFER",
+      "resp_len": 284
+    },
+    {
+      "size": 1024,
+      "opts": 1024,
+      "pkt": 1283,
+      "response": "OFFER",
+      "resp_len": 284
+    }
+  ]
+}

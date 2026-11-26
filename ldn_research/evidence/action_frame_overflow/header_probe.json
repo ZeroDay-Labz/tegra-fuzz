@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-11-24T12:20:35Z",
+  "header_offset": "parser+0x7AC",
+  "known_header_hex": "524601002000000000000000000000000000000000000000",
+  "magic": "0x4652",
+  "attribute": "0x0001",
+  "blockSize": "0x00000020"
+}

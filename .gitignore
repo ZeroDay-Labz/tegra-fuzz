@@ -25,12 +25,12 @@ ldn_research/firmware/
 bins/
 01000000000010*/
 
-# Evidence data — large JSON/pcap/bin test outputs, regeneratable from scripts
-ldn_research/evidence/
-findings/
+# Album baseline web assets (pulled from device, not source code)
+findings/album_baseline_*
+ldn_research/evidence/album_baseline_*
 
-# Pcap captures
-*.pcap
+# Large pcap (60MB baseline too big for GitHub)
+ldn_research/evidence/ldn_baseline_20261120_010339.pcap
 
 # Nintendo / Switch firmware artifacts
 *.nca

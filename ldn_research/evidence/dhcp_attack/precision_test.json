@@ -1,0 +1,48 @@
+{
+  "test": "precision_boundary",
+  "timestamp": "2026-11-23T05:57:23.536872+00:00",
+  "results": [
+    {
+      "vendor": 220,
+      "total": 475,
+      "timeout": false,
+      "elapsed": 2.7,
+      "got_ack": true,
+      "got_ip": true,
+      "pre_http": 200,
+      "post_http": 200,
+      "ap_up": true,
+      "req_size": 504,
+      "ack_size": 284,
+      "status": "OK (req=504B, ACK in 2.7s)"
+    },
+    {
+      "vendor": 221,
+      "total": 476,
+      "timeout": false,
+      "elapsed": 2.7,
+      "got_ack": true,
+      "got_ip": true,
+      "pre_http": 200,
+      "post_http": 200,
+      "ap_up": true,
+      "req_size": 505,
+      "ack_size": 284,
+      "status": "OK (req=505B, ACK in 2.7s)"
+    },
+    {
+      "vendor": 222,
+      "total": 477,
+      "timeout": true,
+      "elapsed": 25.0,
+      "got_ack": false,
+      "got_ip": false,
+      "pre_http": 200,
+      "post_http": 200,
+      "ap_up": false,
+      "req_size": 0,
+      "ack_size": 0,
+      "status": "CRASH (AP gone)"
+    }
+  ]
+}

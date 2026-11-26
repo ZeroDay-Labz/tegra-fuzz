@@ -1,0 +1,208 @@
+{
+  "start_time": "2026-11-24T03:52:57.421097+00:00",
+  "connections": [],
+  "http_requests": [
+    {
+      "timestamp": "2026-11-24T03:57:44.230461+00:00",
+      "client": "192.168.44.35",
+      "method": "GET",
+      "path": "/",
+      "host": "ctest.cdn.nintendo.net",
+      "user_agent": "NX NIFM/00",
+      "headers": {
+        "Host": "ctest.cdn.nintendo.net",
+        "User-Agent": "NX NIFM/00",
+        "Accept": "*/*"
+      }
+    },
+    {
+      "timestamp": "2026-11-24T03:57:44.230510+00:00",
+      "client": "192.168.44.35",
+      "method": "LOG",
+      "message": "\"GET / HTTP/1.1\" 302 -"
+    },
+    {
+      "timestamp": "2026-11-24T03:58:00.140622+00:00",
+      "client": "192.168.44.35",
+      "method": "GET",
+      "path": "/",
+      "host": "ctest.cdn.nintendo.net",
+      "user_agent": "NX NIFM/00",
+      "headers": {
+        "Host": "ctest.cdn.nintendo.net",
+        "User-Agent": "NX NIFM/00",
+        "Accept": "*/*"
+      }
+    },
+    {
+      "timestamp": "2026-11-24T03:58:00.140658+00:00",
+      "client": "192.168.44.35",
+      "method": "LOG",
+      "message": "\"GET / HTTP/1.1\" 302 -"
+    },
+    {
+      "timestamp": "2026-11-24T03:58:09.316934+00:00",
+      "client": "192.168.44.35",
+      "method": "GET",
+      "path": "/",
+      "host": "ctest.cdn.nintendo.net",
+      "user_agent": "NX NIFM/00",
+      "headers": {
+        "Host": "ctest.cdn.nintendo.net",
+        "User-Agent": "NX NIFM/00",
+        "Accept": "*/*"
+      }
+    },
+    {
+      "timestamp": "2026-11-24T03:58:09.316963+00:00",
+      "client": "192.168.44.35",
+      "method": "LOG",
+      "message": "\"GET / HTTP/1.1\" 302 -"
+    },
+    {
+      "timestamp": "2026-11-24T03:58:13.554492+00:00",
+      "client": "192.168.44.35",
+      "method": "GET",
+      "path": "/",
+      "host": "ctest.cdn.nintendo.net",
+      "user_agent": "NX NIFM/00",
+      "headers": {
+        "Host": "ctest.cdn.nintendo.net",
+        "User-Agent": "NX NIFM/00",
+        "Accept": "*/*"
+      }
+    },
+    {
+      "timestamp": "2026-11-24T03:58:13.554525+00:00",
+      "client": "192.168.44.35",
+      "method": "LOG",
+      "message": "\"GET / HTTP/1.1\" 302 -"
+    },
+    {
+      "timestamp": "2026-11-24T03:58:19.452960+00:00",
+      "client": "192.168.44.1",
+      "method": "GET",
+      "path": "/portal",
+      "host": "192.168.44.1",
+      "user_agent": "curl/8.18.0",
+      "headers": {
+        "Host": "192.168.44.1",
+        "User-Agent": "curl/8.18.0",
+        "Accept": "*/*"
+      }
+    },
+    {
+      "timestamp": "2026-11-24T03:58:19.452990+00:00",
+      "client": "192.168.44.1",
+      "method": "LOG",
+      "message": "\"GET /portal HTTP/1.1\" 200 -"
+    },
+    {
+      "timestamp": "2026-11-24T03:58:26.353957+00:00",
+      "client": "192.168.44.35",
+      "method": "GET",
+      "path": "/",
+      "host": "ctest.cdn.nintendo.net",
+      "user_agent": "NX NIFM/00",
+      "headers": {
+        "Host": "ctest.cdn.nintendo.net",
+        "User-Agent": "NX NIFM/00",
+        "Accept": "*/*"
+      }
+    },
+    {
+      "timestamp": "2026-11-24T03:58:26.353994+00:00",
+      "client": "192.168.44.35",
+      "method": "LOG",
+      "message": "\"GET / HTTP/1.1\" 302 -"
+    },
+    {
+      "timestamp": "2026-11-24T03:58:26.472770+00:00",
+      "client": "192.168.44.35",
+      "method": "GET",
+      "path": "/",
+      "host": "ctest.cdn.nintendo.net",
+      "user_agent": "NX NIFM/00",
+      "headers": {
+        "Host": "ctest.cdn.nintendo.net",
+        "User-Agent": "NX NIFM/00",
+        "Accept": "*/*"
+      }
+    },
+    {
+      "timestamp": "2026-11-24T03:58:26.472792+00:00",
+      "client": "192.168.44.35",
+      "method": "LOG",
+      "message": "\"GET / HTTP/1.1\" 302 -"
+    },
+    {
+      "timestamp": "2026-11-24T03:58:32.782570+00:00",
+      "client": "192.168.44.35",
+      "method": "GET",
+      "path": "/",
+      "host": "ctest.cdn.nintendo.net",
+      "user_agent": "NX NIFM/00",
+      "headers": {
+        "Host": "ctest.cdn.nintendo.net",
+        "User-Agent": "NX NIFM/00",
+        "Accept": "*/*"
+      }
+    },
+    {
+      "timestamp": "2026-11-24T03:58:32.782605+00:00",
+      "client": "192.168.44.35",
+      "method": "LOG",
+      "message": "\"GET / HTTP/1.1\" 302 -"
+    },
+    {
+      "timestamp": "2026-11-24T03:58:35.287270+00:00",
+      "client": "192.168.44.35",
+      "method": "GET",
+      "path": "/",
+      "host": "ctest.cdn.nintendo.net",
+      "user_agent": "NX NIFM/00",
+      "headers": {
+        "Host": "ctest.cdn.nintendo.net",
+        "User-Agent": "NX NIFM/00",
+        "Accept": "*/*"
+      }
+    },
+    {
+      "timestamp": "2026-11-24T03:58:35.287302+00:00",
+      "client": "192.168.44.35",
+      "method": "LOG",
+      "message": "\"GET / HTTP/1.1\" 302 -"
+    },
+    {
+      "timestamp": "2026-11-24T03:58:37.839502+00:00",
+      "client": "192.168.44.35",
+      "method": "GET",
+      "path": "/",
+      "host": "ctest.cdn.nintendo.net",
+      "user_agent": "NX NIFM/00",
+      "headers": {
+        "Host": "ctest.cdn.nintendo.net",
+        "User-Agent": "NX NIFM/00",
+        "Accept": "*/*"
+      }
+    },
+    {
+      "timestamp": "2026-11-24T03:58:37.839534+00:00",
+      "client": "192.168.44.35",
+      "method": "LOG",
+      "message": "\"GET / HTTP/1.1\" 302 -"
+    }
+  ],
+  "user_agents": [
+    "NX NIFM/00",
+    "curl/8.18.0"
+  ],
+  "dhcp_leases": [],
+  "config": {
+    "iface": "wlp5s0",
+    "ssid": "NintendoWiFi",
+    "channel": 6,
+    "ap_ip": "192.168.44.1"
+  },
+  "end_time": "2026-11-24T03:58:45.425769+00:00"
+}

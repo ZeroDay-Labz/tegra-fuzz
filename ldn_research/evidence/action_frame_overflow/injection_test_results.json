@@ -1,0 +1,48 @@
+{
+  "test_date": "2026-11-24",
+  "switch_ssid": "switch_F3DCDB0100S",
+  "switch_mac": "ec:c4:0d:f3:dc:db",
+  "switch_channel": 1,
+  "wifi_adapter": "Intel AX210 (iwlwifi)",
+
+  "findings": {
+    "iwlwifi_injection_limitation": {
+      "finding": "Intel iwlwifi driver does NOT support raw 802.11 frame injection in monitor mode",
+      "detail": "scapy sendp() on monitor interface succeeds at kernel level but firmware silently drops frames",
+      "evidence": "0 beacons captured from Switch in full monitor mode (5s baseline), 0 in 10s post-injection",
+      "workaround_attempted": "NL80211_CMD_FRAME API for firmware-managed TX",
+      "nl80211_result": "ENOTCONN (errno 107) when waiting for ACK; silently queued when using DONT_WAIT_FOR_ACK"
+    },
+
+    "concurrent_monitor_mode": {
+      "finding": "Concurrent monitor+managed interface barely captures any frames",
+      "evidence": "1 frame in 5s on mon0 while wlp5s0 associated, vs expected 50+ beacons",
+      "unusable": true
+    },
+
+    "nl80211_cmd_frame": {
+      "finding": "NL80211_CMD_FRAME returns ENOTCONN on managed interface for action frames to associated AP",
+      "detail": "Likely requires additional attributes or frame format adjustment",
+      "without_ack_wait": "Returns TX cookie (kernel queues) but frame may not be transmitted",
+      "with_ack_wait": "Returns ENOTCONN (errno 107) — kernel rejects after checking association state",
+      "note": "Some ENOTCONN tests were run after NetworkManager auto-switched to home WiFi"
+    },
+
+    "switch_lp2p_session": {
+      "finding": "lp2p AP disappeared after testing (Switch went to sleep or app closed)",
+      "note": "Vulnerable IPC RecvActionFrame path requires a game actively polling for frames"
+    }
+  },
+
+  "requirements_for_success": {
+    "wifi_adapter": "Need adapter with ACTUAL injection support (ath9k, rtl8812au, etc.)",
+    "game_state": "Switch must have a game in active lp2p multiplayer session (RecvActionFrame IPC pending)",
+    "alternative": "If NL80211_CMD_FRAME can be fixed, iwlwifi may work for on-channel TX"
+  },
+
+  "frames_attempted": {
+    "monitor_mode_raw": "300 (200 unicast + 100 broadcast) — likely NOT transmitted",
+    "nl80211_no_ack": "1100 (various frame types) — queued but likely NOT transmitted",
+    "nl80211_with_ack": "1 — rejected ENOTCONN"
+  }
+}

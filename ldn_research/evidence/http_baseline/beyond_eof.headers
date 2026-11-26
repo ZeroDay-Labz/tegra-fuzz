@@ -1,0 +1,6 @@
+HTTP/1.1 206 Partial Content
+Connection: close
+Content-Length: 0
+Content-Range: bytes 362329-362328/362329
+Content-Type: image/jpeg
+

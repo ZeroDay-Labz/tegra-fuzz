@@ -1,0 +1,70 @@
+{
+  "test": "raw_dhcp_injection_overflow",
+  "timestamp": "2026-11-23T06:27:15.898647+00:00",
+  "results": [
+    {
+      "payload": 50,
+      "packet_size": 315,
+      "got_offer": true,
+      "ap_up": true,
+      "status": "OK",
+      "label": "baseline"
+    },
+    {
+      "payload": 200,
+      "packet_size": 465,
+      "got_offer": true,
+      "ap_up": true,
+      "status": "OK",
+      "label": "p200"
+    },
+    {
+      "payload": 243,
+      "packet_size": 508,
+      "got_offer": true,
+      "ap_up": true,
+      "status": "OK",
+      "label": "p243"
+    },
+    {
+      "payload": 300,
+      "packet_size": 567,
+      "got_offer": true,
+      "ap_up": true,
+      "status": "OK",
+      "label": "p300"
+    },
+    {
+      "payload": 400,
+      "packet_size": 667,
+      "got_offer": true,
+      "ap_up": true,
+      "status": "OK",
+      "label": "p400"
+    },
+    {
+      "payload": 500,
+      "packet_size": 767,
+      "got_offer": true,
+      "ap_up": true,
+      "status": "OK",
+      "label": "p500"
+    },
+    {
+      "payload": 600,
+      "packet_size": 869,
+      "got_offer": true,
+      "ap_up": true,
+      "status": "OK",
+      "label": "p600"
+    },
+    {
+      "payload": 800,
+      "packet_size": 1071,
+      "got_offer": true,
+      "ap_up": true,
+      "status": "OK",
+      "label": "p800"
+    }
+  ]
+}

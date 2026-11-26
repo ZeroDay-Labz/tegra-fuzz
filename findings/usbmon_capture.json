@@ -1,0 +1,34 @@
+{
+  "bus": 3,
+  "device_filter": 29,
+  "duration_s": 60.0,
+  "event_count": 2,
+  "events": [
+    {
+      "timestamp_us": 889316252,
+      "event_type": "S",
+      "direction": "OUT",
+      "endpoint": 0,
+      "device": 29,
+      "bus": 3,
+      "length": 0,
+      "status": 0,
+      "data_hex": "",
+      "setup_hex": "00 09 0001 0000 0000",
+      "raw_line": "ffff88ed8930eb40 889316252 S Co:3:029:0 s 00 09 0001 0000 0000 0"
+    },
+    {
+      "timestamp_us": 889316484,
+      "event_type": "C",
+      "direction": "OUT",
+      "endpoint": 0,
+      "device": 29,
+      "bus": 3,
+      "length": 0,
+      "status": -71,
+      "data_hex": "",
+      "setup_hex": "",
+      "raw_line": "ffff88ed8930eb40 889316484 C Co:3:029:0 -71 0"
+    }
+  ]
+}

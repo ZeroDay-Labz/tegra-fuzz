@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-11-24T12:53:20Z",
+  "results": [
+    {
+      "name": "controlled_0x4000",
+      "free_size": 16384,
+      "result": "OK",
+      "pre_http": {
+        "status": "HTTP/1.1 200 OK",
+        "content_length": 8823,
+        "total_bytes": 4096
+      },
+      "post_http1": {
+        "status": "HTTP/1.1 200 OK",
+        "content_length": 8823,
+        "total_bytes": 2896
+      },
+      "post_http2": {
+        "status": "HTTP/1.1 200 OK",
+        "content_length": 8823,
+        "total_bytes": 4096
+      }
+    },
+    {
+      "name": "heap_stress_0x10000",
+      "result": "OK",
+      "http_requests": 20,
+      "last_http": {
+        "status": "HTTP/1.1 200 OK",
+        "content_length": 8823,
+        "total_bytes": 4096
+      }
+    }
+  ]
+}

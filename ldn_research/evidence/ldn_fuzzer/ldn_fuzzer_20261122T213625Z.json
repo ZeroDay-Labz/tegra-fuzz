@@ -1,0 +1,632 @@
+{
+  "timestamp": "20261122T213625Z",
+  "target_bssid": "EC:C4:0D:F3:DC:DB",
+  "source_mac": "AA:BB:CC:DD:EE:FF",
+  "dry_run": true,
+  "total_tests": 69,
+  "sent": 0,
+  "errors": 0,
+  "results": [
+    {
+      "name": "advert_normal",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "Normal advertisement frame (baseline)",
+      "frame_type": "advertisement",
+      "sha256": "c84111b865244671bd1e753d613cb772922c2547a91dae221d24bd6abda61bd4"
+    },
+    {
+      "name": "advert_size_zero",
+      "status": "dry_run",
+      "frame_size": 84,
+      "wrapped_size": 116,
+      "description": "Advertisement data size = 0",
+      "frame_type": "advertisement",
+      "sha256": "02b49f07eebaabbe3806e162161b6f0232623441a31e840578678b9d20eaaef3"
+    },
+    {
+      "name": "advert_size_1281",
+      "status": "dry_run",
+      "frame_size": 1365,
+      "wrapped_size": 1397,
+      "description": "Advertisement data size = 1281 (buffer is 1280)",
+      "frame_type": "advertisement",
+      "sha256": "7caa9966b923f30deb160307ecf8a0287328d79f03230f6a74f4851c32550664"
+    },
+    {
+      "name": "advert_size_1300",
+      "status": "dry_run",
+      "frame_size": 1384,
+      "wrapped_size": 1416,
+      "description": "Advertisement data size = 1300 (buffer is 1280)",
+      "frame_type": "advertisement",
+      "sha256": "76d3a5f8f67c724e9c37ac78ebe79b397fbfd8d0bc36554e4be1fcd5eeb5e8dc"
+    },
+    {
+      "name": "advert_size_1400",
+      "status": "dry_run",
+      "frame_size": 1484,
+      "wrapped_size": 1516,
+      "description": "Advertisement data size = 1400 (buffer is 1280)",
+      "frame_type": "advertisement",
+      "sha256": "d59dabf23bd4647716da7888858da26e0d9e9cd409e5678146254f0e79521c8e"
+    },
+    {
+      "name": "advert_size_1536",
+      "status": "dry_run",
+      "frame_size": 1620,
+      "wrapped_size": 1652,
+      "description": "Advertisement data size = 1536 (buffer is 1280)",
+      "frame_type": "advertisement",
+      "sha256": "9ea44e32c8537061352de4b8dcc02707bdc0ede9f3ed24722a3e605e806e40a4"
+    },
+    {
+      "name": "advert_size_1024",
+      "status": "dry_run",
+      "frame_size": 1108,
+      "wrapped_size": 1140,
+      "description": "Advertisement data size = 1024",
+      "frame_type": "advertisement",
+      "sha256": "a44793165e9bcaeff93fa1eb69cf037860ba10e25c9cd1e90434fad5fbf0f204"
+    },
+    {
+      "name": "advert_size_2048",
+      "status": "dry_run",
+      "frame_size": 2132,
+      "wrapped_size": 2164,
+      "description": "Advertisement data size = 2048",
+      "frame_type": "advertisement",
+      "sha256": "bb4cb4e7c346c309c169ec5e5d5f7c3c1f7773b557f9a8f8a9f78709f29ccde2"
+    },
+    {
+      "name": "advert_size_4096",
+      "status": "dry_run",
+      "frame_size": 4180,
+      "wrapped_size": 4212,
+      "description": "Advertisement data size = 4096",
+      "frame_type": "advertisement",
+      "sha256": "9c697a888ebfb79f41ae5a23dd45d99c6b8947469db23ca49edd1db3468cf42a"
+    },
+    {
+      "name": "advert_size_8192",
+      "status": "dry_run",
+      "frame_size": 4180,
+      "wrapped_size": 4212,
+      "description": "Advertisement data size = 8192",
+      "frame_type": "advertisement",
+      "sha256": "66b6b537bf799e67226f165f8a42f1d4dff3e12078b1f1e4cd0be132d8006e9e"
+    },
+    {
+      "name": "advert_size_16384",
+      "status": "dry_run",
+      "frame_size": 4180,
+      "wrapped_size": 4212,
+      "description": "Advertisement data size = 16384",
+      "frame_type": "advertisement",
+      "sha256": "2209f780bb7355cbe09207f4c2722984315c4846c625890cfbacdb694f4249dd"
+    },
+    {
+      "name": "advert_size_32768",
+      "status": "dry_run",
+      "frame_size": 4180,
+      "wrapped_size": 4212,
+      "description": "Advertisement data size = 32768",
+      "frame_type": "advertisement",
+      "sha256": "5b96a38f8a57ca5ce46f8afa93c5c5c1a973db86418835c314acd9b125480c5c"
+    },
+    {
+      "name": "advert_size_65535",
+      "status": "dry_run",
+      "frame_size": 4180,
+      "wrapped_size": 4212,
+      "description": "Advertisement data size = 65535",
+      "frame_type": "advertisement",
+      "sha256": "dc9979167f9ee3a414b86a1bc93bf9f62f26e86bbc0e5e7898824a937d8390c7"
+    },
+    {
+      "name": "advert_size_mismatch_large",
+      "status": "dry_run",
+      "frame_size": 4180,
+      "wrapped_size": 4212,
+      "description": "Size claims 1280 but payload is 4096 bytes",
+      "frame_type": "advertisement",
+      "sha256": "13ee181d5e2dd4d2406b82804ed4ba89e78779f61ee68b93e26fa59ae3e62d7f"
+    },
+    {
+      "name": "advert_size_max_short_data",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "Size claims 65535 but only 1280 bytes sent",
+      "frame_type": "advertisement",
+      "sha256": "5486f755ab7b66612841a199d3b3532881e358610ae083604e0a11295167a98f"
+    },
+    {
+      "name": "advert_participant_count_255",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "Participant count = 255 (overflows 8-slot array)",
+      "frame_type": "advertisement",
+      "sha256": "b962ce18b5cb1480c5ef59d224aa588daf545a7ede81db811135f4fcbf4f91d9"
+    },
+    {
+      "name": "advert_participant_count_9",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "Participant count = 9 (one beyond 8-slot limit)",
+      "frame_type": "advertisement",
+      "sha256": "d81db0f251b0a7bab943f6388c5903a08d90e1c92a4fcf9ae436058e74d916c2"
+    },
+    {
+      "name": "advert_appdata_size_max",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "Application data size = 65535 (buffer is 384)",
+      "frame_type": "advertisement",
+      "sha256": "dd5c963d1831307305a1b5c31dc5f1a2cc44fcb33245223909c7ca11f6593949"
+    },
+    {
+      "name": "advert_enc_gcm_plain_data",
+      "status": "dry_run",
+      "frame_size": 1332,
+      "wrapped_size": 1364,
+      "description": "Encryption type = GCM but data is plain format",
+      "frame_type": "advertisement",
+      "sha256": "c51eb418d96c8a5f387a4666b010c5657c310160f621ec2367c32baa797c8875"
+    },
+    {
+      "name": "advert_enc_invalid",
+      "status": "dry_run",
+      "frame_size": 1332,
+      "wrapped_size": 1364,
+      "description": "Encryption type = 0xFF (invalid)",
+      "frame_type": "advertisement",
+      "sha256": "4eace3e1337fc9b5120edc78e558bcbbd0298c9f792c274f7fa455f51a5cc71d"
+    },
+    {
+      "name": "advert_version_0",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "LDN version = 0",
+      "frame_type": "advertisement",
+      "sha256": "26976dc83ebd2d5fe2061a182270625718de043a81fd80e2c82aaee548966747"
+    },
+    {
+      "name": "advert_version_1",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "LDN version = 1",
+      "frame_type": "advertisement",
+      "sha256": "3ed8c7eaaeb83d4ed6699bebce6038c13fe7899b5f68df34076479d249a041a5"
+    },
+    {
+      "name": "advert_version_5",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "LDN version = 5",
+      "frame_type": "advertisement",
+      "sha256": "7f257f0a6bd9992fc94070833fb2bada5249412eadc6dfe55cc5dc5dbfe48a0a"
+    },
+    {
+      "name": "advert_version_127",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "LDN version = 127",
+      "frame_type": "advertisement",
+      "sha256": "e25469f947825c58b912166cb1dbb35cac9aaf871f42e669237bbe2d633e3195"
+    },
+    {
+      "name": "advert_version_255",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "LDN version = 255",
+      "frame_type": "advertisement",
+      "sha256": "488c1ca0f837675768e36ec2919aeb32fcc3e921b06448c796502e11571e675d"
+    },
+    {
+      "name": "auth_normal",
+      "status": "dry_run",
+      "frame_size": 946,
+      "wrapped_size": 986,
+      "description": "Normal auth request (baseline)",
+      "frame_type": "auth",
+      "sha256": "e6ca43b8a5f69fedb849e18274693f9c8b3e5d3612666399b7c2efb76dc1a0b4"
+    },
+    {
+      "name": "auth_payload_size_max",
+      "status": "dry_run",
+      "frame_size": 946,
+      "wrapped_size": 986,
+      "description": "Auth payload size = 65535 (split across bytes 0x1 and 0x4)",
+      "frame_type": "auth",
+      "sha256": "b09d5f79223a29bf801457a8549797fd60f0f78b318c27fa3d97bc7b65758590"
+    },
+    {
+      "name": "auth_payload_size_zero",
+      "status": "dry_run",
+      "frame_size": 78,
+      "wrapped_size": 118,
+      "description": "Auth payload size = 0",
+      "frame_type": "auth",
+      "sha256": "79bd74b508fe447559bdd11e5ef3f0e741f176bdc1922da0e7079a28d24ad67c"
+    },
+    {
+      "name": "auth_size_mismatch_large",
+      "status": "dry_run",
+      "frame_size": 5042,
+      "wrapped_size": 5082,
+      "description": "Auth size claims 32 but actual payload is ~4KB",
+      "frame_type": "auth",
+      "sha256": "35caf84b8267825ab33532d9fa0ae38027e198bab3d47507a2396ea1f8c57bc5"
+    },
+    {
+      "name": "auth_oversized_256",
+      "status": "dry_run",
+      "frame_size": 1202,
+      "wrapped_size": 1242,
+      "description": "Auth request with 256 extra bytes beyond normal",
+      "frame_type": "auth",
+      "sha256": "481f05c44c1c2fa95f3c66569a0cda9030e1225c49e5d70b4ee2425af5b024d8"
+    },
+    {
+      "name": "auth_oversized_512",
+      "status": "dry_run",
+      "frame_size": 1458,
+      "wrapped_size": 1498,
+      "description": "Auth request with 512 extra bytes beyond normal",
+      "frame_type": "auth",
+      "sha256": "bc1815c20c597be09b6d373b4cecd1ac5320f28732237252c21e6d4fbd7efb52"
+    },
+    {
+      "name": "auth_oversized_1024",
+      "status": "dry_run",
+      "frame_size": 1970,
+      "wrapped_size": 2010,
+      "description": "Auth request with 1024 extra bytes beyond normal",
+      "frame_type": "auth",
+      "sha256": "18605152d1b709d45de6fbe69d451adee76f89f8e544da6d3d3c4e4a6b51e93b"
+    },
+    {
+      "name": "auth_oversized_2048",
+      "status": "dry_run",
+      "frame_size": 2994,
+      "wrapped_size": 3034,
+      "description": "Auth request with 2048 extra bytes beyond normal",
+      "frame_type": "auth",
+      "sha256": "0967065d2b8a95f619724c1e97e32657bdd33aef36d22005ac2637006e17d6ed"
+    },
+    {
+      "name": "auth_oversized_4096",
+      "status": "dry_run",
+      "frame_size": 5042,
+      "wrapped_size": 5082,
+      "description": "Auth request with 4096 extra bytes beyond normal",
+      "frame_type": "auth",
+      "sha256": "4bd5810c8aebbc5c4d900727fd2620cadeb16c067857f79e66e5b43ffe675704"
+    },
+    {
+      "name": "auth_challenge_p_0",
+      "status": "dry_run",
+      "frame_size": 946,
+      "wrapped_size": 986,
+      "description": "Challenge request with P = 0 (controls array at 0xC0)",
+      "frame_type": "auth",
+      "sha256": "d7a5c6001f2b0d7d93a8bf08c395717da0359420530544d335983788b605f275"
+    },
+    {
+      "name": "auth_challenge_p_8",
+      "status": "dry_run",
+      "frame_size": 946,
+      "wrapped_size": 986,
+      "description": "Challenge request with P = 8 (controls array at 0xC0)",
+      "frame_type": "auth",
+      "sha256": "db2860110d2f4264066434336d2f5c44fff9901ea372786b052403ae39af68ca"
+    },
+    {
+      "name": "auth_challenge_p_16",
+      "status": "dry_run",
+      "frame_size": 946,
+      "wrapped_size": 986,
+      "description": "Challenge request with P = 16 (controls array at 0xC0)",
+      "frame_type": "auth",
+      "sha256": "c8d86d2af8c18083816111f10d812683519b58c9ada63b48aef7635fe6d1e880"
+    },
+    {
+      "name": "auth_challenge_p_32",
+      "status": "dry_run",
+      "frame_size": 946,
+      "wrapped_size": 986,
+      "description": "Challenge request with P = 32 (controls array at 0xC0)",
+      "frame_type": "auth",
+      "sha256": "0ac1a91cfe05b68ae59e48ea6441f2f0fdc13d32c43fb99cb2624d1420c918b5"
+    },
+    {
+      "name": "auth_challenge_p_64",
+      "status": "dry_run",
+      "frame_size": 946,
+      "wrapped_size": 986,
+      "description": "Challenge request with P = 64 (controls array at 0xC0)",
+      "frame_type": "auth",
+      "sha256": "d604011f9979c786993a5982aeaccf03c8a604233a70c2a2fb757d6021a399d6"
+    },
+    {
+      "name": "auth_challenge_p_127",
+      "status": "dry_run",
+      "frame_size": 946,
+      "wrapped_size": 986,
+      "description": "Challenge request with P = 127 (controls array at 0xC0)",
+      "frame_type": "auth",
+      "sha256": "1751ab6da9b66e1733fa41fe56bfc8e90d63d5350d3b5fd4b1145d848c093caa"
+    },
+    {
+      "name": "auth_challenge_p_255",
+      "status": "dry_run",
+      "frame_size": 946,
+      "wrapped_size": 986,
+      "description": "Challenge request with P = 255 (controls array at 0xC0)",
+      "frame_type": "auth",
+      "sha256": "45bfca5179301e025d92a388a631954b43f97c7f7e89c7d0f04ecf6ab4e9355e"
+    },
+    {
+      "name": "auth_version_0",
+      "status": "dry_run",
+      "frame_size": 142,
+      "wrapped_size": 182,
+      "description": "Auth request with LDN version = 0",
+      "frame_type": "auth",
+      "sha256": "da5ce9595fa45a47851259a08ffe9d336b5044992168ca95723de5ba85be03fc"
+    },
+    {
+      "name": "auth_version_1",
+      "status": "dry_run",
+      "frame_size": 142,
+      "wrapped_size": 182,
+      "description": "Auth request with LDN version = 1",
+      "frame_type": "auth",
+      "sha256": "b12d63de2277bb1e7caa081937291bff1f8f61580eb6f832e2383deca15287ba"
+    },
+    {
+      "name": "auth_version_2",
+      "status": "dry_run",
+      "frame_size": 142,
+      "wrapped_size": 182,
+      "description": "Auth request with LDN version = 2",
+      "frame_type": "auth",
+      "sha256": "e08f99b6136796b37da248b14d7e5a572fe64fc7c90ce482d67461f31ccf69c3"
+    },
+    {
+      "name": "auth_version_5",
+      "status": "dry_run",
+      "frame_size": 946,
+      "wrapped_size": 986,
+      "description": "Auth request with LDN version = 5",
+      "frame_type": "auth",
+      "sha256": "4fc85b34253ba7ff163255d8076a6105d8b6e5e06e7ef39563a80781ab82c8c2"
+    },
+    {
+      "name": "auth_version_127",
+      "status": "dry_run",
+      "frame_size": 946,
+      "wrapped_size": 986,
+      "description": "Auth request with LDN version = 127",
+      "frame_type": "auth",
+      "sha256": "c7208d41a1340b1bb611ab03c0b941f59176dd960ad1d34ed2fc2b2362c527ca"
+    },
+    {
+      "name": "auth_version_255",
+      "status": "dry_run",
+      "frame_size": 946,
+      "wrapped_size": 986,
+      "description": "Auth request with LDN version = 255",
+      "frame_type": "auth",
+      "sha256": "0c01b968c818d32ba11ba37d39072a8ca9e2c919892feeb181c39649674a2dca"
+    },
+    {
+      "name": "auth_fake_response",
+      "status": "dry_run",
+      "frame_size": 466,
+      "wrapped_size": 506,
+      "description": "Fake auth response (injected as if from AP)",
+      "frame_type": "auth",
+      "sha256": "182c31b60d2adfce4f271841408de4a522528026b029763da5f47817dcbeb5db"
+    },
+    {
+      "name": "auth_fake_response_oversized",
+      "status": "dry_run",
+      "frame_size": 2514,
+      "wrapped_size": 2554,
+      "description": "Oversized fake auth response (2KB+ extra)",
+      "frame_type": "auth",
+      "sha256": "1d71335d39fd177b9847c1378f2112ecaac47de7d29a03cdf30f948220dd6120"
+    },
+    {
+      "name": "disconnect_reason_0",
+      "status": "dry_run",
+      "frame_size": 38,
+      "wrapped_size": 78,
+      "description": "Disconnect with reason = 0",
+      "frame_type": "disconnect",
+      "sha256": "f7cebfa645455dec0df12f58fc6ed2cf2a148f3178cf1a4553f18cabb6346e4d"
+    },
+    {
+      "name": "disconnect_reason_3",
+      "status": "dry_run",
+      "frame_size": 38,
+      "wrapped_size": 78,
+      "description": "Disconnect with reason = 3",
+      "frame_type": "disconnect",
+      "sha256": "1b4e9f6474b8a3f29dfd4d9b1edc6b3deefa074d7f842e94f692cd0e5f3cc41b"
+    },
+    {
+      "name": "disconnect_reason_4",
+      "status": "dry_run",
+      "frame_size": 38,
+      "wrapped_size": 78,
+      "description": "Disconnect with reason = 4",
+      "frame_type": "disconnect",
+      "sha256": "15455130aef39ac98671fe34056ebe5ec7a0f7db56aa1dcfd35abf73e5028aba"
+    },
+    {
+      "name": "disconnect_reason_5",
+      "status": "dry_run",
+      "frame_size": 38,
+      "wrapped_size": 78,
+      "description": "Disconnect with reason = 5",
+      "frame_type": "disconnect",
+      "sha256": "a05f955ab1eefaa950e827e130e34bd51c432d932688dbac1193009f83cbdfa2"
+    },
+    {
+      "name": "disconnect_reason_127",
+      "status": "dry_run",
+      "frame_size": 38,
+      "wrapped_size": 78,
+      "description": "Disconnect with reason = 127",
+      "frame_type": "disconnect",
+      "sha256": "c1f7614a9005e1e082916d04dd9631ed25a2e28fa485511553161d9dc982710c"
+    },
+    {
+      "name": "disconnect_reason_255",
+      "status": "dry_run",
+      "frame_size": 38,
+      "wrapped_size": 78,
+      "description": "Disconnect with reason = 255",
+      "frame_type": "disconnect",
+      "sha256": "d8347eb2c46b3d20d54eef89e4b6c1b1e63964014a392eed3c52b748cd6a408a"
+    },
+    {
+      "name": "disconnect_oversized",
+      "status": "dry_run",
+      "frame_size": 1062,
+      "wrapped_size": 1102,
+      "description": "Disconnect with 1KB extra data",
+      "frame_type": "disconnect",
+      "sha256": "8754aad522ad1e61eaa6ee19c1568ed75a4b4944c0a869e7db877180177b14f7"
+    },
+    {
+      "name": "malformed_empty_advert",
+      "status": "dry_run",
+      "frame_size": 12,
+      "wrapped_size": 44,
+      "description": "Advertisement header only, no payload",
+      "frame_type": "malformed",
+      "sha256": "ecd4bb61cc16563152e00d1958645e5e7b198e9fbba4e674646161b2387ad257"
+    },
+    {
+      "name": "malformed_truncated_12",
+      "status": "dry_run",
+      "frame_size": 12,
+      "wrapped_size": 44,
+      "description": "Frame truncated at 12 bytes",
+      "frame_type": "malformed",
+      "sha256": "ecd4bb61cc16563152e00d1958645e5e7b198e9fbba4e674646161b2387ad257"
+    },
+    {
+      "name": "malformed_truncated_16",
+      "status": "dry_run",
+      "frame_size": 16,
+      "wrapped_size": 48,
+      "description": "Frame truncated at 16 bytes",
+      "frame_type": "malformed",
+      "sha256": "c2556191a828999696948cbdee9047f465e7860687bf5599771f7ffda7e77eb2"
+    },
+    {
+      "name": "malformed_truncated_32",
+      "status": "dry_run",
+      "frame_size": 32,
+      "wrapped_size": 64,
+      "description": "Frame truncated at 32 bytes",
+      "frame_type": "malformed",
+      "sha256": "39c57206c80d6b51cef1b384a40e00d4eaba3984b394fff553fcef060bec1394"
+    },
+    {
+      "name": "malformed_truncated_44",
+      "status": "dry_run",
+      "frame_size": 44,
+      "wrapped_size": 76,
+      "description": "Frame truncated at 44 bytes",
+      "frame_type": "malformed",
+      "sha256": "69690b579c3fc257f68f750b9a6dde52e71fa3ae1da69d5e96e1e0e7df98bb25"
+    },
+    {
+      "name": "malformed_truncated_64",
+      "status": "dry_run",
+      "frame_size": 64,
+      "wrapped_size": 96,
+      "description": "Frame truncated at 64 bytes",
+      "frame_type": "malformed",
+      "sha256": "704e47f57c82e610775467606eb13210da1b4472a676903a4c341c87e9fe851e"
+    },
+    {
+      "name": "malformed_truncated_128",
+      "status": "dry_run",
+      "frame_size": 128,
+      "wrapped_size": 160,
+      "description": "Frame truncated at 128 bytes",
+      "frame_type": "malformed",
+      "sha256": "1c269210ce4fd400903e1ac77efc9c76d40a848bcb5366c61172eeeae9caf9a8"
+    },
+    {
+      "name": "malformed_truncated_256",
+      "status": "dry_run",
+      "frame_size": 256,
+      "wrapped_size": 288,
+      "description": "Frame truncated at 256 bytes",
+      "frame_type": "malformed",
+      "sha256": "5fcd99bebd350c7c9bf52cb9657530fc4c20e384ecc55c88f52e9b30de4827ab"
+    },
+    {
+      "name": "malformed_truncated_512",
+      "status": "dry_run",
+      "frame_size": 512,
+      "wrapped_size": 544,
+      "description": "Frame truncated at 512 bytes",
+      "frame_type": "malformed",
+      "sha256": "c09c68b1e23f4c46a101710143188f4ba61f26f53f24e833a48d3f5d0e90481d"
+    },
+    {
+      "name": "malformed_bad_oui",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "Advertisement with invalid OUI FF:FF:FF",
+      "frame_type": "malformed",
+      "sha256": "eb6142358866dfaa13caca98122b07959d2e3c31686d3559e07e09f396689853"
+    },
+    {
+      "name": "malformed_bad_pkt_type",
+      "status": "dry_run",
+      "frame_size": 1364,
+      "wrapped_size": 1396,
+      "description": "Frame with packet type 0xFFFF",
+      "frame_type": "malformed",
+      "sha256": "908727c5ddbd1d250c52df9dbe217e2a4d40daa251fe1048b0b76b87d4532eaa"
+    },
+    {
+      "name": "malformed_all_ff",
+      "status": "dry_run",
+      "frame_size": 2048,
+      "wrapped_size": 2080,
+      "description": "All 0xFF (2048 bytes)",
+      "frame_type": "malformed",
+      "sha256": "d0ff1b294b5288d1ae1421eadf5b2d38a8752b76d472ff30bed9028e25b1c5b8"
+    },
+    {
+      "name": "malformed_all_00",
+      "status": "dry_run",
+      "frame_size": 2048,
+      "wrapped_size": 2080,
+      "description": "All 0x00 (2048 bytes)",
+      "frame_type": "malformed",
+      "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    }
+  ]
+}

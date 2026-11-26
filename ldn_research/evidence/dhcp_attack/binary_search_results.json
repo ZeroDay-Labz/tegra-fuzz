@@ -1,0 +1,25 @@
+{
+  "test": "dhcp_overflow_binary_search",
+  "cve": "CVE-2026-82079",
+  "timestamp": "2026-11-23T05:45:00Z",
+  "method": "NM dhcp-hostname (opt 12) + dhcp-vendor-class-identifier (opt 60) via disconnect/reconnect cycles",
+  "hostname_fixed": 255,
+  "results": [
+    {"vendor": 0,   "total": 255, "status": "OK"},
+    {"vendor": 64,  "total": 319, "status": "OK"},
+    {"vendor": 128, "total": 383, "status": "OK"},
+    {"vendor": 192, "total": 447, "status": "OK"},
+    {"vendor": 208, "total": 463, "status": "OK"},
+    {"vendor": 216, "total": 471, "status": "OK"},
+    {"vendor": 220, "total": 475, "status": "OK"},
+    {"vendor": 222, "total": 477, "status": "CRASH (nmcli scan timeout, AP recovery needed)"},
+    {"vendor": 224, "total": 479, "status": "CRASH (nmcli connection timeout)"},
+    {"vendor": 255, "total": 510, "status": "CRASH (AP disappeared, all services unreachable)"}
+  ],
+  "conclusion": {
+    "buffer_boundary_total_option_bytes": "475-477",
+    "last_ok": {"hostname": 255, "vendor": 220, "total": 475},
+    "first_crash": {"hostname": 255, "vendor": 222, "total": 477},
+    "note": "NM also sends ~30B of standard options (client-id, param-request, max-msg-size) beyond hostname+vendor, so the actual option data reaching the server per packet is larger than the hostname+vendor sum"
+  }
+}

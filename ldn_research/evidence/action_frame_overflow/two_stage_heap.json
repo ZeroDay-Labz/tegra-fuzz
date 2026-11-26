@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-11-24T13:01:32Z",
+  "results": [
+    {
+      "name": "baseline_0x20_small",
+      "result": "CRASH_S1"
+    },
+    {
+      "name": "baseline_0x20_large",
+      "result": "CRASH_S1"
+    },
+    {
+      "name": "forge_0x1000_small",
+      "free_size": 4096,
+      "result": "CRASH_S2",
+      "mid_alive": false
+    },
+    {
+      "name": "forge_0x1000_large",
+      "free_size": 4096,
+      "result": "CRASH_S2",
+      "mid_alive": true
+    },
+    {
+      "name": "forge_0x10000_small",
+      "free_size": 65536,
+      "result": "CRASH_S2",
+      "mid_alive": true
+    },
+    {
+      "name": "forge_0x10000_large",
+      "free_size": 65536,
+      "result": "CRASH_S2",
+      "mid_alive": false
+    },
+    {
+      "name": "forge_0x40000_small",
+      "free_size": 262144,
+      "result": "CRASH_S2",
+      "mid_alive": false
+    },
+    {
+      "name": "forge_0x40000_large",
+      "free_size": 262144,
+      "result": "CRASH_S2",
+      "mid_alive": true
+    },
+    {
+      "name": "rapid_0x10000",
+      "free_size": 65536,
+      "result": "CRASH"
+    },
+    {
+      "name": "rapid_0x40000",
+      "free_size": 262144,
+      "result": "CRASH"
+    },
+    {
+      "name": "rapid_0x80000",
+      "free_size": 524288,
+      "result": "CRASH"
+    },
+    {
+      "name": "accumulation_round_1",
+      "result": "CRASH"
+    }
+  ]
+}

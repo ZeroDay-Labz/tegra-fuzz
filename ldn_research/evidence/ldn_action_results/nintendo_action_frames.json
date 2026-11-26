@@ -1,0 +1,223 @@
+{
+  "suite": "nintendo_action_frames",
+  "timestamp": "2026-11-22T21:35:18.698114+00:00",
+  "mon_iface": "wlp5s0mon",
+  "dry_run": true,
+  "tests": [
+    {
+      "name": "action_nintendo_baseline",
+      "src_mac": "d2:8e:1f:74:50:6c",
+      "frame_size": 39,
+      "timestamp": "2026-11-22T21:35:18.690591+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_type_00",
+      "src_mac": "7e:b6:6b:4e:14:00",
+      "frame_size": 39,
+      "timestamp": "2026-11-22T21:35:18.690868+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_type_01",
+      "src_mac": "d6:d7:da:9a:79:c7",
+      "frame_size": 39,
+      "timestamp": "2026-11-22T21:35:18.691117+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_type_02",
+      "src_mac": "4e:46:05:49:ad:35",
+      "frame_size": 39,
+      "timestamp": "2026-11-22T21:35:18.691384+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_type_03",
+      "src_mac": "66:3c:46:eb:a0:19",
+      "frame_size": 39,
+      "timestamp": "2026-11-22T21:35:18.691635+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_type_04",
+      "src_mac": "8a:e4:b6:49:c4:b1",
+      "frame_size": 39,
+      "timestamp": "2026-11-22T21:35:18.691881+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_type_0f",
+      "src_mac": "12:cd:e6:48:54:31",
+      "frame_size": 39,
+      "timestamp": "2026-11-22T21:35:18.692131+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_type_10",
+      "src_mac": "6a:05:f8:27:83:c3",
+      "frame_size": 39,
+      "timestamp": "2026-11-22T21:35:18.692416+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_type_11",
+      "src_mac": "96:08:e1:28:fe:2f",
+      "frame_size": 39,
+      "timestamp": "2026-11-22T21:35:18.692666+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_type_20",
+      "src_mac": "d2:ca:03:e6:c3:ad",
+      "frame_size": 39,
+      "timestamp": "2026-11-22T21:35:18.692909+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_type_30",
+      "src_mac": "46:ba:c5:65:1f:3b",
+      "frame_size": 39,
+      "timestamp": "2026-11-22T21:35:18.693152+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_type_ff",
+      "src_mac": "12:7d:49:f0:7a:ac",
+      "frame_size": 39,
+      "timestamp": "2026-11-22T21:35:18.693398+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_t10_payload_64B",
+      "src_mac": "3e:7f:df:13:36:51",
+      "frame_size": 101,
+      "timestamp": "2026-11-22T21:35:18.693642+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_t10_payload_128B",
+      "src_mac": "c2:93:4f:37:2c:50",
+      "frame_size": 165,
+      "timestamp": "2026-11-22T21:35:18.694102+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_t10_payload_255B",
+      "src_mac": "56:e3:61:b6:9e:72",
+      "frame_size": 292,
+      "timestamp": "2026-11-22T21:35:18.694359+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_t10_payload_512B",
+      "src_mac": "d2:39:e2:b8:e2:65",
+      "frame_size": 549,
+      "timestamp": "2026-11-22T21:35:18.694611+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_t10_payload_1024B",
+      "src_mac": "12:be:60:6a:46:47",
+      "frame_size": 1061,
+      "timestamp": "2026-11-22T21:35:18.694890+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_t10_payload_2000B",
+      "src_mac": "16:f5:40:2d:98:59",
+      "frame_size": 2037,
+      "timestamp": "2026-11-22T21:35:18.695216+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_ldn_scan_resp_10_participants",
+      "src_mac": "da:de:fa:26:32:0d",
+      "frame_size": 123,
+      "timestamp": "2026-11-22T21:35:18.695479+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_ldn_scan_resp_100_participants",
+      "src_mac": "f6:85:d3:f1:e0:a4",
+      "frame_size": 843,
+      "timestamp": "2026-11-22T21:35:18.695720+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_ldn_scan_resp_1000_participants",
+      "src_mac": "96:ba:57:48:86:66",
+      "frame_size": 2043,
+      "timestamp": "2026-11-22T21:35:18.695963+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_ldn_scan_resp_65535_participants",
+      "src_mac": "76:66:91:30:d7:23",
+      "frame_size": 2043,
+      "timestamp": "2026-11-22T21:35:18.696217+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_ldn_connect_64B_extra",
+      "src_mac": "be:2a:4b:38:bc:25",
+      "frame_size": 107,
+      "timestamp": "2026-11-22T21:35:18.696451+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_ldn_connect_256B_extra",
+      "src_mac": "3e:dc:51:1d:21:98",
+      "frame_size": 299,
+      "timestamp": "2026-11-22T21:35:18.696679+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_ldn_connect_512B_extra",
+      "src_mac": "82:37:d7:60:e7:62",
+      "frame_size": 555,
+      "timestamp": "2026-11-22T21:35:18.696919+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_ldn_connect_1024B_extra",
+      "src_mac": "fe:00:be:ff:86:ed",
+      "frame_size": 1067,
+      "timestamp": "2026-11-22T21:35:18.697155+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_ldn_connect_2000B_extra",
+      "src_mac": "32:7e:0a:5c:47:20",
+      "frame_size": 2043,
+      "timestamp": "2026-11-22T21:35:18.697396+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_ldn_participant_count_overflow",
+      "src_mac": "c6:1f:6d:88:1c:b3",
+      "frame_size": 75,
+      "timestamp": "2026-11-22T21:35:18.697637+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_all_nulls",
+      "src_mac": "96:b3:eb:ef:e8:99",
+      "frame_size": 292,
+      "timestamp": "2026-11-22T21:35:18.697874+00:00",
+      "dry_run": true
+    },
+    {
+      "name": "action_nintendo_fmtstr",
+      "src_mac": "2e:5a:62:68:ea:55",
+      "frame_size": 177,
+      "timestamp": "2026-11-22T21:35:18.698106+00:00",
+      "dry_run": true
+    }
+  ],
+  "summary": {
+    "total": 30,
+    "sent": 0,
+    "possible_crashes": 0
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-11-25T03:32:26Z",
+  "finding": "multipart_filename_crash_exact",
+  "last_safe_filename_len": 3984,
+  "crash_filename_len": 3992,
+  "disposition_prefix_len": 34,
+  "total_string_at_crash": 4028,
+  "probable_buffer_size": 4096,
+  "overflow_amount": -68
+}
