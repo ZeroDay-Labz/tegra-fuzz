@@ -1,0 +1,6 @@
+# Runtime: pyusb drives libusb-1.0 (install the system libusb-1.0 package too;
+# on Fedora that is 'libusb1', already present on this host).
+pyusb>=1.2
+
+# Test suite:
+#   pytest>=7.0

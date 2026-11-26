@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tegra_fuzz"
+version = "0.1.0"
+description = "Live USB fuzzer for the Tegra X1 RCM (recovery mode) interface — research tooling."
+requires-python = ">=3.12"
+dependencies = ["pyusb>=1.2"]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.scripts]
+tegra_fuzz = "tegra_fuzz.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tegra_fuzz*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

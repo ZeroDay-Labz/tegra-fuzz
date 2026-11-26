@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environment
+.venv/
+venv/
+
+# IDE / tools
+.idea/
+*.iml
+.vscode/
+.claude/
+MASTER_RESEARCH_COORDINATOR.md
+main.py
+
+# Testing
+.pytest_cache/
+
+# Firmware binaries — extracted from device, too large and legally sensitive for GitHub
+ldn_research/firmware/
+bins/
+
+# Evidence data — large JSON/pcap/bin test outputs, regeneratable from scripts
+ldn_research/evidence/
+findings/
+
+# Pcap captures
+*.pcap
+
+# Nintendo / Switch firmware artifacts
+*.nca
+*.nsp
+*.xci
+*.nso
+*.npdm
+
+# Images pulled from device
+*.jpg
+*.jpeg
+*.png
+*.bmp
+
+# Nmap scan output
+*.nmap
+*.gnmap
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
