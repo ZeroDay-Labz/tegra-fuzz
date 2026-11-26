@@ -90,6 +90,7 @@ is pre-DHCP, not in the ldn DHCP handler.
 | [firmware_acquisition.md](docs/firmware_acquisition.md) | How firmware was obtained and decrypted |
 | [pcap_analysis.md](docs/pcap_analysis.md) | Packet capture analysis |
 | [phase_deliverables.md](docs/phase_deliverables.md) | CVE validation deliverables checklist |
+| [evidence_reconciliation.md](docs/evidence_reconciliation.md) | **Evidence audit — separates confirmed from inferred findings** |
 | [vuln_function_0x99d80.md](docs/vuln_function_0x99d80.md) | SUPERSEDED — BuildVendorIE analysis (invalidated) |
 
 ## Scripts (scripts/)

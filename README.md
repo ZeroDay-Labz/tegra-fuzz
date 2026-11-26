@@ -47,10 +47,12 @@ parser. This is the most promising path to code execution.
 |----------|-------|
 | Trigger | Single unauthenticated HTTP POST |
 | Buffer | ~4096 bytes (stack-allocated) |
-| Return address control | **CONFIRMED** |
-| Stack canaries | **NONE** |
+| Crash boundary | filename >= 3985 bytes (byte-precise, reproduced) |
+| Stack corruption | **PROBABLE** (inferred from crash boundary + static layout) |
+| Return address control | Inferred from static analysis, not yet empirically demonstrated |
+| Stack canaries | Absent from binary (standard mechanism not linked) |
 | Persistent DoS | **CONFIRMED** (3x reproduced) |
-| Code execution | Not yet — ASLR (~18-bit entropy) is the remaining blocker |
+| Code execution | Not yet — ASLR bypass and empirical LR control needed |
 
 **Writeup:** [CVE-multipart-crash.md](ldn_research/CVE-multipart-crash.md)
 **Deep analysis:** [multipart_overflow_status.md](ldn_research/docs/multipart_overflow_status.md)
@@ -58,10 +60,12 @@ parser. This is the most promising path to code execution.
 
 ### CVE-2026-82079 (ldn WiFi stack overflow)
 
-Stack-based buffer overflow in the `ldn` sysmodule's network layer copy
-function, triggered via LP2P WiFi action frames. Independently confirmed
-through static analysis of the ldn binary. Harder to exploit than the
-multipart overflow (requires monitor-mode WiFi injection).
+Dead size parameter in the `ldn` sysmodule's `NetworkLayersCopy` function
+identified through static analysis. The function accepts a buffer size
+argument but never checks it. A plausible candidate for CVE-2026-82079
+(correspondence not confirmed). Live DHCP crash reproduced at vendor-class
+>= 222 bytes, but LR redirect tests were **empirically refuted** — the
+overflow may not reach saved LR on the live device.
 
 **Writeup:** [CVE-2026-82079_POC.md](ldn_research/CVE-2026-82079_POC.md)
 **Technical report:** [TECHNICAL_REPORT.md](ldn_research/TECHNICAL_REPORT.md)
@@ -74,8 +78,8 @@ HTTP DoS, RCM, TSEC, peripherals).
 
 | Path | Status |
 |------|--------|
-| **Multipart overflow (photoViewer)** | **ACTIVE** — LR control confirmed, ASLR is the blocker |
-| CVE-2026-82079 (ldn WiFi) | Confirmed, harder to exploit |
+| **Multipart overflow (photoViewer)** | **ACTIVE** — crash confirmed, LR control inferred (not empirically demonstrated) |
+| CVE-2026-82079 (ldn WiFi) | Static finding confirmed, live LR redirect refuted — under investigation |
 | LDN Heap OOB Write | Confirmed, separate finding |
 | HTTP Range DoS | Confirmed, DoS only |
 | RCM / USB Boot ROM | Exhausted — patched hardware |
